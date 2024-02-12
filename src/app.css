@@ -160,42 +160,22 @@ body {
 
 h1 {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 6rem;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    letter-spacing: -.05em;
-    line-height: .9
 
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    font-weight: 200;
-    margin: 1rem 0;
-    letter-spacing: 0rem;
-    line-height: 1.2
+    
 }
 
 h3 {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0rem;
-    line-height: 1.2
+    
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    letter-spacing: .02em;
-    line-height: 1.2
+
 }
 
 p {

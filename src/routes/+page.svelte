@@ -1,23 +1,26 @@
 <script>
 	import home_image from '$lib/assets/hero.jpg';
-	// import Faq from '$lib/components/Faq.svelte';
+	import couples_image from '$lib/assets/couples0.png'
+	import individual_image from '$lib/assets/individual0.png'
+	import tele_image from '$lib/assets/tele1.png'
+	import Faq from '$lib/components/Faq.svelte';
 </script>
 
 <!-- Hero Section -->
-<section class="hero-section bg-[var(--dark)] px-5 py-5">
-	<div class="home-hero">
-		<div class="text-[var(--primary)] rounded px-10 py-3 home-head bg-[#6874E8]/40">
-			<h1 class="pb-3 font-light">Lawson Psychotherapy</h1>
-			<h2 class="pb-3 font-light text-5xl">Making sense together</h2>
+<section class="hero-section bg-[var(--dark)] p-2 sm:p-5">
+	<div class="home-hero pt-10">
+		<div class="text-[var(--primary)] px-5 rounded home-head">
+			<h1 class="pb-3 text-4xl sm:text-6xl">Lawson Psychotherapy</h1>
+			<h2 class="pb-3 font-light text-xl sm:text-4xl">Making sense together</h2>
 			<div>
-				<a href="/contact" class="btn btn-primary">Get in touch</a>
-				<a href="/about" class="btn btn-secondary">Learn more</a>
+				<a href="/contact" class="btn btn-primary my-2">Get in touch</a>
+				<a href="/about" class="btn btn-secondary my-2">Learn more</a>
 			</div>
 		</div>
 		<img
 			src={home_image}
 			width="800"
-			class=""
+			class="blur-sm lg:blur-none"
 			alt="a welcoming space to straighten out your thoughts"
 		/>
 	</div>
@@ -28,36 +31,36 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<h3>Depth Therapy</h3>
-						<p>Focus on the root cause of distress to get to the bottom of your suffering.</p>
+						<img src="{couples_image}" alt="">
+						<h3 class="text-2xl mt-3">Couples</h3>
+						<p>Together, we'll identify and break out of destructive communication cycles.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<h3>Couples</h3>
-						<p>
-							One is the loneliest number. Two can be as bad as one; it's the loneliest since the
-							number one.
-						</p>
+						<img src="{individual_image}" alt="">
+						<h3 class="text-2xl mt-3">Individuals</h3>
+						<p>I provide   depth-oriented therapy for a diverse range of adults.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<h3>Individuals</h3>
-						<p>Providing adults affirming and compassionate therapy for all kinds of shit.</p>
+						<img src="{tele_image}" alt="">
+						<h3 class="text-2xl mt-3">Teletherapy</h3>
+						<p>I'm PSYPACT Authorized to practice teletherapy across certain state lines.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<h2 class="pt-5">Use your words</h2>
-				<p class="">
+				<h2 class="pt-5 text-2xl text-slate-700">Depth therapy</h2>
+				<p class="text-slate-700">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
 					sint animi sapiente vitae suscipit. Dolor sit amet consectetur adipisicing
 					elit. Architecto quidem facere deserunt vitae suscipit.
 				</p>
 
-				<h2 class="pt-5 text-right">Don't be so mad</h2>
-				<p class="text-right">
+				<h2 class="pt-5 text-right text-2xl text-slate-700">A safe space</h2>
+				<p class="text-right text-slate-700">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
 					sint animi sapiente vitae suscipit. Lorem ipsum dolor sit amet consectetur adipisicing
 					elit. Architecto quidem facere vitae suscipit.
@@ -66,13 +69,13 @@
 		</div>
 	</div>
 </section>
-<section class="pb-5">
-	<!-- <Faq /> -->
+<section class="">
+	<Faq />
 </section>
 
 <style lang="scss">
 	.home-hero {
-		// position: relative;
+		position: relative;
 
 		div {
 			position: relative;
@@ -92,12 +95,18 @@
 		flex-direction: column;
 		justify-content: center;
 		max-width: 40rem;
-		min-height: 34rem;
+		min-height: 20rem;
+		
+	}
 
-		h2 {
-			width: 20rem;
+	@media only screen and (min-width: 768px) {
+		.home-head {
+			min-height: 36rem;
+
 		}
 	}
+
+
 
 	.service-card {
 		border-radius: var(--border-radius);

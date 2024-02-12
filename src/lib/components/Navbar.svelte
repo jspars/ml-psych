@@ -1,62 +1,35 @@
-<script lang="ts">
-	import {
-		Collapse,
-		Navbar,
-		NavbarToggler,
-		NavbarBrand,
-		Nav,
-		NavItem,
-		NavLink,
-		Dropdown,
-		DropdownToggle,
-		DropdownMenu,
-		DropdownItem
-	} from 'sveltestrap';
-
-	let isOpen = false;
-
-	function handleUpdate(event) {
-		isOpen = event.detail.isOpen;
-	}
+<script>
+	
 </script>
 
-<Navbar class="z-3" color="dark" dark expand="md">
-	<NavbarBrand href="/" class="text-3xl">LP</NavbarBrand>
-	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
-	<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
-		<Nav class="ms-auto navbar-fixed-top" navbar navbar-fixed-top>
-			<NavItem>
-				<NavLink href="/about" class="px-4">About</NavLink>
-			</NavItem>
-            <NavItem>
-				<NavLink href="/fees_and_insurance" class="px-4">Insurance and Fees</NavLink>
-			</NavItem>
-            <NavItem>
-				<NavLink href="https://simplepractice.com"  target="_blank" class="px-4">Client Portal</NavLink>
-			</NavItem>
-			<Dropdown nav inNavbar>
-				<DropdownToggle nav caret class="px-4">More</DropdownToggle>
-				<DropdownMenu end>
-					<DropdownItem>
-						<NavLink href="">FAQs</NavLink>
-					</DropdownItem>
-					<DropdownItem>
-						<NavLink href="/publications">Publications</NavLink>
-					</DropdownItem>
-					<DropdownItem>
-						<NavLink href="/resources">External Resources</NavLink>
-					</DropdownItem>
-				</DropdownMenu>
-			</Dropdown>
-			<NavItem>
-				<NavLink href="/contact" class="px-4">Contact</NavLink>
-			</NavItem>  
-		</Nav>
-	</Collapse>
-</Navbar>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Dark offcanvas navbar">
+	<div class="container-fluid">
+		<a href="/" class="navbar-brand">LP</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="offcanvasNavbarDark" class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" aria-labeledby="offcanvasNavbarDarkLabel">
+			<div class="offcanvas-header">
+				<h2 id="offcanvasNavbarDark" class="offcanvas-title">Menu</h2>
+				<button class="btn-close text-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close">&#10006;</button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item" id="">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item" id="">
+						<a class="nav-link" href="/fees_and_insurance">Fees and Insurance</a>
+					</li>
+					<li class="nav-item" id="">
+						<a class="nav-link" href="/contact">Contact me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 
 <style>
-    .navbar-nav > li {
-		margin-right: 2rem;
-	}
+    
 </style>

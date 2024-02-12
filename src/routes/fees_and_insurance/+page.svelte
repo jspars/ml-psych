@@ -1,16 +1,16 @@
 <script>
 </script>
 
-<section>
-	<h1 class="text-6xl p-5">Fees and Insurance</h1>
+<section class="container mx-auto">
+	<h1 class="text-4xl ml-10 mt-10">Fees and Insurance</h1>
 	<div class="rounded my-grid p-10">
 		<div class="grid-item">
 			<h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">Individual intake</h3>
-            <h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">$170</h3>
+            <h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">$175</h3>
 		</div>
 		<div class="grid-item">
 			<h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">Individual session</h3>
-            <h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">$140</h3>
+            <h3 class="text-xl font-sans font-medium bg-[var(--primary)] px-5 py-4 text-[var(--bg)]">$150</h3>
 		</div>
 		<div class="grid-item">
 			<h3 class="text-xl font-sans font-medium bg-[var(--secondary)] px-5 py-4 text-slate-800">Couples intakes</h3>
