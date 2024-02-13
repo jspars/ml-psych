@@ -1,10 +1,11 @@
 <script>
+	import { base } from '$app/paths';
 	
 </script>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Dark offcanvas navbar">
 	<div class="container-fluid">
-		<a href="/" class="navbar-brand">LP</a>
+		<a href="{base}/" class="navbar-brand">LP</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -16,13 +17,13 @@
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item" id="">
-						<a class="nav-link" href="/about">About</a>
+						<a class="nav-link" href="{base}/about">About</a>
 					</li>
 					<li class="nav-item" id="">
-						<a class="nav-link" href="/fees_and_insurance">Fees and Insurance</a>
+						<a class="nav-link" href="{base}/fees_and_insurance">Fees and Insurance</a>
 					</li>
 					<li class="nav-item" id="">
-						<a class="nav-link" href="/contact">Contact me</a>
+						<a class="nav-link" href="{base}/contact">Contact me</a>
 					</li>
 				</ul>
 			</div>

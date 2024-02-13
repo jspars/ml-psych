@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="container mx-auto">
+<section class="container">
 	<h1 class="text-4xl ml-10 mt-10">Fees and Insurance</h1>
 	<div class="rounded my-grid p-10">
 		<div class="grid-item">
