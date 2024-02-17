@@ -1,8 +1,4 @@
 <script>
-	// import home_image from '/images/hero.jpg';
-	// import couples_image from '/images/couples0.png'
-	// import individual_image from '/images/individual0.png'
-	// import tele_image from '/images/tele1.png'
 	import Faq from '$lib/components/Faq.svelte';
 </script>
 
