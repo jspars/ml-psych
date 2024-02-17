@@ -1,8 +1,8 @@
 <script>
-	import home_image from '$lib/assets/hero.jpg';
-	import couples_image from '$lib/assets/couples0.png'
-	import individual_image from '$lib/assets/individual0.png'
-	import tele_image from '$lib/assets/tele1.png'
+	// import home_image from '/images/hero.jpg';
+	// import couples_image from '/images/couples0.png'
+	// import individual_image from '/images/individual0.png'
+	// import tele_image from '/images/tele1.png'
 	import Faq from '$lib/components/Faq.svelte';
 </script>
 
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<img
-			src={home_image}
+			src="/images/hero.jpg"
 			width="800"
 			class="blur-sm lg:blur-none"
 			alt="a welcoming space to straighten out your thoughts"
@@ -31,21 +31,21 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="{couples_image}" alt="">
+						<img src="/images/couples0.png" alt="">
 						<h3 class="text-2xl mt-3">Couples</h3>
 						<p>Together, we'll identify and break out of destructive communication cycles.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="{individual_image}" alt="">
+						<img src="/images/individual0.png" alt="">
 						<h3 class="text-2xl mt-3">Individuals</h3>
 						<p>I provide   depth-oriented therapy for a diverse range of adults.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="{tele_image}" alt="">
+						<img src="/images/tele1.png" alt="">
 						<h3 class="text-2xl mt-3">Teletherapy</h3>
 						<p>I'm PSYPACT Authorized to practice teletherapy across certain state lines.</p>
 					</div>

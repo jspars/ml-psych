@@ -31,7 +31,7 @@
 		information, see the <a href="fees_and_insurance">fees and insurance</a> 
 		page.
 	</p>
-	<h2 class="text-xl prose mx-auto">Can I uPse insurance for couples or relationship therapy?</h2>
+	<h2 class="text-xl prose mx-auto">Can I use insurance for couples or relationship therapy?</h2>
 	<p class="prose mx-auto">
 		Unfortunately, probably not. Many health insurance policies do not 
 		cover relationship, couples, or marital therapy, as couples therapy is 
