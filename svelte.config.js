@@ -6,10 +6,14 @@ const config = {
   preprocess: vitePreprocess(),
 
   kit: {
-    
+    prerender: {
+      default: true
+    },
+
     adapter: adapter({
-      fallback: 'index.html' 
+      fallback: index.html
     }),
+    
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/ml-psych' : '',
     },
