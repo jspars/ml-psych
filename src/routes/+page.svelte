@@ -36,7 +36,7 @@
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
 						<img src="{base}/images/individual0.png" alt="">
-						<h3 class="text-2xl mt-3">Individuals</h3>
+						<h3 class="text-2xl mt-3">Individual</h3>
 						<p>I provide depth-oriented therapy for a diverse range of adults.</p>
 					</div>
 				</div>
