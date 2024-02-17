@@ -1,7 +1,9 @@
 <script>
 	import { base } from '$app/paths';
 	
-
+	import { onMount } from 'svelte';
+	
+	
 	
 	
 </script>
@@ -20,13 +22,13 @@
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item" id="">
-						<a class="nav-link" href="{base}/about">About</a>
+						<a class="nav-link" data-sveltekit-reload href="{base}/about">About</a>
 					</li>
 					<li class="nav-item" id="">
-						<a class="nav-link" href="{base}/fees_and_insurance">Fees and Insurance</a>
+						<a class="nav-link" data-sveltekit-reload href="{base}/fees_and_insurance">Fees and Insurance</a>
 					</li>
 					<li class="nav-item" id="">
-						<a href="{base}/contact" role="button" class="btn btn-warning ml-2">
+						<a href="{base}/contact" data-sveltekit-reload role="button" class="btn btn-warning cta-button">
 							Get in touch now
 						</a>
 						<!-- TODO modal contact form -->
@@ -39,5 +41,17 @@
 </nav>
 
 <style>
-    
+	@media only screen and (min-width: 768px) {
+		.cta-button {
+			margin-left: 1rem;
+		}
+	}
+
+	@media only screen and (max-width: 769px) {
+		.cta-button {
+			margin-top: 0.75rem;
+	
+		}
+	}
+
 </style>
