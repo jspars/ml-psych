@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<img
-			src="/images/hero.jpg"
+			src="{base}/images/hero.jpg"
 			width="800"
 			class="blur-sm lg:blur-none"
 			alt="a welcoming space to straighten out your thoughts"
@@ -28,21 +28,21 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="/images/couples0.png" alt="">
+						<img src="{base}/images/couples0.png" alt="">
 						<h3 class="text-2xl mt-3">Couples</h3>
 						<p>Together, we'll identify and break out of destructive communication cycles.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="/images/individual0.png" alt="">
+						<img src="{base}/images/individual0.png" alt="">
 						<h3 class="text-2xl mt-3">Individuals</h3>
 						<p>I provide   depth-oriented therapy for a diverse range of adults.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="/images/tele1.png" alt="">
+						<img src="{base}/images/tele1.png" alt="">
 						<h3 class="text-2xl mt-3">Teletherapy</h3>
 						<p>I'm PSYPACT Authorized to practice teletherapy across certain state lines.</p>
 					</div>

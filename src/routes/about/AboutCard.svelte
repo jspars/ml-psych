@@ -1,6 +1,9 @@
+<script>
+	import { base } from '$app/paths';
 
+</script>
 <div class="card drop-shadow-md" style="width: 20rem;">
-	<img src="/images/mlawson.jpg" class="card-img-top" alt="Monica Lawson, PhD." />
+	<img src="{base}/images/mlawson.jpg" class="card-img-top" alt="Monica Lawson, PhD." />
 	<div class="card-body">
 		<h1 class="text-2xl font-bold card-title">Monica Lawson, PhD.</h1>
         <h2 class="text-sm font-light card-subtitle mb-2 text-muted">Licensed Clinical Psychologist, VA</h2>

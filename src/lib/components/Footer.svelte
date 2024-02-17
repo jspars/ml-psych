@@ -1,5 +1,6 @@
 <script>
-
+   	import { base } from '$app/paths';
+ 
 </script>
 
 <section class="bg-dark text-light">
@@ -17,7 +18,7 @@
                 <div class="lc-block">
                     <div editable="rich">
                         <p>
-                            <a class="text-decoration-none" href="/privacy">Notice of Privacy Practices/HIPAA</a>
+                            <a class="text-decoration-none" href="{base}/privacy">Notice of Privacy Practices/HIPAA</a>
                         </p>
                     </div>
                 </div>
