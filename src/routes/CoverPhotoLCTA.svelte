@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
     import hero_image from "$lib/assets/hero.jpg";
 </script>
 
@@ -10,7 +11,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</p>
 			<a class="btn btn-primary px-4 w-fit btn-lg" 
-                href="/contact" 
+                href="{base}/contact" 
                 role="button">
                 Schedule a Consultation
             </a>

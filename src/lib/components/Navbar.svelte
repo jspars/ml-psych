@@ -9,7 +9,7 @@
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div id="offcanvasNavbarDark" class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" aria-labeledby="offcanvasNavbarDarkLabel">
+		<div id="offcanvasNavbarDark" class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" aria-labelledby="offcanvasNavbarDarkLabel">
 			<div class="offcanvas-header">
 				<h2 id="offcanvasNavbarDark" class="offcanvas-title">Menu</h2>
 				<button class="btn-close text-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close">&#10006;</button>

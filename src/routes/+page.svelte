@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Faq from '$lib/components/Faq.svelte';
 </script>
 
@@ -9,8 +10,8 @@
 			<h1 class="pb-3 text-4xl sm:text-6xl">Lawson Psychotherapy</h1>
 			<h2 class="pb-3 font-light text-xl sm:text-4xl">Making sense together</h2>
 			<div>
-				<a href="/contact" class="btn btn-primary my-2">Get in touch</a>
-				<a href="/about" class="btn btn-secondary my-2">Learn more</a>
+				<a href="{base}/contact" class="btn btn-primary my-2">Get in touch</a>
+				<a href="{base}/about" class="btn btn-secondary my-2">Learn more</a>
 			</div>
 		</div>
 		<img
