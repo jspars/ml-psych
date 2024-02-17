@@ -1,6 +1,9 @@
 <script>
 	import { base } from '$app/paths';
 	
+
+	
+	
 </script>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Dark offcanvas navbar">
@@ -23,7 +26,11 @@
 						<a class="nav-link" href="{base}/fees_and_insurance">Fees and Insurance</a>
 					</li>
 					<li class="nav-item" id="">
-						<a class="nav-link" href="{base}/contact">Contact me</a>
+						<a href="{base}/contact" role="button" class="btn btn-warning ml-2">
+							Get in touch now
+						</a>
+						<!-- TODO modal contact form -->
+
 					</li>
 				</ul>
 			</div>

@@ -46,7 +46,7 @@
         </label>
       </div>
       <p class="prose text-xs italic">* required fields</p>
-    <button type="" class="btn btn-primary btn-lg mt-5">Submit</button>
+    <button type="" class="btn btn-warning mt-5">Submit</button>
 </form>
 
 <style>
