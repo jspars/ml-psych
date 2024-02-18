@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <div class="bg-[var(--dark)] p-5">
@@ -28,7 +29,7 @@
 		agree to work together, and you wish to use insurance, we will discuss 
 		this platform and billing during our initial consultation. I currently 
 		can accept Anthem/BCBS and Aetna for Virginia residents only. For more 
-		information, see the <a href="fees_and_insurance">fees and insurance</a> 
+		information, see the <a href="{base}/fees_and_insurance">fees and insurance</a> 
 		page.
 	</p>
 	<h2 class="text-xl prose mx-auto">Can I use insurance for couples or relationship therapy?</h2>
