@@ -3,6 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -31,8 +33,6 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/free-regular-svg-icons": "^6.5.1",
-		"@fortawesome/free-solid-svg-icons": "^6.5.1",
-		"@sveltestrap/sveltestrap": "^6.2.5",
-		"sveltestrap": "^5.11.2"
+		"@fortawesome/free-solid-svg-icons": "^6.5.1"
 	}
 }
