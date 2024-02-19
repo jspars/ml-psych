@@ -118,10 +118,4 @@
 	.service-card p {
 		color: var(--primary);
 	}
-
-	.about-us {
-		background-color: var(--primary);
-		padding: 20px;
-		color: var(--dark);
-	}
 </style>
