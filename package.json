@@ -30,6 +30,5 @@
 	"dependencies": {
 		"@fortawesome/free-regular-svg-icons": "^6.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.5.1",
-		"sveltestrap": "^5.11.2"
 	}
 }
