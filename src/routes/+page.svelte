@@ -10,7 +10,7 @@
 			<h1 class="pb-3 text-4xl sm:text-6xl">Lawson Psychotherapy</h1>
 			<h2 class="pb-3 font-light text-xl sm:text-4xl">Making sense together</h2>
 			<div>
-				<a href="{base}/contact" class="btn btn-primary my-2">Get in touch</a>
+				<a href="{base}/contact" class="btn btn-warning my-2">Get in touch</a>
 				<a href="{base}/about" class="btn btn-secondary my-2">Learn more</a>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 		<div class="container p-5">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
+					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50 ">
 						<img src="{base}/images/couples0.png" alt="">
 						<h3 class="text-2xl mt-3">Couples</h3>
 						<p>Together, we'll identify and break out of destructive communication cycles.</p>
@@ -36,8 +36,8 @@
 				<div class="col-md-4">
 					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
 						<img src="{base}/images/individual0.png" alt="">
-						<h3 class="text-2xl mt-3">Individuals</h3>
-						<p>I provide   depth-oriented therapy for a diverse range of adults.</p>
+						<h3 class="text-2xl mt-3">Individual</h3>
+						<p>I provide depth-oriented therapy for a diverse range of adults.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -49,7 +49,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<h2 class="pt-5 text-2xl text-slate-700">Depth therapy</h2>
+				<!-- TODO, make a better transition between the cards above, and the FAQ below -->
+				<!-- <h2 class="pt-5 text-2xl text-slate-700">Depth therapy</h2>
 				<p class="text-slate-700">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
 					sint animi sapiente vitae suscipit. Dolor sit amet consectetur adipisicing
@@ -61,7 +62,7 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
 					sint animi sapiente vitae suscipit. Lorem ipsum dolor sit amet consectetur adipisicing
 					elit. Architecto quidem facere vitae suscipit.
-				</p>
+				</p> -->
 			</div>
 		</div>
 	</div>
@@ -109,6 +110,7 @@
 		border-radius: var(--border-radius);
 		padding: 20px;
 		margin-bottom: 20px;
+		min-height: 28rem;
 	}
 
 	.service-card h3 {
@@ -118,4 +120,9 @@
 	.service-card p {
 		color: var(--primary);
 	}
+<<<<<<< HEAD
+=======
+
+	
+>>>>>>> prod
 </style>

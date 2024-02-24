@@ -147,6 +147,7 @@
     font-style: normal;
     font-weight: 800;
     src: url('/fonts/NanumMyeongjo-ExtraBold.ttf') format('truetype');
+<<<<<<< HEAD
 }
 
 body {
@@ -156,6 +157,8 @@ body {
     line-height: 1.5;
     color: #212529;
     background-color: #EEF4ED; 
+=======
+>>>>>>> prod
 }
 
 body {

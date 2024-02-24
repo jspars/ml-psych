@@ -1,3 +1,4 @@
+
 <form class="my-5 this-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mleqbdvg" method="post">
     <div class="mb-3">
       <label for="your_name" class="form-label">Name*</label>
@@ -46,7 +47,7 @@
         </label>
       </div>
       <p class="prose text-xs italic">* required fields</p>
-    <button type="" class="btn btn-primary btn-lg mt-5">Submit</button>
+    <button type="" class="btn btn-warning mt-5">Submit</button>
 </form>
 
 <style>

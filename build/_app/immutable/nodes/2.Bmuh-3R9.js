@@ -1,0 +1,29 @@
+import{s as k,n as d}from"../chunks/scheduler.Ce_0Mfso.js";import{S as I,i as _,e as m,c as v,k as g,l as y,g as c,d as r,s as w,m as $,f as b,a as T,n as C,o as q,p as H,q as L,r as M}from"../chunks/index.BCOiWEsT.js";import{b as l}from"../chunks/paths.oUZkCY3d.js";function S(f){let e,p=`<h1 class="text-3xl text-center mb-5">Frequently Asked Questions</h1> <h2 class="text-xl prose mx-auto">How do we get started?</h2> <p class="prose mx-auto">Complete the contact form. Once received, I will reach out to schedule 
+		an initial consultation if I am currently accepting new clients.</p> <p class="prose mx-auto">The initial consultation is a 20 to 30 minute, virtual, no cost, 
+		consultation to get know you, what is bringing you to therapy, and to 
+		assess whether we are a good fit to work together. I will ask you some
+		questions, tell you more about my therapeutic approach, and you will 
+		have time to ask me questions as well.</p> <p class="prose mx-auto">The working relationship between therapist and client is vital to the 
+		success of therapy, and therapy is a significant investment of time and 
+		resources, so finding a therapist with whom you feel a good rapport is
+		important.</p> <h2 class="text-xl prose mx-auto">Do you accept insurance?</h2> <p class="prose mx-auto">I currently work with a third party platform to bill insurance. If we 
+		agree to work together, and you wish to use insurance, we will discuss 
+		this platform and billing during our initial consultation. I currently 
+		can accept Anthem/BCBS and Aetna for Virginia residents only. For more 
+		information, see the <a href="${l}/fees_and_insurance">fees and insurance</a> 
+		page.</p> <h2 class="text-xl prose mx-auto">Can I use insurance for couples or relationship therapy?</h2> <p class="prose mx-auto">Unfortunately, probably not. Many health insurance policies do not 
+		cover relationship, couples, or marital therapy, as couples therapy is 
+		not specifically focused on treating a mental health disorder. Couples
+		therapy is focused on helping individuals improve their romantic 
+		relationships. This is not considered a medically necessary service by 
+		most health insurance policies.</p> <h2 class="text-xl prose mx-auto">What is an intake?</h2> <p class="prose mx-auto">An intake is a first session, where I will gather background  
+		information related to your reasons for seeking therapy, your 
+		developmental history, and other information that helps me better 
+		understand you and what is bringing you to therapy. Ideally, I prefer 
+		90 minutes for the intake, to allow enough time to gather this 
+		information.</p> <h2 class="text-xl prose mx-auto">How long do sessions last?</h2> <p class="prose mx-auto">Individual sessions typically last between 50 and 55 minutes and are 
+		held weekly. We may meet less or more frequently if appropriate. We 
+		will discuss frequency of sessions in our first session.</p> <p class="prose mx-auto">Couples sessions vary in length due to various factors. When possible, 
+		I prefer to see couples for at least 75 minutes, once a week. If 
+		schedules do not allow for a 75 minute session, we will meet for 50-55
+		minutes.</p>`;return{c(){e=m("div"),e.innerHTML=p,this.h()},l(s){e=v(s,"DIV",{class:!0,"data-svelte-h":!0}),g(e)!=="svelte-2lihcx"&&(e.innerHTML=p),this.h()},h(){y(e,"class","bg-[var(--dark)] p-5")},m(s,a){c(s,e,a)},p:d,i:d,o:d,d(s){s&&r(e)}}}class A extends I{constructor(e){super(),_(this,e,null,S,k,{})}}function E(f){let e,p=`<div class="home-hero pt-10 svelte-10vm5a1"><div class="text-[var(--primary)] px-5 rounded home-head svelte-10vm5a1"><h1 class="pb-3 text-4xl sm:text-6xl">Lawson Psychotherapy</h1> <h2 class="pb-3 font-light text-xl sm:text-4xl">Making sense together</h2> <div class="svelte-10vm5a1"><a href="${l}/contact" class="btn btn-warning my-2">Get in touch</a> <a href="${l}/about" class="btn btn-secondary my-2">Learn more</a></div></div> <img src="${l}/images/hero.jpg" width="800" class="blur-sm lg:blur-none svelte-10vm5a1" alt="a welcoming space to straighten out your thoughts"/></div>`,s,a,x=`<div class="pb-5"><div class="container p-5"><div class="row"><div class="col-md-4"><div class="service-card drop-shadow-lg bg-[#f2d7ba]/50  svelte-10vm5a1"><img src="${l}/images/couples0.png" alt=""/> <h3 class="text-2xl mt-3 svelte-10vm5a1">Couples</h3> <p class="svelte-10vm5a1">Together, we&#39;ll identify and break out of destructive communication cycles.</p></div></div> <div class="col-md-4"><div class="service-card drop-shadow-lg bg-[#f2d7ba]/50 svelte-10vm5a1"><img src="${l}/images/individual0.png" alt=""/> <h3 class="text-2xl mt-3 svelte-10vm5a1">Individual</h3> <p class="svelte-10vm5a1">I provide depth-oriented therapy for a diverse range of adults.</p></div></div> <div class="col-md-4"><div class="service-card drop-shadow-lg bg-[#f2d7ba]/50 svelte-10vm5a1"><img src="${l}/images/tele1.png" alt=""/> <h3 class="text-2xl mt-3 svelte-10vm5a1">Teletherapy</h3> <p class="svelte-10vm5a1">I&#39;m PSYPACT Authorized to practice teletherapy across certain state lines.</p></div></div></div> <div class="row"></div></div></div>`,h,i,n,u;return n=new A({}),{c(){e=m("section"),e.innerHTML=p,s=w(),a=m("section"),a.innerHTML=x,h=w(),i=m("section"),$(n.$$.fragment),this.h()},l(t){e=v(t,"SECTION",{class:!0,"data-svelte-h":!0}),g(e)!=="svelte-4oi80p"&&(e.innerHTML=p),s=b(t),a=v(t,"SECTION",{"data-svelte-h":!0}),g(a)!=="svelte-1vw97wt"&&(a.innerHTML=x),h=b(t),i=v(t,"SECTION",{class:!0});var o=T(i);C(n.$$.fragment,o),o.forEach(r),this.h()},h(){y(e,"class","hero-section bg-[var(--dark)] p-2 sm:p-5"),y(i,"class","")},m(t,o){c(t,e,o),c(t,s,o),c(t,a,o),c(t,h,o),c(t,i,o),q(n,i,null),u=!0},p:d,i(t){u||(H(n.$$.fragment,t),u=!0)},o(t){L(n.$$.fragment,t),u=!1},d(t){t&&(r(e),r(s),r(a),r(h),r(i)),M(n)}}}class F extends I{constructor(e){super(),_(this,e,null,E,k,{})}}export{F as component};
