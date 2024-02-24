@@ -1,7 +1,7 @@
 <script>
 	import { base } from '$app/paths';
-
 </script>
+
 <div class="card drop-shadow-md" style="width: 20rem;">
 	<img src="{base}/images/mlawson-portrait.jpg" class="card-img-top" alt="Monica Lawson, PhD." />
 	<div class="card-body">
@@ -19,6 +19,8 @@
 	</div>
 </div>
 
+
 <style>
 
 </style>
+
