@@ -31,6 +31,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/free-regular-svg-icons": "^6.5.1",
-		"@fortawesome/free-solid-svg-icons": "^6.5.1"
+		"@fortawesome/free-solid-svg-icons": "^6.5.1",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2"
 	}
 }
