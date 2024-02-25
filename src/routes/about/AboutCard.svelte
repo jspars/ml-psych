@@ -20,6 +20,7 @@
 </div>
 
 
+<!-- eslint-disable -->
 <style>
 
 </style>
