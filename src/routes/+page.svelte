@@ -120,9 +120,4 @@
 	.service-card p {
 		color: var(--primary);
 	}
-<<<<<<< HEAD
-=======
-
-	
->>>>>>> prod
 </style>
