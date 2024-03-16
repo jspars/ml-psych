@@ -1,10 +1,10 @@
-<script>
+    <script>
 	import AboutCard from './AboutCard.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 </script>
 
 <section>
-	<PageHeader />
+	<PageHeader backgroundImage="/images/about-header.png" headerText="About" />
 </section>
 
 <section class="container mt-5">

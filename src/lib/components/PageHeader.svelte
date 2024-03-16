@@ -1,12 +1,15 @@
 <script>
 	import { base } from '$app/paths';
+
+	export let backgroundImage;
+	export let headerText = "Section Header"
 </script>
 
-<section id="page-header" class="page-header d-flex align-items-center">
+<section id="page-header" class="page-header d-flex align-items-center" style="background: url('{backgroundImage}') top;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-4">
-				<h1 class="text-6xl text-slate-300">About</h1>
+				<h1 class="text-6xl text-slate-300">{headerText}</h1>
 			</div>
 		</div>
 	</div>
@@ -16,7 +19,6 @@
 	.page-header {
 		width: 100%;
 		min-height: 30vh;
-		background: url('/images/about-header.png') top;
 		position: relative;
 		padding: 120px 0;
 		z-index: 3;
