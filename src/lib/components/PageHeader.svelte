@@ -3,6 +3,7 @@
 
 	export let backgroundImage;
 	export let headerText = "Section Header"
+	export let subheaderText = "";
 </script>
 
 <section id="page-header" class="page-header d-flex align-items-center" style="background: url('{backgroundImage}') top;">
@@ -10,6 +11,7 @@
 		<div class="row">
 			<div class="col-xl-4">
 				<h1 class="text-6xl text-slate-300">{headerText}</h1>
+				<p class="text-3xl text-slate-300">{subheaderText}</p>
 			</div>
 		</div>
 	</div>

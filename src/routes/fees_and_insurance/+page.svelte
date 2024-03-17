@@ -1,12 +1,21 @@
 <script>
+	import { base } from '$app/paths'
+
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Prices from './Prices.svelte';
 
 </script>
 
+
 <PageHeader headerText="Fees and Insurance" backgroundImage="/images/fees-header.png"/>
 
-<div class="my-5">
+<div class="my-5 container">
+	<p class="">
+		Below is a summary of my fees, and it is broken into fees for individuals and fees for couples.
+		Each group lists the price for the requried intake session and each session thereafter.
+		If you have any questions about this structure, please make sure to include
+		them when submitting the <a href="{base}/contact">Contact Form</a>.
+	</p>
 	<Prices />
 </div>
 <div class="p-10 mt-10">

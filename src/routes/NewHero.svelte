@@ -6,9 +6,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-4">
-				<h1 class="text-6xl text-slate-300">Lawson Psychotherapy</h1>
+				<h1 class="outline-it text-8xl">Lawson Psychotherapy</h1>
 				<blockquote>
-					<p class="text-2xl font-light">Making sense together</p>
+					<p class="outilne-it text-3xl">Making sense together</p>
 				</blockquote>
 				<div class="d-flex">
 					<a href="{base}/contact" class="btn btn-warning">Get Started</a>
@@ -19,11 +19,18 @@
 </section>
 
 <style>
+	.outline-it {
+		color: white;
+		-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+		-webkit-text-stroke: 1px black;
+	}
+
 	.hero {
 		width: 100%;
 		min-height: 75vh;
-		background: url('/images/hero.jpg') top;
+		background: url('/images/test-hero-ill.png') center;
 		background-size: cover;
+		background-attachment: fixed;
 		position: relative;
 		padding: 120px 0;
 		z-index: 3;
@@ -43,24 +50,18 @@
 	.hero:before {
 		position: absolute;
 		content: '';
-		background: rgba(27, 47, 69, 0.6);
+		background: rgba(27, 47, 69, 0.4);
 		inset: 0;
 	}
 
 	@media (max-width: 1034px) {
 		.hero:before {
-			background: rgba(27, 47, 69, 0.7);
+			/* background: rgba(27, 47, 69, 0.7); */
 		}
 	}
 
 	.hero .container {
 		z-index: 1;
-	}
-
-	@media (min-width: 1024px) {
-		.hero {
-			background-attachment: fixed;
-		}
 	}
 
 	.hero h2 {
