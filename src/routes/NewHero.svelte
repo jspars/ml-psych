@@ -124,14 +124,20 @@
 	}
 
 	@media (max-width: 640px) {
-		.hero h2 {
+		.hero h1 {
 			font-size: 36px;
-			line-height: 1;
+			line-height: 0.75;
 		}
 
 		.hero .btn-get-started,
 		.hero .btn-watch-video {
 			font-size: 13px;
 		}
+
+		.outline-it {
+		color: white;
+		-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+		-webkit-text-stroke: 1px white;
+	}
 	}
 </style>
