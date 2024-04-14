@@ -6,10 +6,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-4">
-				<h1 class="outline-it text-8xl">Lawson Psychotherapy</h1>
-				<blockquote>
-					<p class="outilne-it text-3xl">Making sense together</p>
-				</blockquote>
+				<h1 class="outline-it">Lawson Psychotherapy</h1>
+				
+					<p class="text-2xl text-gray-200">Making meaning together</p>
+				
 				<div class="d-flex">
 					<a href="{base}/contact" class="btn btn-warning">Get Started</a>
 				</div>
@@ -34,9 +34,10 @@
 		position: relative;
 		padding: 120px 0;
 		z-index: 3;
+		overflow: hidden;
 	}
 
-	@media (min-width: 1034px) {
+	@media (min-width: 650px) {
 		.hero:after {
 			position: absolute;
 			content: '';
@@ -44,6 +45,10 @@
 			background: var(--color-secondary);
 			top: 0;
 			bottom: 0;
+		}
+
+		h1 {
+			font-size: 6rem;
 		}
 	}
 
@@ -54,10 +59,17 @@
 		inset: 0;
 	}
 
-	@media (max-width: 1034px) {
+	@media (max-width: 650px) {
 		.hero:before {
 			/* background: rgba(27, 47, 69, 0.7); */
 		}
+
+		h1 {
+			font-size: 2.75rem;
+			font-weight: 900;
+			
+		}
+
 	}
 
 	.hero .container {

@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-xl-4">
 				<h1 class="text-6xl text-slate-300">{headerText}</h1>
-				<p class="text-3xl text-slate-300">{subheaderText}</p>
+				<h2 class="text-xl text-slate-300">{subheaderText}</h2>
 			</div>
 		</div>
 	</div>
@@ -20,7 +20,7 @@
 <style>
 	.page-header {
 		width: 100%;
-		min-height: 30vh;
+		height: 30vh;
 		position: relative;
 		padding: 120px 0;
 		z-index: 3;
@@ -62,8 +62,8 @@
 
 	.page-header h2 {
 		margin: 0;
-		font-size: 48px;
-		font-weight: 700;
+		font-size: 24px;
+		font-weight: 300;
 		line-height: 1.2;
 		color: #fff;
 		font-family: var(--font-secondary);

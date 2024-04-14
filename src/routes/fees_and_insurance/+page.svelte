@@ -9,9 +9,9 @@
 
 <PageHeader headerText="Fees and Insurance" backgroundImage="/images/fees-header.png"/>
 
-<div class="my-5 container">
+<div class="my-5 mx-auto container">
 	<p class="">
-		Below is a summary of my fees, and it is broken into fees for individuals and fees for couples.
+		Below is a summary of my fees, and it is broken into rates for individuals and rates for couples.
 		Each group lists the price for the requried intake session and each session thereafter.
 		If you have any questions about this structure, please make sure to include
 		them when submitting the <a href="{base}/contact">Contact Form</a>.

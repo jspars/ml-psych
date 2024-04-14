@@ -12,7 +12,7 @@
         <label for="phone" class="form-label">Phone number</label>
         <input type="phone" class="form-control" id="phone" name="phone" aria-describedby="phone" required>
     </div>
-    <div class="mb-3">
+    <!-- <div class="mb-3">
         <label for="paymentMethod">Insurance or private pay?</label>
         <select class="form-select" name="paymentMethod" id="paymentMethod" aria-label="Default select example" required>
             <option selected>Select one</option>
@@ -28,7 +28,7 @@
             <option value="anthem">Anthem/BCBS</option>
             <option value="aetna">Aetna</option>
         </select>
-    </div>
+    </div> -->
     <div class="mb-3">
         <label for="therapyType">Individual or couples therapy?</label>
         <select class="form-select" name="therapyType" id="therapyType" aria-label="Default select example" required>
@@ -49,4 +49,4 @@
     .this-form {
         max-width: 450px;
     }
-    </style>
+</style>
