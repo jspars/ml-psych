@@ -65,8 +65,7 @@
 		}
 
 		h1 {
-			font-size: 2.75rem;
-			font-weight: 900;
+			font-size: 2.8rem;
 			
 		}
 
