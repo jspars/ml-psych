@@ -1,5 +1,5 @@
 <script>
-    import ContactForm from '$lib/components/ContactForm.svelte'
+    import ContactForm from '$lib/components/ContactForm.svelte';
     import ContactHeader from '$lib/components/PageHeader.svelte';
 
 </script>

@@ -7,8 +7,9 @@
 	<div class="card-body">
 		<h1 class="text-2xl font-bold card-title">Monica Lawson, PhD.</h1>
         <h2 class="text-sm font-light card-subtitle mb-2 text-muted">Licensed Clinical Psychologist, VA</h2>
+		<h2 class="text-sm font-light card-subtitle mb-2 text-muted">Licensed Psychologist, PA</h2>
 		<p class="text-sm prose card-text my-1">
-			PhD Clinical Psychology, <em>Duquesne University</em>.
+			PhD Clinical Psychology, <em>Duquesne University</em>
 		</p>
 		<p class="text-sm prose card-text my-1">
 			MA   Clinical Psychology, <em>Saint Michael's College</em>

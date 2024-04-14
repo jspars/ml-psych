@@ -9,68 +9,38 @@
 	<NewHero />
 </section>
 
-<section class="m-5">
-	<CardGroup />
-</section>
-
-<!--
-
-
-<section>
-	<div class="pb-5">
-		<div class="container p-5">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50 ">
-						<img src="{base}/images/couples0.png" alt="">
-						<h3 class="text-2xl mt-3">Couples</h3>
-						<p>Together, we'll identify and break out of destructive communication cycles.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="{base}/images/individual0.png" alt="">
-						<h3 class="text-2xl mt-3">Individual</h3>
-						<p>I provide depth-oriented therapy for a diverse range of adults.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service-card drop-shadow-lg bg-[#f2d7ba]/50">
-						<img src="{base}/images/tele1.png" alt="">
-						<h3 class="text-2xl mt-3">Teletherapy</h3>
-						<p>I'm PSYPACT Authorized to practice teletherapy across certain state lines.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<p class="text-slate-700">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
-					sint animi sapiente vitae suscipit. Dolor sit amet consectetur adipisicing
-					elit. Architecto quidem facere deserunt vitae suscipit.
-				</p>
-
-				<h2 class="pt-5 text-right text-2xl text-slate-700">A safe space</h2>
-				<p class="text-right text-slate-700">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt
-					sint animi sapiente vitae suscipit. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Architecto quidem facere vitae suscipit.
-				</p>
-			</div>
-		</div>
+<section class="my-5 container max-w-[1000px]">
+	<div class="mx-auto">
+		<h1 class="text-4xl">Depth therapy for individuals and couples</h1>
+		<p>
+			I provide individual and couples therapy either in person at my 
+			office in Harrisonburg, Virginia, or remotely via a HIPAA secure 
+			platform. I practice from a psychodynamic, existential, and emotionally 
+			focused perspective. In both couples and individual therapy, we examine 
+			how early experiences contribute to how you move through the 
+			world, and relate with others. We also attend to particular 
+			patterns in your life and relationships. I help you tune into your 
+			emotional world via emotionally-focused and somatic (body-based) 
+			practices.
+		</p>
 	</div>
-</section>
--->
-
-
-<section class="">
+	<CardGroup />
+	<div class="mx-auto">
+		<h1 class="text-4xl">Being deeply understood</h1>
+		<p>
+			I believe we all need to be understood by those closest to us. 
+			Sometimes we do not receive that understanding and this can result in 
+			suffering. Therapy is a place where my primary focus is on 
+			understanding you, your experiences, and what you feel. Feeling 
+			understood is the first step towards change and transformation. 
+			This commitment is the foundation of my work in both couples and 
+			individual therapy.
+		</p>
+	</div>
 	<Faq />
 </section>
 
 <style lang="scss">
-	
-
-
-
 	.service-card {
 		border-radius: var(--border-radius);
 		padding: 20px;
