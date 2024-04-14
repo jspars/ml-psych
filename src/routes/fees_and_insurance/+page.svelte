@@ -19,7 +19,7 @@
 	</p>
 	<Prices />
 	
-	<div class="p-10 mt-10">
+	<div class="p-10 pt-0">
 		<h3>
 			Insurances Accepted<span class="font-light text-sm align-top text-slate-600">†*</span>
 		</h3>
