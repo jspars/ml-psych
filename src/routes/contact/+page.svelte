@@ -4,9 +4,10 @@
 
 </script>
 
-<ContactHeader headerText="Contact me" subheaderText="Leave your contact information, and I will respond within two business days." backgroundImage="/images/contact-header.png" />
+<ContactHeader headerText="Contact me" subheaderText="" backgroundImage="/images/contact-header.png" />
 
-<section class="container">
+<section class="container mx-auto max-w-[750px]">
+    <p class="text-xl pt-5">Leave your contact information, and I will respond within two business days.</p>
     <ContactForm />
 </section>
 
