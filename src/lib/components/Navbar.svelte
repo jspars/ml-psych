@@ -5,12 +5,13 @@
 	
 	
 	
-	
 </script>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Dark offcanvas navbar">
 	<div class="container-fluid">
-		<a href="{base}/" class="navbar-brand">LP</a>
+		<a href="{base}/" class="navbar-brand">
+			<img src="/images/lp.svg" alt="Lawson Psych Logo" width="48">
+		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -27,6 +28,9 @@
 					<li class="nav-item" id="">
 						<a href="{base}/fees_and_insurance" data-sveltekit-reload class="nav-link">Fees and Insurance</a>
 					</li>
+					<!-- <li class="nav-item" id="">
+						<a href="{base}/psypact" data-sveltekit-reload class="nav-link">Non-VA Residents</a>
+					</li> -->
 					<li class="nav-item" id="">
 						<a href="{base}/contact" data-sveltekit-reload role="button" class="btn btn-warning cta-button">
 							Get in touch now
