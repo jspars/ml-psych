@@ -10,7 +10,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Dark offcanvas navbar">
 	<div class="container-fluid">
 		<a href="{base}/" class="navbar-brand">
-			<img src="{base}/images/lp.svg" alt="Lawson Psych Logo" width="42">
+			<img src="{base}/images/lp.png" alt="Lawson Psych Logo" width="42">
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
 			<span class="navbar-toggler-icon"></span>
