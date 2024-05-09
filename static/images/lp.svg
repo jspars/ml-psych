@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="120"
-   height="120"
-   viewBox="0 0 120 120"
+   width="117.78598"
+   height="117.78598"
+   viewBox="0 0 117.78598 117.78598"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
@@ -37,12 +37,12 @@
      inkscape:current-layer="g2"
      showguides="true">
     <sodipodi:guide
-       position="59.926199,55.055351"
+       position="58.74539,56.531364"
        orientation="1,0"
        id="guide2"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="59.188192,59.778598"
+       position="58.007383,61.254611"
        orientation="0,-1"
        id="guide3"
        inkscape:locked="false" />
@@ -53,16 +53,17 @@
      inkscape:label="Layer 1 copy"
      inkscape:groupmode="layer"
      id="g2"
-     style="fill:#c5beb9;fill-opacity:1">
+     style="fill:#c5beb9;fill-opacity:1"
+     transform="translate(-1.180809,-1.4760132)">
     <circle
-       style="fill:#a79f9a;fill-opacity:1"
+       style="fill:#e5bdeb;fill-opacity:1"
        id="circle2"
        cx="60.073799"
        cy="60.369003"
        r="58.89299" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;font-family:NanumMyeongjo;-inkscape-font-specification:'NanumMyeongjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;font-family:NanumMyeongjo;-inkscape-font-specification:'NanumMyeongjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#212529;fill-opacity:1"
        x="18.450184"
        y="88.856087"
        id="text2"><tspan
@@ -70,6 +71,6 @@
          id="tspan2"
          x="18.450184"
          y="88.856087"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;font-family:NanumMyeongjo;-inkscape-font-specification:'NanumMyeongjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">LP</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;font-family:NanumMyeongjo;-inkscape-font-specification:'NanumMyeongjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#212529;fill-opacity:1">LP</tspan></text>
   </g>
 </svg>
