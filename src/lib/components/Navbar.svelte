@@ -28,9 +28,9 @@
 					<li class="nav-item" id="">
 						<a href="{base}/fees_and_insurance" data-sveltekit-reload class="nav-link">Fees and Insurance</a>
 					</li>
-					<!-- <li class="nav-item" id="">
+					<li class="nav-item" id="">
 						<a href="{base}/psypact" data-sveltekit-reload class="nav-link">Non-VA Residents</a>
-					</li> -->
+					</li>
 					<li class="nav-item" id="">
 						<a href="{base}/contact" data-sveltekit-reload role="button" class="btn btn-warning cta-button">
 							Get in touch now

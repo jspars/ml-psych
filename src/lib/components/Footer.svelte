@@ -3,7 +3,7 @@
  
 </script>
 
-<section class="bg-dark text-light">
+<footer class="bg-dark text-light">
     <div class="py-5 container">
         <div class="row">
             <div class="col-6 small">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-</section>
+</footer>
 
 <style>
 

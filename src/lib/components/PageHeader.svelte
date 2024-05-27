@@ -6,7 +6,7 @@
 	export let subheaderText = "";
 </script>
 
-<section id="page-header" class="page-header d-flex align-items-center" style="background: url('{backgroundImage}') top;">
+<header id="page-header" class="page-header d-flex align-items-center" style="background: url('{backgroundImage}') top;">
 	<div class="container">
 		<div class="row">
 			<div class="">
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</header>
 
 <style>
 	.page-header {

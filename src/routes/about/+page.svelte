@@ -3,10 +3,7 @@
 	import PageHeader from '$lib/components/PageHeader.svelte';
 </script>
 
-<section>
-	<PageHeader backgroundImage="/images/about-header.png" headerText="About" />
-</section>
-
+<PageHeader backgroundImage="/images/about-header.png" headerText="About" />
 <section class="container mt-5">
     <div class="row my-auto">
         <div class="col col-lg-8">
