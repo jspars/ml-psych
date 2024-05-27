@@ -37,6 +37,7 @@
 			individual therapy.
 		</p>
 	</div>
+	<div id="faq" class="faq-scroller"/>
 	<Faq />
 </section>
 

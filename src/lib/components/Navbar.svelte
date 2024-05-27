@@ -22,16 +22,19 @@
 			</div>
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-					<li class="nav-item" id="">
+					<li class="nav-item ml-2" id="">
 						<a href="{base}/about" data-sveltekit-reload class="nav-link">About</a>
 					</li>
-					<li class="nav-item" id="">
-						<a href="{base}/fees_and_insurance" data-sveltekit-reload class="nav-link">Fees and Insurance</a>
+					<li class="nav-item ml-2" id="">
+						<a href="{base}/fees_and_insurance" data-sveltekit-reload class="nav-link">Fees</a>
 					</li>
-					<li class="nav-item" id="">
+					<li class="nav-item ml-2" id="">
+						<a href="{base}/#faq" class="nav-link">FAQ</a>
+					</li>
+					<li class="nav-item ml-2" id="">
 						<a href="{base}/psypact" data-sveltekit-reload class="nav-link">Non-VA Residents</a>
 					</li>
-					<li class="nav-item" id="">
+					<li class="nav-item ml-2" id="">
 						<a href="{base}/contact" data-sveltekit-reload role="button" class="btn btn-warning cta-button">
 							Get in touch now
 						</a>

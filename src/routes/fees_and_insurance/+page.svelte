@@ -7,11 +7,11 @@
 </script>
 
 
-<PageHeader headerText="Fees and Insurance" backgroundImage="/images/fees-header.png"/>
+<PageHeader headerText="Fees" backgroundImage="/images/fees-header.png"/>
 
 <div class="my-5 container max-w-[1000px]">
 	
-	<p class="">
+	<p class="pb-4">
 		Below is a summary of my fees, and it is broken into rates for individuals and rates for couples.
 		Each group lists the price for the requried intake session and each session thereafter.
 		If you have any questions about this structure, please make sure to include
@@ -20,7 +20,7 @@
 	<Prices />
 	
 	<div class="p-10 pt-0">
-		<h3>
+		<!-- <h3>
 			Insurances Accepted<span class="font-light text-sm align-top text-slate-600">†*</span>
 		</h3>
 		<div class="">
@@ -31,7 +31,7 @@
 				information.<br />
 				* Currently accepting these insurances for Virginia residents only.
 			</p>
-		</div>
+		</div> -->
 	</div>
 
 </div>

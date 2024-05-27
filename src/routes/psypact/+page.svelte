@@ -24,14 +24,12 @@
     </div>
   </div> -->
 
-
-
 <section class="container min-h-[45vh]">
     <div class="mx-auto">
         <h1></h1>
         <p>
             Historically, if you were unable to find a licensed
-            psycologist in your home state there were few alternatives.  
+            psychologist in your home state there were few alternatives.  
             PSYPACT&reg; was designed to allow licensed psychologists to conduct 
             teletherapy services across state lines, and over 40 states
             have enacted legislation that allows their licensed psychologists
