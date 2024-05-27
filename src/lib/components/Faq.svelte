@@ -4,7 +4,11 @@
 
 <div class="py-5">
 	<h1 class="text-4xl mb-5">Frequently Asked Questions</h1>
+
+	
 	<div class="accordion mx-auto max-w-[1000px]" id="accordion">
+		
+		<!-- How do we get started? -->
 		<div class="accordion-item bg-[var(--bg)]">
 			<h2 class="accordion-header">
 				<button
@@ -42,63 +46,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="accordion-item bg-[var(--bg)]">
-			<h2 class="accordion-header">
-				<button
-					class="accordion-button collapsed"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#collapseTwo"
-					aria-expanded="false"
-					aria-controls="collapseTwo"
-				>
-					Do you accept insurance?
-				</button>
-			</h2>
-			<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
-				<div class="accordion-body">
-					<p class="mx-auto prose">
-						I currently work with a third party platform to bill 
-						insurance <strong> for individual therapy</strong>. If we agree to 
-						work together, and you wish to use insurance, we will discuss this platform
-						and billing during our initial consultation. I currently can accept 
-						<strong>Anthem/BCBS and Aetna for Virginia residents only</strong>. For more information, 
-						see the	<a href="{base}/fees_and_insurance">fees and insurance</a>
-						page.
-					</p>
-				</div>
-			</div>
-		</div>
 		
-		<div class="accordion-item bg-[var(--bg)]">
-			<h2 class="accordion-header">
-				<button
-					class="accordion-button collapsed"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#collapseThree"
-					aria-expanded="false"
-					aria-controls="collapseThree"
-				>
-					Can I use insurance for couples or relationship therapy?
-				</button>
-			</h2>
-			<div
-				id="collapseThree"
-				class="accordion-collapse collapse"
-				data-bs-parent="#accordion"
-			>
-				<div class="accordion-body">
-					<p class="mx-auto prose">
-						Unfortunately, probably not. <strong>Many health insurance policies do not cover relationship,
-						couples, or marital therapy</strong>, as couples therapy is not specifically focused on treating a
-						mental health disorder. Couples therapy is focused on helping individuals improve their
-						romantic relationships. This is not considered a medically necessary service by most health
-						insurance policies.
-					</p>
-				</div>
-			</div>
-		</div>
+		
 		<div class="accordion-item bg-[var(--bg)]">
 			<h2 class="accordion-header">
 				<button
