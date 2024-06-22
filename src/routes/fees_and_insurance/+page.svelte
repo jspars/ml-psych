@@ -11,11 +11,9 @@
 
 <div class="my-5 container max-w-[1000px]">
 	
-	<p class="pb-4">
-		Below is a summary of my fees, and it is broken into rates for individuals and rates for couples.
-		Each group lists the price for the requried intake session and each session thereafter.
-		If you have any questions about this structure, please make sure to include
-		them when submitting the <a href="{base}/contact">Contact Form</a>.
+	<p class="py-4">
+		Below, is the fee structure for both individual and 
+		couples therapy sessions.
 	</p>
 	<Prices />
 	

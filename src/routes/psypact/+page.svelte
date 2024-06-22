@@ -24,7 +24,7 @@
     </div>
   </div> -->
 
-<section class="container min-h-[45vh]">
+<section class="container max-w-[1000px] min-h-[45vh]">
     <div class="mx-auto">
         <h1></h1>
         <p>
@@ -32,11 +32,11 @@
             psychologist in your home state there were few alternatives.  
             PSYPACT&reg; was designed to allow licensed psychologists to conduct 
             teletherapy services across state lines, and over 40 states
-            have enacted legislation that allows their licensed psychologists
+            have enacted legislation that allows licensed psychologists
             to provide out of state teletherapy.
-        </p><span>
-            <!-- <img src="{base}/images/solo-tele-session.png" width="375" class="mx-auto my-5"/>
-            <img src="{base}/images/solo-tele-therapist.png" width="375" class="mx-auto my-5"/> -->
+        </p><span class="flex flex-wrap max-w-[500px] m-auto">
+            <!-- <img src="{base}/images/solo-tele-session.png" width="375" class="mx-auto my-5"/> -->
+            <img src="{base}/images/solo-tele-therapist.png" class="mx-auto my-3 object-fit"/>
         </span>
 	</div>
 	<div class="mx-auto">
