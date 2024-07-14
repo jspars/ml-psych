@@ -131,7 +131,8 @@
 			>
 				<div class="accordion-body">
 					<p class="mx-auto prose">
-						I currently work with a third party platform to bill insurance. 
+						I currently work with a third party platform to bill insurance 
+						<strong> for individual therapy <em> only</em></strong>. 
 						If we agree to work together, and you wish to use insurance, 
 						we will discuss this platform and billing during our initial 
 						consultation. <strong>I currently can accept Anthem/BCBS 
@@ -161,7 +162,7 @@
 			>
 				<div class="accordion-body">
 					<p class="mx-auto prose">
-						Unfortunately,<strong>probably not</strong>.  Many health 
+						Unfortunately, <strong>probably not</strong>.  Many health 
 						insurance policies do not cover relationship, couples, 
 						or marital therapy, as couples therapy is not specifically 
 						focused on treating a mental health disorder. Couples
