@@ -47,6 +47,71 @@
 			</div>
 		</div>
 
+		<!-- Do you accept insurance? -->
+		<div class="accordion-item bg-[var(--bg)]">
+			<h2 class="accordion-header">
+				<button
+					class="accordion-button collapsed"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseInsurance"
+					aria-expanded="false"
+					aria-controls="collapseInsurance"
+				>
+					Do you accept insurance?
+				</button>
+			</h2>
+			<div
+				id="collapseInsurance"
+				class="accordion-collapse collapse"
+				data-bs-parent="#accordion"
+			>
+				<div class="accordion-body">
+					<p class="mx-auto prose">
+						I currently work with a third party platform to bill insurance 
+						<strong> for individual therapy <em> only</em></strong>. 
+						If we agree to work together, and you wish to use insurance, 
+						we will discuss this platform and billing during our initial 
+						consultation. <strong>I currently can accept Anthem/BCBS 
+						and Aetna for Virginia residents only.</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Can I use insuance for couples or relationship therapy? -->
+		<div class="accordion-item bg-[var(--bg)]">
+			<h2 class="accordion-header">
+				<button
+					class="accordion-button collapsed"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseCouples"
+					aria-expanded="false"
+					aria-controls="collapseCouples"
+				>
+					Can I use insurance for couples or relationship therapy?
+				</button>
+			</h2>
+			<div
+				id="collapseCouples"
+				class="accordion-collapse collapse"
+				data-bs-parent="#accordion"
+			>
+				<div class="accordion-body">
+					<p class="mx-auto prose">
+						Unfortunately, <strong>probably not</strong>.  Many health 
+						insurance policies do not cover relationship, couples, 
+						or marital therapy, as couples therapy is not specifically 
+						focused on treating a mental health disorder. Couples
+						therapy is focused on helping individuals improve their 
+						romantic relationships. This is not considered a medically 
+						necessary service by most health insurance policies.
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<!-- What is an intake? -->
 		<div class="accordion-item bg-[var(--bg)]">
 			<h2 class="accordion-header">
@@ -76,6 +141,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- How long do sessions last? -->
 		<div class="accordion-item bg-[var(--bg)]">
 			<h2 class="accordion-header">
@@ -110,69 +176,44 @@
 				</div>
 			</div>
 		</div>
-		<!-- Do you accept insurance? -->
+
+		<!-- What if I am not a Virginia resident and I’d like to work with you? -->
 		<div class="accordion-item bg-[var(--bg)]">
 			<h2 class="accordion-header">
 				<button
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseInsurance"
+					data-bs-target="#collapsePsypact"
 					aria-expanded="false"
-					aria-controls="collapseInsurance"
+					aria-controls="collapsePsypact"
 				>
-					Do you accept insurance?
+					How long do sessions last?
 				</button>
 			</h2>
 			<div
-				id="collapseInsurance"
+				id="collapsePsypact"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
 				<div class="accordion-body">
 					<p class="mx-auto prose">
-						I currently work with a third party platform to bill insurance 
-						<strong> for individual therapy <em> only</em></strong>. 
-						If we agree to work together, and you wish to use insurance, 
-						we will discuss this platform and billing during our initial 
-						consultation. <strong>I currently can accept Anthem/BCBS 
-						and Aetna for Virginia residents only.</strong>
+						If you reside in a PSYPACT&reg; state <strong>we can 
+						potentially</strong> work together.	PSYPACT&reg; allows 
+						authorized psychologists to work across state lines.
 					</p>
-				</div>
-			</div>
-		</div>
-		<!-- Can I use insuance for couples or relationship therapy? -->
-		<div class="accordion-item bg-[var(--bg)]">
-			<h2 class="accordion-header">
-				<button
-					class="accordion-button collapsed"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#collapseCouples"
-					aria-expanded="false"
-					aria-controls="collapseCouples"
-				>
-					Can I use insurance for couples or relationship therapy?
-				</button>
-			</h2>
-			<div
-				id="collapseCouples"
-				class="accordion-collapse collapse"
-				data-bs-parent="#accordion"
-			>
-				<div class="accordion-body">
 					<p class="mx-auto prose">
-						Unfortunately, <strong>probably not</strong>.  Many health 
-						insurance policies do not cover relationship, couples, 
-						or marital therapy, as couples therapy is not specifically 
-						focused on treating a mental health disorder. Couples
-						therapy is focused on helping individuals improve their 
-						romantic relationships. This is not considered a medically 
-						necessary service by most health insurance policies.
+						See my PSYPACT&reg; page here for more information and 
+						for a link to the PSYPACT&reg; official map to see if 
+						you live in a PSYPACT&reg; state.
+					</p>	
+					<p class="mx-auto prose">
+						As a reminder, <strong> I am unable to bill insurance 
+						for clients who are not residents of Virginia</strong>.
 					</p>
 				</div>
 			</div>
-		</div>
+		</div>		
 	</div>
 </div>
 
