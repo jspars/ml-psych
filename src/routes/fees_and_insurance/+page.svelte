@@ -18,7 +18,7 @@
 	<Prices />
 	
 	<div class="p-10 pt-0">
-		<!-- <h3>
+		<h3>
 			Insurances Accepted<span class="font-light text-sm align-top text-slate-600">†*</span>
 		</h3>
 		<div class="">
@@ -29,7 +29,7 @@
 				information.<br />
 				* Currently accepting these insurances for Virginia residents only.
 			</p>
-		</div> -->
+		</div>
 	</div>
 
 </div>
