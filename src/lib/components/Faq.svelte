@@ -15,15 +15,15 @@
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseOne"
+					data-bs-target="#collapseStarted"
 					aria-expanded="false"
-					aria-controls="collapseOne"
+					aria-controls="collapseStarted"
 				>
 					How do we get started?
 				</button>
 			</h2>
 			<div
-				id="collapseOne"
+				id="collapseStarted"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
@@ -54,15 +54,15 @@
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseFour"
+					data-bs-target="#collapseIntake"
 					aria-expanded="false"
-					aria-controls="collapseFour"
+					aria-controls="collapseIntake"
 				>
 					What is an intake?
 				</button>
 			</h2>
 			<div
-				id="collapseFour"
+				id="collapseIntake"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
@@ -83,15 +83,15 @@
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseFive"
+					data-bs-target="#collapseLength"
 					aria-expanded="false"
-					aria-controls="collapseFive"
+					aria-controls="collapseLength"
 				>
 					How long do sessions last?
 				</button>
 			</h2>
 			<div
-				id="collapseFive"
+				id="collapseLength"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
@@ -117,15 +117,15 @@
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseFive"
+					data-bs-target="#collapseInsurance"
 					aria-expanded="false"
-					aria-controls="collapseFive"
+					aria-controls="collapseInsurance"
 				>
 					Do you accept insurance?
 				</button>
 			</h2>
 			<div
-				id="collapseFive"
+				id="collapseInsurance"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
@@ -147,15 +147,15 @@
 					class="accordion-button collapsed"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseFive"
+					data-bs-target="#collapseCouples"
 					aria-expanded="false"
-					aria-controls="collapseFive"
+					aria-controls="collapseCouples"
 				>
 					Can I use insurance for couples or relationship therapy?
 				</button>
 			</h2>
 			<div
-				id="collapseFive"
+				id="collapseCouples"
 				class="accordion-collapse collapse"
 				data-bs-parent="#accordion"
 			>
