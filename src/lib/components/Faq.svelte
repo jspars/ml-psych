@@ -188,7 +188,7 @@
 					aria-expanded="false"
 					aria-controls="collapsePsypact"
 				>
-					How long do sessions last?
+				What if I am not a Virginia resident and I’d like to work with you?
 				</button>
 			</h2>
 			<div
@@ -203,7 +203,7 @@
 						authorized psychologists to work across state lines.
 					</p>
 					<p class="mx-auto prose">
-						See my PSYPACT&reg; page here for more information and 
+						See my <a href="{base}/psypact"> PSYPACT&reg; page here </a> for more information and 
 						for a link to the PSYPACT&reg; official map to see if 
 						you live in a PSYPACT&reg; state.
 					</p>	
