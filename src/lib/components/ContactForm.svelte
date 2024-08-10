@@ -19,16 +19,17 @@
             <option value="insurance">Insurance</option>
             <option value="private-pay">Private Pay</option>
         </select>
-    </div>
+    </div> -->
     <div class="mb-3">
         <label for="insurance">Who is your insurance provider?</label>
+        <p class="text-sm text-red-500">Reminder: Insurance is not accepted for couples</p>
         <select class="form-select" name="insurance" id="insurance" aria-label="Default select example" required>
             <option selected>Select one</option>
             <option value="none">N/A</option>
             <option value="anthem">Anthem/BCBS</option>
             <option value="aetna">Aetna</option>
         </select>
-    </div> -->
+    </div>
     <div class="mb-3">
         <label for="therapyType">Individual or couples therapy?</label>
         <select class="form-select" name="therapyType" id="therapyType" aria-label="Default select example" required>
