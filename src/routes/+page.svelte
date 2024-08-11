@@ -11,17 +11,23 @@
 
 <section class="my-5 container max-w-[1000px]">
 	<div class="mx-auto">
-		<h1 class="text-4xl">Depth therapy for individuals and couples</h1>
+		<h1 class="text-4xl">Neurodiversity and LGBTQIA+ affirming psychodynamic therapy for individuals and couples</h1>
 		<p>
-			I provide individual and couples therapy either in person at my 
-			office in Harrisonburg, Virginia, or remotely via a HIPAA secure 
-			platform. I practice from a psychodynamic, existential, and emotionally 
-			focused perspective. In both couples and individual therapy, we examine 
-			how early experiences contribute to how you move through the 
-			world, and relate with others. We also attend to particular 
-			patterns in your life and relationships. I help you tune into your 
-			emotional world via emotionally-focused and somatic (body-based) 
-			practices.
+			 
+			Psychodynamic therapy focuses on how early experiences contribute to how you move through the 
+			world and relate with others. In psychodynamic therapy, we also attend to particular 
+			patterns in your life and relationships. My approach is also informed by existential-humanistic and phenomenological theories of human development. 
+			I offer affirming dynamic therapy for neurodivergent clients and members of the LGBTQIA+ 
+			commmunity.  In person sessions are available at my office in Harrisonburg, VA and teletherapy 
+			appointments are available throughout Virginia and in all PSYPACT® participating states. For a more	
+			in-depth description of how I work, see <a href="{base}/about">the About page</a>. 
+
+
+			
+			
+			
+			
+			
 		</p>
 	</div>
 	<CardGroup />
