@@ -73,7 +73,7 @@
 						If we agree to work together, and you wish to use insurance, 
 						we will discuss this platform and billing during our initial 
 						consultation. <strong>I currently can accept Anthem/BCBS 
-						and Aetna for Virginia residents only.</strong>
+						and Aetna for people located in Virginia only.</strong>
 					</p>
 				</div>
 			</div>
@@ -164,7 +164,7 @@
 				<div class="accordion-body">
 					<p class="mx-auto prose">
 						<strong>Individual sessions typically last between 50 and 55 minutes</strong> and are held weekly. We may meet
-						less or more frequently if appropriate. We will discuss frequency of sessions in our first
+						more or less frequently if appropriate. We will discuss frequency of sessions in our first
 						session.
 					</p>
 			
@@ -188,7 +188,7 @@
 					aria-expanded="false"
 					aria-controls="collapsePsypact"
 				>
-				What if I am not a Virginia resident and I’d like to work with you?
+				What if I am not located in Virginia, and I’d like to work with you?
 				</button>
 			</h2>
 			<div
@@ -198,7 +198,7 @@
 			>
 				<div class="accordion-body">
 					<p class="mx-auto prose">
-						If you reside in a PSYPACT&reg; state <strong>we can 
+						If you are located in a PSYPACT&reg; state <strong>we can 
 						potentially</strong> work together.	PSYPACT&reg; allows 
 						authorized psychologists to work across state lines.
 					</p>
@@ -209,7 +209,7 @@
 					</p>	
 					<p class="mx-auto prose">
 						As a reminder, <strong> I am unable to bill insurance 
-						for clients who are not residents of Virginia</strong>.
+						for clients who are not located in Virginia</strong>.
 					</p>
 				</div>
 			</div>

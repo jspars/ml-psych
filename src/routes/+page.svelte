@@ -20,14 +20,7 @@
 			I offer affirming dynamic therapy for neurodivergent clients and members of the LGBTQIA+ 
 			commmunity.  In person sessions are available at my office in Harrisonburg, VA and teletherapy 
 			appointments are available throughout Virginia and in all PSYPACT® participating states. For a more	
-			in-depth description of how I work, see <a href="{base}/about">the About page</a>. 
-
-
-			
-			
-			
-			
-			
+			in-depth description of how I work, see <a href="{base}/about">the About page</a>. 			
 		</p>
 	</div>
 	<CardGroup />

@@ -43,9 +43,9 @@
 		<p>
             I have been given authorization (APIT14018) by the PSYPACT&reg; 
             commission to practice telehealth in any participating state.  To 
-            find out if you live in a PSYPACT&reg; state, see 
+            find out if you are in a PSYPACT&reg; state, see 
             <a href="https://psypact.org/mpage/psypactmap" target="_blank">
-            the official PSYPACTMap</a>.  If you live in a PSYPACT&reg; state and 
+            the official PSYPACT Map</a>.  If you are located in a PSYPACT&reg; state and 
             are interested in learning more about working together virtually, 
              complete the <a href="{base}/contact">Contact Form</a>.
 		</p>
