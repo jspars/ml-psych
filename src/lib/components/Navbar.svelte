@@ -29,7 +29,10 @@
 						<a href="{base}/fees_and_insurance" data-sveltekit-reload class="nav-link">Fees</a>
 					</li>
 					<li class="nav-item ml-2" id="">
-						<a href="{base}/#faq" class="nav-link">FAQ</a>
+						<a href="{base}/faq" data-sveltekit-reload class="nav-link">FAQ</a>
+					</li>
+					<li class="nav-item ml-2" id="">
+						<a href="{base}/publications" data-sveltekit-reload class="nav-link">Publications</a>
 					</li>
 					<li class="nav-item ml-2" id="">
 						<a href="{base}/psypact" data-sveltekit-reload class="nav-link">Non-VA Residents</a>

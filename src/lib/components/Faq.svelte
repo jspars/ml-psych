@@ -3,7 +3,7 @@
 </script>
 
 <div class="py-5">
-	<h1 class="text-4xl mb-5">Frequently Asked Questions</h1>
+	<!-- <h1 class="text-4xl mb-5">Frequently Asked Questions</h1> -->
 
 	
 	<div class="accordion mx-auto max-w-[1000px]" id="accordion">

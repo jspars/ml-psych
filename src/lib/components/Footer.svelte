@@ -9,7 +9,7 @@
             <div class="col-6 small">
                 <div class="lc-block">
                     <div editable="rich">
-                        <p>© Lawson Psychotherapy 2024</p>
+                        <p>© Lawson Psychotherapy 2025</p>
                     </div>
                 </div>
                 <!-- /lc-block -->
