@@ -5,31 +5,12 @@
 </script>
 <PageHeader backgroundImage="/images/psypact-header.png" headerText="Inter-state Therapy" />
 
-<!-- <div class="container my-4">
-    <div class="row">
-      <div class="col-6 grid-item">
-        <p>Text 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="col-6 grid-item">
-        <img src="{base}/images/solo-tele-session.png" height="250" alt="Image 1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6 grid-item">
-        <p>Text 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="col-6 grid-item">
-        <img src="{base}/images/solo-tele-session.png" height="250" alt="Image 2">
-      </div>
-    </div>
-  </div> -->
-
 <section class="container max-w-[1000px] min-h-[45vh]">
     <div class="mx-auto">
         <h1></h1>
         <p>
-            Historically, if you were unable to find a licensed
-            psychologist in your home state there were few alternatives.  
+            Have you ever been forced to end your work with a therapist you 
+            really liked, because one of you relocated across state lines?
             PSYPACT&reg; was designed to allow licensed psychologists to conduct 
             teletherapy services across state lines, and over 40 states
             have enacted legislation that allows licensed psychologists

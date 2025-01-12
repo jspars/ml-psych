@@ -27,7 +27,7 @@
 			<p class="text-sm text-slate-500">
 				† Couples therapy is not covered by most health insurance policies. See FAQ for more
 				information.<br />
-				* Currently accepting these insurances for Virginia residents only.
+				* Currently accepting these insurances for people located in Virginia only.
 			</p>
 		</div>
 	</div>

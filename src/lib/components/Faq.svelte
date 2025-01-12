@@ -165,7 +165,7 @@
 					<p class="mx-auto prose">
 						<strong>Individual sessions typically last between 50 and 55 minutes</strong> and are held weekly. We may meet
 						more or less frequently if appropriate. We will discuss frequency of sessions in our first
-						session.
+						meeting.
 					</p>
 			
 					<p class="mx-auto prose">
