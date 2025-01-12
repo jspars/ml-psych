@@ -18,6 +18,16 @@
                 Friendly City home for the last few years.
             </p>
             <p class="prose">
+                I continue to grow and hone my therapeutic approach by participating in advanced 
+                training. As of Fall 2024, I am participating in the Integrative Psychoanalytic Couple 
+                Therapy training program through the Institute for Clinical Social Work, a 
+                psychodynamic graduate institute in Chicago, under the direction of Dr. Carla Leone,
+                Dr. Arthur Nielsen, and Dr. Karen Bloomberg. I also continue to study with the 
+                Training and Research in Intersubjective Self Psychology (TRISP) Foundation in New 
+                York, NY.  I am always seeking continuing education as a life-long learner, and as 
+                someone who is passionate about providing meaningful and effective psychotherapy.
+            </p>
+            <p class="prose">
                 I am excited to open Lawson Psychotherapy and want to express my gratitude to the clients who
                 have entrusted me with their care. It is an honor to be a psychotherapist, and I deeply
                 appreciate the clients who allow me to journey alongside them in making sense of their
@@ -38,34 +48,51 @@
                     phenomenological approaches to human suffering. I see our early experiences as largely
                     influential and formative of our later adult experiences. With this in mind, much of my work
                     draws on attachment theory, and understanding how early attachment relationships shape and
-                    inform how we relate and attach to others in adulthood. I also take seriously how experiences
+                    inform how we relate with others in adulthood. I also take seriously how experiences
                     of oppression contribute to distress and suffering. I actively integrate a focus on various
                     aspects of identity (i.e. gender, sexual orientation, ability, race, class, socioeconomic
-                    status) and how those aspects shape and inform your experience in the world.
+                    status) and how those aspects shape and inform your experience in the world.  As a psychodynamic 
+                    psychologist drawing upon self-psychology, I focus on how unmet psychological needs may 
+                    contribute to your experience of suffering.
                 </p>
                 <p class="prose">
-                    As a psychodynamic psychologist drawing upon self-psychology, I focus on how unmet
-                    psychological needs may contribute to your experience of suffering. I especially enjoy doing
-                    this work with couples and have specific training in Emotionally-Focused Therapy (EFT) for
-                    Couples. Using an EFT framework, I help couples examine patterns they find themselves stuck
-                    in, alongside understanding the attachment yearnings present in couple distress.
+                    I provide both individual and couples therapy. In working with couples, I integrate 
+                    psychoanalytic/psychodynamic therapy, and Sue Johnson’s Emotionally Focused Therapy 
+                    for Couples. Using these approaches, I help couples identify, examine, and change 
+                    patterns they find themselves stuck in, alongside understanding the softer and more 
+                    vulnerable emotions present in  couples’ distress. We also examine family of origin 
+                    contributors to couples’ distress, and unconscious dynamics at play in patterns of 
+                    interaction.
                 </p>
                 <p class="prose">
-                    I continue to grow and hone my therapeutic approach by participating in advanced training in
-                    Intersubjective Self-Psychology through the Training and Research in Intersubjective Self
-                    Psychology (TRISP) Foundation in New York, NY, as well as continued consultation and training
-                    in Emotionally Focused Therapy.
+                    My areas of expertise include working with: 
                 </p>
-                <p class="prose">
-                    Clinical areas of interest include working with individuals who wish to examine family of
-                    origin concerns, as well as supporting individuals who have experienced religious trauma. I
-                    love working with members of the LGBTQIA+ community, and have specific training and experience
-                    in supporting trans* individuals pursuing transition. I also enjoy working with women’s issues
-                    across the lifespan, individuals processing and recovering from traumatic experience,
-                    first-generation college students and the transition to college or higher education. During my
-                    graduate training and post-graduate experience, I’ve worked in community mental health
-                    centers, community clinics, university counseling centers, and private practice.
-                </p>
+                <ul class="my-list">
+                    <li>
+                        Individuals who wish to examine family of origin concerns
+                    </li>
+                    <li>
+                        Individuals who have experienced religious trauma
+                    </li>
+                    <li>
+                        Members of the LGBTQIA+ community
+                    </li>
+                    <li>
+                        Trans* folks exploring gender identity and transition
+                    </li>
+                    <li>
+                        Women’s issues and experiences
+                    </li>
+                    <li>
+                        Individuals processing and recovering from traumatic experience
+                    </li>
+                    <li>
+                        First generation college students and the transition to college and graduate school
+                    </li>
+                    <li>
+                        Neurodiverse couples
+                    </li>
+                </ul>
             </div>
     
         </div>
@@ -77,7 +104,7 @@
     </div>
 </section>
 
-<style>
+<style lang="scss">
 	@media only screen and (max-width: 768px) {
 		.about-container {
 			display: flex;
@@ -110,4 +137,11 @@
 	.about-copy {
 		/* max-width: 600px */
 	}
+
+    .my-list {
+        list-style: disc;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
 </style>

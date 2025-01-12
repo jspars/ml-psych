@@ -21,8 +21,8 @@
         </select>
     </div> -->
     <div class="mb-3">
-        <label for="insurance">Who is your insurance provider?</label>
-        <p class="text-sm text-red-500">Reminder: Insurance is not accepted for couples</p>
+        <label for="insurance pb-0 mb-0">Who is your insurance provider?</label>
+        <p class="text-sm text-red-600 p-0 m-0">Reminder: Insurance is not accepted for couples</p>
         <select class="form-select" name="insurance" id="insurance" aria-label="Default select example" required>
             <option selected>Select one</option>
             <option value="none">N/A</option>
@@ -42,7 +42,7 @@
         <label for="messageText" class="form-label">How can I help?</label>
         <textarea class="form-control" name="messageText" id="messageText" rows="3" required></textarea>
     </div>
-    <p class="prose text-xs italic text-red-800">* all fields required</p>
+    <p class="prose text-xs italic text-red-600">* all fields required</p>
     <button type="" class="btn btn-warning mt-5">Submit</button>  
 </form>
 
