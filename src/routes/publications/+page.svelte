@@ -68,9 +68,9 @@
                 the practice of Open Dialogue in Western Lapland, Finland. Open 
                 Dialogue is a community mental health orientation to working 
                 with first-break psychosis. Since Laing did not propose a 
-                therapeutic way of working with families with a psychotic 
-                member, Open Dialogue may be as close as we get to an applied 
-                Laingian approach." 
+                therapeutic way of working with families with a member 
+                experiencing psychosis, Open Dialogue may be as close as we get 
+                to an applied Laingian approach." 
             pubLink=""/>
         <hr />
         <Presentation 
