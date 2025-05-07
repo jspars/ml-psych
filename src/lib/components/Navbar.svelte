@@ -49,11 +49,17 @@
 		</div>
 	</div>
 </nav>
-
-<style>
+<div class="vote-banner">
+	<span class="text-slate-600"><a class="font-black" href="https://www.dnronline.com/special/best_of_valley/voting/#/group/1740/nom/30356/110965">Vote for me!</a>  Daily News-Record's Best of the Valley 2025</span>
+</div>
+<style lang="scss">
 	@media only screen and (min-width: 768px) {
 		.cta-button {
 			margin-left: 1rem;
+		}
+
+		.vote-banner {
+			
 		}
 	}
 
@@ -62,6 +68,32 @@
 			margin-top: 0.75rem;
 	
 		}
+
+		.vote-banner {
+			
+		}
 	}
 
+	@media only screen and (max-width: 468px) {
+		.vote-banner {
+			
+		}
+	}
+
+	.vote-banner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		padding: 5px;
+		background: hsla(300, 76%, 72%, 50%);
+		overflow: hidden;
+		height: 5rem;
+		margin: auto;
+		font-weight: 700;
+
+		a {
+			text-decoration: underline;
+		}
+	}
 </style>
