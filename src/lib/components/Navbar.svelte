@@ -49,9 +49,11 @@
 		</div>
 	</div>
 </nav>
+<!-- 
 <div class="vote-banner">
 	<span class="text-slate-600"><a class="font-black" href="https://www.dnronline.com/special/best_of_valley/voting/#/group/1740/nom/30356/110965">Vote for me!</a>  Daily News-Record's Best of the Valley 2025</span>
 </div>
+-->
 <style lang="scss">
 	@media only screen and (min-width: 768px) {
 		.cta-button {
