@@ -22,7 +22,6 @@
 			Insurances Accepted<span class="font-light text-sm align-top text-slate-600">†*</span>
 		</h3>
 		<div class="">
-			<h4 class="font-normal text-slate-600">Anthem/BCBS</h4>
 			<h4 class="font-normal text-slate-600">Aetna</h4>
 			<p class="text-sm text-slate-500">
 				† Couples therapy is not covered by most health insurance policies. See FAQ for more
