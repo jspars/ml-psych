@@ -72,8 +72,8 @@
 						<strong> for individual therapy <em> only</em></strong>. 
 						If we agree to work together, and you wish to use insurance, 
 						we will discuss this platform and billing during our initial 
-						consultation. <strong>I currently can accept Anthem/BCBS 
-						and Aetna for people located in Virginia only.</strong>
+						consultation. <strong>I currently can accept 
+						Aetna for people located in Virginia only.</strong>
 					</p>
 				</div>
 			</div>
