@@ -14,24 +14,28 @@
             <p class="prose">
                 Due to this desire, I completed my APA accredited pre-doctoral internship at Western Carolina
                 University in Cullowhee, NC and completed a post-doc at Friendly City Psychology in
-                Harrisonburg, VA. I am happy to be living in a warmer climate and have enjoyed calling the
-                Friendly City home for the last few years.
+                Harrisonburg, VA. 
             </p>
             <p class="prose">
-                I continue to grow and hone my therapeutic approach by participating in advanced 
-                training. As of Fall 2024, I am participating in the Integrative Psychoanalytic Couple 
-                Therapy training program through the Institute for Clinical Social Work, a 
-                psychodynamic graduate institute in Chicago, under the direction of Dr. Carla Leone,
-                Dr. Arthur Nielsen, and Dr. Karen Bloomberg. I also continue to study with the 
-                Training and Research in Intersubjective Self Psychology (TRISP) Foundation in New 
-                York, NY.  I am always seeking continuing education as a life-long learner, and as 
-                someone who is passionate about providing meaningful and effective psychotherapy.
+                I opened Lawson Psychotherapy in Harrisonburg in early 2024 and am excited to relocate 
+                my business to Richmond, VA this summer. I am continually grateful to the clients who 
+                have entrusted me with their care. Therapy is deep, vulnerable, and hard work, and I 
+                am honored to be part of this journey with my clients.
             </p>
             <p class="prose">
-                I am excited to open Lawson Psychotherapy and want to express my gratitude to the clients who
-                have entrusted me with their care. It is an honor to be a psychotherapist, and I deeply
-                appreciate the clients who allow me to journey alongside them in making sense of their
-                experiences.
+                I continue to grow and hone my therapeutic approach by participating in advanced training. 
+                My PhD program focused on psychodynamic, phenomenological, and critical psychological
+                approaches to understanding human development and suffering. This means, I take what 
+                happens in your early development very seriously, alongside exploring the ways societal 
+                structures and systems contribute to your experiences in the world.
+            <p class="prose">
+                I’ve completed a certificate in Psychoanalytic Couple Therapy through 
+                the Institute for Clinical Social Work, a psychodynamic graduate institute 
+                in Chicago, under the direction of Dr. Carla Leone, Dr. Arthur Nielsen, 
+                and Dr. Karen Bloomberg. I also continue to study with the Training and 
+                Research in Intersubjective Self Psychology (TRISP) Foundation in New York, NY. 
+                I am always seeking continuing education as a life-long learner, and as someone 
+                who is passionate about providing meaningful and effective psychotherapy.
             </p>
             <div class="about-copy">
                 <h3 class="prose text-2xl">My approach</h3>
