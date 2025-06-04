@@ -26,7 +26,6 @@
         <select class="form-select" name="insurance" id="insurance" aria-label="Default select example" required>
             <option selected>Select one</option>
             <option value="none">N/A</option>
-            <option value="anthem">Anthem/BCBS</option>
             <option value="aetna">Aetna</option>
         </select>
     </div>
