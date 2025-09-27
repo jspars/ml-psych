@@ -12,7 +12,7 @@
             INFORMATION. PLEASE REVIEW IT CAREFULLY.
         </p>
         <p class="prose">
-            This Notice of Privacy Practices references laws in the states where I am licensed (Virginia) and in the states where I work via the Authority to Practice Interjurisdictional
+            This Notice of Privacy Practices references laws in the states where I am licensed (Virginia and Pennsylvania) and in the states where I work via the Authority to Practice Interjurisdictional
 Telepsychology (APIT) granted by the PSYPACT Commission.
         </p>
         <p class="prose">
