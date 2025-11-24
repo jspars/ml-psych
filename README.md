@@ -38,7 +38,7 @@ If you only need to make text changes, and feel confident about pushing those ch
     
     Follow the link in the terminal to open your browser to the dev server web page, or go to:
 
-    [http://localhost:5173](http://localhost:5173)
+    [https://localhost:5173](https://localhost:5173)
     
 
 ## Deploying
