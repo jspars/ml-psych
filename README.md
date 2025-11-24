@@ -47,6 +47,7 @@ All content shown on the website is contained in the `src` directory, and the ov
 Explaination of the directory structure of this app is beyond the scope of this README, but you should be able to find which page you need to modify by symantically locating its route folder in `src/routes`, and opening the `.svelte` file (usually `+page.svelte`, but always ends in `.svelte`).
 
 **IMPORTANT**
+
 Do not change the structure or file contents of any folders within this project unless you know what you're doing, and are comfortable with the same.
 
 ## Deploying
