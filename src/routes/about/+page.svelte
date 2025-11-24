@@ -5,30 +5,30 @@
 
 <PageHeader backgroundImage="/images/about-header.png" headerText="About" />
 <section class="container mt-5">
-    <div class="row my-auto">
-        <div class="col col-lg-8">
-            <p class="prose">
+    <div class="row m-auto">
+        <div class="col col-lg-6 mx-auto">
+            <p>
                 Born and raised in Kentucky, after spending my graduate training in the Northeast, I was ready
                 to return to the warmer weather and sunshine of the South.
             </p>
-            <p class="prose">
+            <p>
                 Due to this desire, I completed my APA accredited pre-doctoral internship at Western Carolina
                 University in Cullowhee, NC and completed a post-doc at Friendly City Psychology in
                 Harrisonburg, VA. 
             </p>
-            <p class="prose">
+            <p>
                 I opened Lawson Psychotherapy in Harrisonburg in early 2024 and am excited to relocate 
                 my business to Richmond, VA this summer. I am continually grateful to the clients who 
                 have entrusted me with their care. Therapy is deep, vulnerable, and hard work, and I 
                 am honored to be part of this journey with my clients.
             </p>
-            <p class="prose">
-                I continue to grow and hone my therapeutic approach by participating in advanced training. 
+            <p>
+                I continue to grow and hone my therapeutic approach by participating in advanced training.
                 My PhD program focused on psychodynamic, phenomenological, and critical psychological
                 approaches to understanding human development and suffering. This means, I take what 
                 happens in your early development very seriously, alongside exploring the ways societal 
                 structures and systems contribute to your experiences in the world.
-            <p class="prose">
+            <p>
                 I’ve completed a certificate in Psychoanalytic Couple Therapy through 
                 the Institute for Clinical Social Work, a psychodynamic graduate institute 
                 in Chicago, under the direction of Dr. Carla Leone, Dr. Arthur Nielsen, 
@@ -38,8 +38,8 @@
                 who is passionate about providing meaningful and effective psychotherapy.
             </p>
             <div class="about-copy">
-                <h3 class="prose text-2xl">My approach</h3>
-                <p class="prose">
+                <h3 class="text-2xl">My approach</h3>
+                <p class="">
                     I believe being deeply understood, in the context of a safe and collaborative therapeutic
                     relationship, is the catalyst for healing and transformation. In our work together, what often
                     are considered symptoms are viewed as important messages about one’s lived experiences and
@@ -47,7 +47,7 @@
                     underlying that distress. My focus in therapy is on understanding the root cause of your
                     suffering, rather than focusing on treating symptoms alone.
                 </p>
-                <p class="prose">
+                <p class="">
                     My orientation to clinical work is grounded in psychodynamic, humanistic, existential, and
                     phenomenological approaches to human suffering. I see our early experiences as largely
                     influential and formative of our later adult experiences. With this in mind, much of my work
@@ -59,7 +59,7 @@
                     psychologist drawing upon self-psychology, I focus on how unmet psychological needs may 
                     contribute to your experience of suffering.
                 </p>
-                <p class="prose">
+                <p class="">
                     I provide both individual and couples therapy. In working with couples, I integrate 
                     psychoanalytic/psychodynamic therapy, and Sue Johnson’s Emotionally Focused Therapy 
                     for Couples. Using these approaches, I help couples identify, examine, and change 
@@ -68,7 +68,7 @@
                     contributors to couples’ distress, and unconscious dynamics at play in patterns of 
                     interaction.
                 </p>
-                <p class="prose">
+                <p class="">
                     My areas of expertise include working with: 
                 </p>
                 <ul class="my-list">
@@ -139,7 +139,8 @@
 	}
 
 	.about-copy {
-		/* max-width: 600px */
+
+
 	}
 
     .my-list {

@@ -10,13 +10,13 @@
         <h2 class="text-sm font-light card-subtitle mb-2 text-muted">Licensed Psychologist, PA</h2>
 
 		<!-- <h2 class="text-sm font-light card-subtitle mb-2 text-muted">Licensed Psychologist, PA</h2> -->
-		<p class="text-sm prose card-text my-1">
+		<p class="text-sm card-text my-1">
 			PhD Clinical Psychology, <em>Duquesne University</em>
 		</p>
-		<p class="text-sm prose card-text my-1">
+		<p class="text-sm card-text my-1">
 			MA   Clinical Psychology, <em>Saint Michael's College</em>
 		</p>
-		<p class="text-sm prose card-text my-1">
+		<p class="text-sm card-text my-1">
 			BA  Psychology and Writing, Rhetoric, and Communication, <em>Transylvania University</em>
 		</p>
 	</div>

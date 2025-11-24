@@ -152,20 +152,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     color: #212529;
-    background-color: #EEF4ED; 
+    background-color: #EEF4ED;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #EEF4ED; 
-}
 
 h1 {
     font-family: 'Nanum Myeongjo', serif;
