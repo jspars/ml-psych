@@ -15,6 +15,9 @@ If you only need to make text changes, and feel confident about pushing those ch
 1. [Download and install nodejs for your operating system.](https://nodejs.org/en/download)
 2. Clone this repository, and change to that newly created directory from your terminal (PowerShell for Windows, Bash for Linux, Mac, WSL):
 
+>[!IMPORTANT]
+>You will likely need to install git for your terminal, and, most critically, generate and add SSH authentication keys to your GitHub account.  That is far beyond the scope of this README.
+
    ```bash
     git clone git@github.com:jspars/ml-psych.git
     ```
