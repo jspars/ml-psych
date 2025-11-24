@@ -1,5 +1,10 @@
 # Updating lawsonpsych.com
 
+## Summary
+
+1. Download and install necessary apps and configuration,
+2. Make changes to files--probably in `/src/routes`,
+3. Add, commit, and push your changes to `prod`.
 
 
 ## Making changes to the site
@@ -73,7 +78,3 @@ The final command pushes your changes to this remote repository (github), and tr
 
 This can also be run as needed, though you should try to limit the amount of changes you push to prod to avoid showing the incremental changes as opposed to all changes at once.
 
-## Summary
-
-1. Download and install necessary apps and configuration,
-2. Make changes to 
