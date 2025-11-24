@@ -52,4 +52,4 @@ git commit -m "YOUR MESSAGE INSIDE THE QUOTES"
 git push origin prod
 ```
 
-The final command push your changes to this remote repository (github), and triggers and netlify script to build and deploy the sveltekit app (the website) to this repo's GitHub Pages page, i.e. pushing to the prod GitHub branch automatically publishes your changes in dev to production.
+The final command pushes your changes to this remote repository (github), and triggers and netlify script to build and deploy the sveltekit app (the website) to this repo's GitHub Pages page, i.e. pushing to the prod GitHub branch automatically publishes your changes in dev to production.
