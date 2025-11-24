@@ -4,7 +4,7 @@
 
 1. Download and install necessary apps and configuration,
 2. Switch to `prod` branch and make changes to files--probably in `/src/routes`,
-3. Add, commit, and push your changes to `prod`.
+3. Add, commit, and push your changes to `prod` to deploy changes.
 
 
 ## Making changes to the site
