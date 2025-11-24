@@ -36,7 +36,7 @@ If you only need to make text changes, and feel confident about pushing those ch
     npm install --legacy-peer-deps
     ```
     
-3. Run the local dev server if you want to preview your changes before deploying:
+3. Run the local dev server (optional, but helpful) if you want to preview your changes before deploying:
 
     ```bash
     npm run dev
