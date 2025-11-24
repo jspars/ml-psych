@@ -2,33 +2,44 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Making changes to the site
+To make changes to the website, you will need to download the code from this repository, install nodejs, and install this project to run the dev server, which allows you to make changes and preview them locally before pushing to the live website.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+If you only need to make text changes, and feel confident about pushing those changes without seeing how they will be displayed on the site, you can skip to the Deploying section.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. [Download and install nodejs for your operating system.](https://nodejs.org/en/download)
+2. Clone this repository, and change to that newly created directory (directions for bash [linux/mac terminal] shown):
 
-## Developing
+   ```bash
+    git clone git@github.com:jspars/ml-psych.git
+    ```
+   
+    ```bash
+    cd ml-psych
+    ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+3. Switch to the production (`prod`) branch.  This is needed so that your changes are automatically deployed to the live website when you push to git:
 
-```bash
-npm run dev
+    ```bash
+    git checkout prod
+    ```
+    
+4. Install the sveltekit app fully:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+    ```bash
+    npm install --legacy-peer-deps
+    ```
+    
+5. Run dev server to see changes before deploying:
 
-## Building
+    ```bash
+    npm run dev
+    ```
 
-To create a production version of your app:
+## Deploying
 
+Once you're finished making changes, you 
 ```bash
 npm run build
 ```
