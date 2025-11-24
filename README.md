@@ -18,7 +18,7 @@ If you only need to make text changes, and feel confident about pushing those ch
     cd ml-psych
     ```
 
-3. Switch to the production (`prod`) branch.  This is needed so that your changes are automatically deployed to the live website when you push to git:
+3. By default you will begin on branch `main`; switch to the production (`prod`) branch.  This is needed so that your changes are automatically deployed to the live website when you push to git--`prod` is the only branch whose changes are deployed to production:
 
     ```bash
     git checkout prod
@@ -30,10 +30,16 @@ If you only need to make text changes, and feel confident about pushing those ch
     npm install --legacy-peer-deps
     ```
     
-5. Run dev server to see changes before deploying:
+5. Run the local dev server if you want to preview your changes before deploying:
 
     ```bash
     npm run dev
+    ```
+    
+    Follow the link in the terminal to open your browser to the dev server web page, or go to:
+
+    ```url
+    http://localhost:5173
     ```
 
 ## Deploying
