@@ -1,6 +1,6 @@
 # Lawson Psychotherapy website - lawsonpsych.com
 
-Below are the _general_ steps you will need to take to set up your environment, download this code, make changes to it, and push those changes to the live, public, website.
+Below are the _general_ steps you will need to take to set up your environment, download this code, make changes to it, and push those changes to the live, public website.
 
 
 ## Summary
