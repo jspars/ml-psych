@@ -18,10 +18,9 @@
 			world and relate with others. In psychodynamic therapy, we also attend to particular patterns 
 			in your life and relationships. My approach is also informed by existential-humanistic and 
 			phenomenological perspectives. I offer affirming dynamic therapy for neurodivergent clients 
-			and members of the LGBTQIA+ community. Currently, my practice is completely virtual, as I 
-			relocate to Richmond, Virginia, with plans to offer in-person sessions again 
-			in the future. Teletherapy appointments are available throughout Virginia and in all 
-			PSYPACT® participating states. For a more in-depth description of how I work, 
+			and members of the LGBTQIA+ community. Sessions are offered virtually or in person at my
+            office in Richmond, Virginia. Teletherapy appointments are available throughout Virginia and in all
+			PSYPACT® participating states. For a more in-depth description of how I work,
 			see <a href="{base}/about">the About page</a>. 			
 		</p>
 	</div>
