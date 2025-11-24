@@ -20,12 +20,12 @@ If you only need to make text changes, and feel confident about pushing those ch
 
 
    ```bash
-    git clone git@github.com:jspars/ml-psych.git
-    ```
+   git clone git@github.com:jspars/ml-psych.git
+   ```
    
-    ```bash
-    cd ml-psych
-    ```
+   ```bash
+   cd ml-psych
+   ```
 
 
 3. Install the sveltekit app fully:
