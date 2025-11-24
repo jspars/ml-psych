@@ -42,7 +42,7 @@ If you only need to make text changes, and feel confident about pushing those ch
     ```
 All content shown on the website is contained in the `src` directory, and the overwhelming majority contained in `src/routes`:
 
-<img width="538" height="1158" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
+<img height="558" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
 
 Explaination of the directory structure of this app is beyond the scope of this README, but you should be able to find which page you need to modify by symantically locating its route folder in `src/routes`, and opening the `.svelte` file (usually `+page.svelte`, but always ends in `.svelte`).
 
