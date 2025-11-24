@@ -13,10 +13,12 @@ To make changes to the website, you will need to download the code from this rep
 If you only need to make text changes, and feel confident about pushing those changes without seeing how they will be displayed on the site, you can skip to the Deploying section.
 
 1. [Download and install nodejs for your operating system.](https://nodejs.org/en/download)
-2. Clone this repository, and change to that newly created directory from your terminal (PowerShell for Windows, Bash for Linux, Mac, WSL):
 
 >[!IMPORTANT]
 >You will likely also need to install git for your terminal, and, most critically, generate and add SSH authentication keys to your GitHub account, which will authorize you to pull and push code to the repo.  That is far beyond the scope of this README, but [GitHub has great documentation on this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+2. Clone this repository, and change to that newly created directory from your terminal (PowerShell for Windows, Bash for Linux, Mac, WSL):
+
 
 
    ```bash
@@ -28,7 +30,7 @@ If you only need to make text changes, and feel confident about pushing those ch
    ```
 
 
-3. Install the sveltekit app fully:
+4. Install the sveltekit app fully:
 
     ```bash
     npm install --legacy-peer-deps
