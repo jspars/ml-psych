@@ -18,19 +18,14 @@ If you only need to make text changes, and feel confident about pushing those ch
     cd ml-psych
     ```
 
-3. By default you will begin on branch `main`; switch to the production (`prod`) branch.  This is needed so that your changes are automatically deployed to the live website when you push to git--`prod` is the only branch whose changes are deployed to production:
 
-    ```bash
-    git checkout prod
-    ```
-    
-4. Install the sveltekit app fully:
+3. Install the sveltekit app fully:
 
     ```bash
     npm install --legacy-peer-deps
     ```
     
-5. Run the local dev server if you want to preview your changes before deploying:
+3. Run the local dev server if you want to preview your changes before deploying:
 
     ```bash
     npm run dev
@@ -39,7 +34,20 @@ If you only need to make text changes, and feel confident about pushing those ch
     Follow the link in the terminal to open your browser to the dev server web page, or go to:
 
     [https://localhost:5173](https://localhost:5173)
-    
+
+5. By default you will begin on branch `main`; switch to the production (`prod`) branch.  This is needed so that your changes are automatically deployed to the live website when you push to git--`prod` is the only branch whose changes are deployed to production:
+
+    ```bash
+    git checkout prod
+    ```
+All content shown on the website is contained in the `src` directory, and the overwhelming majority contained in `src/routes`:
+
+<img width="538" height="1158" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
+
+Explaination of the directory structure of this app is beyond the scope of this README, but you should be able to find which page you need to modify by symantically locating its route folder in `src/routes`, and opening the `.svelte` file (usually `+page.svelte`, but always ends in `.svelte`).
+
+**IMPORTANT**
+Do not change the structure or file contents of any folders within this project unless you know what you're doing, and are comfortable with the same.
 
 ## Deploying
 
@@ -50,11 +58,21 @@ git add .
 ```
 
 ```bash
-git commit -m "YOUR MESSAGE INSIDE THE QUOTES"
+git commit -m "SHORT DESCRIPTION OF YOUR CHANGES"
 ```
+
+Feel free to run these steps on multiple occasions, especially if you are making multiple, significant changes.  The commit messages are shown in git as historical links to all prior code changes.
 
 ```bash
 git push origin prod
 ```
 
+
 The final command pushes your changes to this remote repository (github), and triggers and netlify script to build and deploy the sveltekit app (the website) to this repo's GitHub Pages page, i.e. pushing to the prod GitHub branch automatically publishes your changes in dev to production.
+
+This can also be run as needed, though you should try to limit the amount of changes you push to prod to avoid showing the incremental changes as opposed to all changes at once.
+
+## Summary
+
+1. Download and install necessary apps and configuration,
+2. Make changes to 
