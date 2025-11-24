@@ -30,13 +30,13 @@ If you only need to make text changes, and feel confident about pushing those ch
    ```
 
 
-4. Install the sveltekit app fully:
+3. Install the sveltekit app fully:
 
     ```bash
     npm install --legacy-peer-deps
     ```
     
-3. Run the local dev server (optional, but helpful) if you want to preview your changes before deploying:
+4. Run the local dev server (optional, but helpful) if you want to preview your changes before deploying (**Remember: Don't test in `prod`**):
 
     ```bash
     npm run dev
