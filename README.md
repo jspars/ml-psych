@@ -1,4 +1,4 @@
-# Updating lawsonpsych.com
+# Lawson Psychotherapy website - lawsonpsych.com
 
 ## Summary
 
@@ -7,10 +7,10 @@
 3. Add, commit, and push your changes to `prod` to deploy changes.
 
 
-## Making changes to the site
+## Updating the website
 To make changes to the website, you will need to download the code from this repository, install nodejs, and install this project to run the dev server, which allows you to make changes and preview them locally before pushing to the live website.
 
-If you only need to make text changes, and feel confident about pushing those changes without seeing how they will be displayed on the site, you can skip to the Deploying section.
+### Installation
 
 1. [Download and install nodejs for your operating system.](https://nodejs.org/en/download)
 
@@ -51,6 +51,9 @@ If you only need to make text changes, and feel confident about pushing those ch
     ```bash
     git checkout prod
     ```
+
+### Making changes
+    
 All content shown on the website is contained in the `src` directory, and the overwhelming majority contained in `src/routes`:
 
 <img height="558" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
