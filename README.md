@@ -59,13 +59,12 @@ To make changes to the website, you will need to download the code from this rep
     
 All content shown on the website is contained in the `src` directory, and the overwhelming majority contained in `src/routes`:
 
-<img height="558" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
-
-Explaination of the directory structure of this app is beyond the scope of this README, but you should be able to find which page you need to modify by symantically locating its route folder in `src/routes`, and opening the `.svelte` file (usually `+page.svelte`, but always ends in `.svelte`).
-
 > [!CAUTION]
 > Do not change the structure or file contents of any folders within this project unless you know what you're doing, and are comfortable with the same.
 
+<img height="558" alt="image" src="https://github.com/user-attachments/assets/f3bf72c0-6e4b-4b64-83ef-5f8bec6faa49" />
+
+Explaination of the directory structure of this app is beyond the scope of this README, but you should be able to find which page you need to modify by symantically locating its route folder in `src/routes`, and opening the `.svelte` file (usually `+page.svelte`, but always ends in `.svelte`).
 
 ## Deploying
 
