@@ -8,7 +8,11 @@
 
 <section class="container mx-auto max-w-[750px]">
     <p class="text-xl pt-5">Leave your contact information, and I will respond within two business days.</p>
-    <ContactForm />
+
+    <div data-secure-form="lawsonpsych-secure-contact-form-5571" data-secure-form-transparent-background="true"></div>
+    <script src="https://hushforms.com/f/public/javascript/embed-hush-form.js"></script>
+
+    <!-- <ContactForm /> -->
 </section>
 
 <style>
