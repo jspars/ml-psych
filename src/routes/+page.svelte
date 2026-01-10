@@ -21,7 +21,7 @@
 			and members of the LGBTQIA+ community. Sessions are offered virtually or in person at my
             office in Richmond, Virginia. Teletherapy appointments are available throughout Virginia and in all
 			PSYPACT® participating states. For a more in-depth description of how I work,
-			see <a href="{base}/about">the About page</a>. 			
+			see the About page. 			
 		</p>
 	</div>
 	<CardGroup />
