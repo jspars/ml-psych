@@ -3,7 +3,7 @@
  
 </script>
 
-<footer class="bg-dark text-light">
+<footer class="bg-dark text-light dummy">
     <div class="py-5 container">
         <div class="row">
             <div class="col-6 small">
