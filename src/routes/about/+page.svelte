@@ -90,7 +90,7 @@
                     </li>
                 </ul>
                 <h3 class="text-2xl">Advanced Training</h3>
-                <p class="">
+                <p class="dummy">
                     I continue to grow and hone my therapeutic approach by participating
                     in advanced training. My PhD program focused on psychodynamic,
                     phenomenological, and critical psychological approaches to understanding
