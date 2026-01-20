@@ -18,7 +18,7 @@
 					<ul class="list-unstyled font-light">
                         <!-- <li>Sessions</li> -->
                     </ul>
-					<h1 class="card-title text-2xl fw-bolder pricing-card-title">$160</h1>
+					<h1 class="card-title text-2xl fw-bolder pricing-card-title">$175</h1>
 				</div>
 			</div>
 		</div>
