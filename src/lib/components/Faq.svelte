@@ -29,7 +29,7 @@
 			>
 				<div class="accordion-body">
 					<p class="mx-auto prose">
-						<strong>Complete the <a href="{base}/contact">contact form</a>.
+						<strong>Complete the <a href="{base}/contact" data-sveltekit-reload>contact form</a>.
 						</strong> Once received, I will reach out to schedule an initial consultation.
 					</p>
 					<p class="mx-auto prose">
