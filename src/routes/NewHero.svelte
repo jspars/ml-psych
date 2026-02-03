@@ -9,7 +9,7 @@
 				<h1 class="outline-it">Lawson Psychotherapy</h1>
 				<p class="text-2xl text-gray-200">Making meaning together</p>
 				<div class="d-flex">
-					<a href="{base}/contact" class="btn btn-warning">Get Started</a>
+					<a href="{base}/contact" data-sveltekit-reload class="btn btn-warning">Get Started</a>
 				</div>
 			</div>
 		</div>
