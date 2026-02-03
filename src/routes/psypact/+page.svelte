@@ -28,7 +28,7 @@
             <a href="https://psypact.org/mpage/psypactmap" target="_blank">
             the official PSYPACT Map</a>.  If you are located in a PSYPACT&reg; state and 
             are interested in learning more about working together virtually, 
-             complete the <a href="{base}/contact">Contact Form</a>.
+             complete the <a href="{base}/contact data-sveltekit-reload">Contact Form</a>.
 		</p>
 	</div>
     
