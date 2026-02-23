@@ -151,7 +151,7 @@
 
             <h3 class="font-extrabold">
                 III. Use and Disclosure of Substance Use Disorder Records Subject to 42
-                CFR Part 2:
+                CFR Part 2
             </h3>
             <p>
                 If applicable, your substance use disorder (“SUD”) records are protected by federal law under 42
@@ -174,7 +174,7 @@
 
 
             <h3 class="font-extrabold">
-                IV. Prohibitions on Use and Disclosure of Part 2 Records:
+                IV. Prohibitions on Use and Disclosure of Part 2 Records
             </h3>
 
             <p>
@@ -197,7 +197,25 @@
             </p>
 
             <h3 class="font-extrabold">
-                V. Patient’s Rights and Provider’s Duties:
+                V. Reproductive Health Care Information
+            </h3>
+            <p>
+                Federal law provides additional privacy protections for protected health information
+                ("PHI") related to lawful reproductive health care. We are prohibited from
+                using or disclosing PHI for the purpose of conducting a criminal, civil,
+                or administrative investigation into, or imposing liability on any person
+                for seeking, obtaining, providing, or facilitating lawful reproductive health care.
+                Before disclosing PHI in response to certain requests from law enforcement, courts, or health
+                oversight agencies where reproductive health care may be implicated, we are
+                required by law to obtain a signed attestation confirming that the request is
+                not for a prohibited purpose.
+            </p>
+            <p>
+                These protections apply regardless of the state in which the reproductive health care was provided.
+            </p>
+
+            <h3 class="font-extrabold">
+                VI. Patient’s Rights and Provider’s Duties:
             </h3>
 
             <ul class="my-3">
