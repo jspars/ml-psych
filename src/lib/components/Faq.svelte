@@ -68,26 +68,9 @@
 			>
 				<div class="accordion-body">
                     <p class="mx-auto prose">
-                        Unfortunately, due to increased privacy concerns for individuals
-                        accessing care through third party insurance billing platforms,
-                        I’m unable to accept new insurance clients currently.
+                        Currently, I am an out-of-network provider.
                     </p>
-                    <p class="mx-auto prose">
-                        For several years, I’ve worked with a third-party platform to
-                        bill insurance for individual therapy. Due to ongoing changes in
-                        requirements to use the platform, which continue to encroach on
-                        client privacy, I have made the decision to move away from working
-                        with these platforms to protect your private health information
-                        first and foremost.
-                    </p>
-                    <p class="mx-auto prose">
-                        I am reviewing the process for independent credentialing with
-                        insurance companies, but for now I am an out of network provider.
-                        If you meet diagnostic criteria as required by your insurance
-                        company, I can provide you with a receipt to file with your
-                        insurance company for out-of-network reimbursement. Often clients
-                        report good results with out-of-network coverage.
-                    </p>
+
 <!--
                     <p class="mx-auto prose">
 						I currently work with a third party platform to bill insurance
