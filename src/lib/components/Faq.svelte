@@ -67,21 +67,16 @@
 				data-bs-parent="#accordion"
 			>
 				<div class="accordion-body">
-                    <p class="mx-auto prose">
-                        Currently, I am an out-of-network provider.
-                    </p>
 
-<!--
                     <p class="mx-auto prose">
 						I currently work with a third party platform to bill insurance
 						<strong> for individual therapy <em> only</em></strong>. 
 						If we agree to work together, and you wish to use insurance, 
 						we will discuss this platform and billing during our initial 
-						consultation. <strong>I currently can accept 
-						Aetna for people located in Virginia only.</strong>
+						consultation. <strong>I currently can accept commercial
+                        Anthem/BCBS and	Aetna plans for people located in Virginia only.</strong>
 					</p>
 
-     -->
 				</div>
 			</div>
 		</div>
