@@ -33,7 +33,7 @@
 						</strong> Once received, I will reach out to schedule an initial consultation.
 					</p>
 					<p class="mx-auto prose">
-						The initial consultation is a 20 to 30 minute, virtual, no cost, consultation to get know you,
+						The initial consultation is a 30 to 45 minute, virtual, no cost, consultation to get know you,
 						what is bringing you to therapy, and to assess whether we are a good fit to work together. I
 						will ask you some questions, tell you more about my therapeutic approach, and you will have
 						time to ask me questions as well.
