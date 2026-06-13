@@ -12,15 +12,20 @@
 <section class="my-5 container max-w-[1000px]">
 	<div class="mx-auto">
 		<h1 class="text-4xl">Neurodiversity and LGBTQIA+ affirming psychodynamic therapy for individuals and couples</h1>
-		<p>
-			 
+        <p>
+            I am a psychodynamic psychologist, licensed in Virginia and Pennsylvania,
+            providing in person services in the greater Richmond, Virginia area and
+            teletherapy in most other states (via PSYPACT®). My office is currently
+            located in North Chesterfield, Virginia, near Bon Air, with quick access
+            from the City of Richmond.
+        </p>
+        <p>
+
 			Psychodynamic therapy focuses on the way early experiences contribute to how you experience the 
 			world and relate with others. In psychodynamic therapy, we also attend to particular patterns 
 			in your life and relationships. My approach is also informed by existential-humanistic and 
 			phenomenological perspectives. I offer affirming dynamic therapy for neurodivergent clients 
-			and members of the LGBTQIA+ community. Sessions are offered virtually or in person at my
-            office in Richmond, Virginia. Teletherapy appointments are available throughout Virginia and in all
-			PSYPACT® participating states. For a more in-depth description of how I work,
+			and members of the LGBTQIA+ community.  For a more in-depth description of how I work,
 			see the About page. 			
 		</p>
 	</div>
