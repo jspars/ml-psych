@@ -42,11 +42,11 @@
 
 
 
-        <h3>
+        <h3 class="text-2xl">
 			Insurances Accepted<span class="font-light text-lg align-top text-slate-600">†*</span>
 		</h3>
 		<div class="">
-			<p class="font-normal ml-2 mt-1">Commercial Anthem/BCBS and Aetna</p>
+			<p class="font-normal mt-1">Commercial Anthem/BCBS and Aetna</p>
 			<p class="text-sm text-slate-500">
 				† Couples therapy is not covered by most health insurance policies. See FAQ for more
 				information.<br />
