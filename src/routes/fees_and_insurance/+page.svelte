@@ -1,6 +1,4 @@
 <script>
-	import { base } from '$app/paths'
-
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Prices from './Prices.svelte';
 

@@ -2,7 +2,6 @@
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Publication from './Publication.svelte';
     import Presentation from './Presentation.svelte';
-    import { base } from '$app/paths';
     
 </script>
 <PageHeader backgroundImage="/images/about-header.png" headerText="My publications and presentations" />

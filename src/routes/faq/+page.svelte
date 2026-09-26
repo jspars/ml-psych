@@ -1,7 +1,6 @@
 <script>
     import PageHeader from '$lib/components/PageHeader.svelte';
     import Faq from '$lib/components/Faq.svelte';
-    import { base } from '$app/paths';
 
 </script>
 <PageHeader backgroundImage="/images/psypact-header.png" headerText="Frequently Asked Questions" />

@@ -11,3 +11,4 @@ build/
 
 # local working notes / handoff docs
 HANDOFF-*.md
+.raycast-handoff.md
