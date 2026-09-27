@@ -30,6 +30,8 @@ rather than an afterthought.
 4. **Affirming.** The practice serves marginalized communities. The design should
    carry that with dignity — never as decoration.
 5. **Sovereign.** No third-party requests for fonts, analytics, or assets.
+6. **Mobile-first, wide-aware.** Base styles target small screens; wider viewports
+   gain richer treatment, not just more whitespace.
 
 ---
 
@@ -40,7 +42,9 @@ rather than an afterthought.
 - `src/app.css` defines `--primary`, `--secondary`, `--accent`, etc. — **almost none
   are used.** Actual styles hardcode `#EEF4ED`, `#212529`, and an off-palette
   orange link color (`#ff5a22`).
-- A large commented-out block of Bootstrap-era variables remains.
+- A large commented-out block of Bootstrap-era variable names remains. **This is
+  dead text, not a dependency** — Bootstrap was never installed. The navbar is
+  already hand-built in `Navbar.svelte`.
 - Tailwind is imported (`@tailwind base/components/utilities`) but the utility
   classes in markup are ad-hoc, with magic values and no semantic layer.
 - `tailwind.config.js` extends nothing; only `@tailwindcss/typography` is added.
@@ -112,19 +116,48 @@ components) and semantic tokens (what components actually reference).
 > uses the `-deep` variants. This is enforced by convention and checked in the
 > a11y pass.
 
+### 3.1.1 Dark theme
+
+Shipped in v1 with a **light / dark / system** toggle. The palette inverts cleanly:
+cream becomes text, and lavender **brightens** so the accent still pops against a
+dark ground.
+
+| Token              | Dark value | Note                                 |
+| ------------------ | ---------- | ------------------------------------ |
+| `--surface`        | `#1A1A1E`  | Warm near-black, slightly smoky      |
+| `--surface-raised` | `#24242A`  | Cards, panels                        |
+| `--surface-accent` | `#2E2A3A`  | Section bands, lavender-tinted       |
+| `--text`           | `#EDEBE4`  | Cream, reused from the light palette |
+| `--text-muted`     | `#A8A4B8`  | Muted lavender-grey                  |
+| `--text-inverse`   | `#12283D`  | Text on light surfaces               |
+| `--border`         | `#3A3A44`  | Hairlines                            |
+| `--lavender`       | `#A99BD4`  | Brightened for dark ground           |
+| `--link`           | `#B9AEE0`  | Higher contrast on dark              |
+| `--focus`          | `#B9AEE0`  | Focus rings                          |
+
+**Implementation:** `:root` holds light values; `[data-theme="dark"]` overrides the
+semantic tokens. A tiny inline script in `app.html` reads the stored preference
+(and `prefers-color-scheme`) and sets `data-theme` **before first paint** to avoid
+a flash of the wrong theme. The toggle is a three-state control (light / dark /
+system) persisted in `localStorage`.
+
 ### 3.2 Typography
 
-Three roles, matching the card.
+Two roles, matching the card.
 
-| Role    | Face                        | Use             | Weights       |
-| ------- | --------------------------- | --------------- | ------------- |
-| Display | **Playfair Display**        | Wordmark, `h1`  | 600, 700      |
-| Script  | **Sacramento** (or similar) | Signature only  | 400           |
-| Body    | **Inter**                   | Everything else | 400, 500, 600 |
+| Role    | Face                 | Use             | Weights       |
+| ------- | -------------------- | --------------- | ------------- |
+| Display | **Playfair Display** | Wordmark, `h1`  | 600, 700      |
+| Body    | **Inter**            | Everything else | 400, 500, 600 |
 
 - Self-hosted, **WOFF2**, **subset to Latin**.
 - `font-display: swap`; preload the body face only.
 - Fluid type scale via `clamp()`.
+
+> **Script face (signature):** the card uses **Brittany** (Typesenses), which is a
+> commercial font and not licensed for web embedding. Rather than substitute a
+> different script face and break consistency across print and web, the signature
+> is rendered as an **image asset**. This also removes a font from the load path.
 
 ```
 --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
@@ -151,6 +184,30 @@ Three roles, matching the card.
 --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 --dur-fast: 150ms;  --dur-base: 250ms;  --dur-slow: 400ms;
 ```
+
+### 3.4 Responsive strategy
+
+**Mobile-first, wide-aware.** Base styles target small screens; `min-width` media
+queries layer up. The goal is that wider viewports gain _richer treatment_, not
+just more empty space.
+
+**Breakpoints** (min-width):
+
+```
+--bp-sm: 40rem;   /* 640px  — large phone / small tablet */
+--bp-md: 48rem;   /* 768px  — tablet */
+--bp-lg: 64rem;   /* 1024px — small laptop */
+--bp-xl: 80rem;   /* 1280px — desktop */
+--bp-2xl: 96rem;  /* 1536px — wide / ultrawide */
+```
+
+**Content width:** prose is capped at ~72ch; the layout container at ~1200px.
+Text never stretches to unreadable line lengths on ultrawide displays.
+
+**Beyond ~1400px (`--bp-2xl`):** the content column stays constrained while the
+_atmosphere_ expands — full-bleed hero gradient, decorative botanical elements in
+the margins, and multi-column layouts that gain breathing room rather than
+padding. This is where the mockup's soft color-wash aesthetic earns its keep.
 
 ---
 
@@ -215,9 +272,13 @@ Target: **WCAG 2.2 AA**, with AAA on body text contrast where feasible.
 - [ ] Full keyboard operability; logical tab order.
 - [ ] `prefers-reduced-motion` respected.
 - [ ] `prefers-color-scheme` — dark mode via token swap.
+- [ ] Theme toggle: three-state (light / dark / system), keyboard-operable, with an
+      accessible name and `aria-pressed` or equivalent state.
+- [ ] No flash of incorrect theme on load (pre-paint `data-theme` script).
 - [ ] Meaningful `alt` text; `alt=""` for decorative images.
 - [ ] Form labels, error messaging, and `aria-live` (when contact form returns).
 - [ ] Colorblind support: affirming iconography always paired with labels.
+- [ ] Both themes independently meet contrast targets (dark is not an afterthought).
 
 ---
 
@@ -226,13 +287,24 @@ Target: **WCAG 2.2 AA**, with AAA on body text contrast where feasible.
 Generated in Canva; integrated here. Export as **WebP**, with explicit
 `width`/`height` to prevent layout shift.
 
-| Asset            | Purpose                          | Notes                                                   |
-| ---------------- | -------------------------------- | ------------------------------------------------------- |
-| Hero background  | Landing hero                     | Low-contrast botanical; needs negative space for text   |
-| Service icons    | Individual / Affirming / Couples | Thin-line, single stroke weight, navy                   |
-| Affirming banner | Dedicated section                | Pride/trans/intersex/BLM/feminist, treated with dignity |
-| Lavender texture | Reusable background              | Low opacity, like the card                              |
-| LP monogram      | Favicon + logo mark              | Navy/lavender treatment                                 |
+| Asset            | Purpose                          | Notes                                                      |
+| ---------------- | -------------------------------- | ---------------------------------------------------------- |
+| Hero background  | Landing hero                     | Soft color-wash + botanical; needs negative space for text |
+| Service icons    | Individual / Affirming / Couples | Thin-line, single stroke weight, navy                      |
+| Affirming banner | Dedicated section                | Pride/trans/intersex/BLM/feminist, treated with dignity    |
+| Lavender texture | Reusable background              | Low opacity, like the card                                 |
+| LP monogram      | Favicon + logo mark              | Navy/lavender treatment                                    |
+| Signature        | Personal note / about page       | Brittany script as an image (not web-licensed as a font)   |
+
+### 6.1 Hero treatment
+
+The early mockup (soft blurred lavender → pink → pale-blue wash behind the
+wordmark, with the lavender sprig as a photographic element) is the direction for
+the **hero specifically**. The rest of the site stays calm and flat.
+
+This gives the landing page a striking first impression without making every page
+busy, and it gives the dark theme something to echo. On wide displays the wash
+extends full-bleed while the content column stays constrained (see §3.4).
 
 ---
 
@@ -254,18 +326,22 @@ nav.
 document. Distinct from the existing `/privacy` page (which is the clinical
 privacy policy).
 
-> **Naming:** needs a route that doesn't collide with `/privacy`. Candidates:
-> `/site-privacy`, `/your-privacy`, `/data`. Decide before implementation.
+**Route:** `/your-data` — chosen to avoid collision with the clinical `/privacy`
+page and to read naturally as a footer link.
 
 ---
 
-## 8. Open questions
+## 8. Decisions
 
-- [ ] Route name for the new privacy page (see §7).
-- [ ] Dark mode: ship in v1, or defer?
-- [ ] Script face: which handwriting font best matches the card's signature?
-- [ ] Do we keep the existing `/privacy` clinical page as-is, or restyle it too?
-- [ ] Netlify deploy previews for `redesign/theme` — enable for review?
+- **Privacy page route:** `/your-data`.
+- **Dark mode:** ships in v1, with a light / dark / system toggle.
+- **Script face:** Brittany is commercial and not web-licensed — the signature is
+  an image asset instead. No script font in the stack.
+- **Existing `/privacy`:** copy stays exactly as-is; the page is restyled to match.
+- **Netlify deploy previews:** enabled for `redesign/theme` so the redesign can be
+  reviewed at a live URL without touching production.
+- **Bootstrap:** never a dependency — the commented-out variables in `app.css` are
+  dead text. The navbar is already hand-built and will be restyled natively.
 
 ---
 
@@ -275,5 +351,5 @@ privacy policy).
 2. **`redesign/layout`** — shell, primitives, component architecture.
 3. **`redesign/a11y`** — audit and fixes woven throughout.
 4. **`redesign/assets`** — imagery integration.
-5. **Privacy page** — content + route.
+5. **`/your-data` page** — content + route.
 6. Merge `redesign/theme` → `prod`.
