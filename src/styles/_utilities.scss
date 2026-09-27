@@ -1,0 +1,66 @@
+// =============================================================================
+// Utilities
+// =============================================================================
+// Deliberately small. Only genuinely reusable helpers belong here — anything
+// used once should live in the component's scoped <style> block instead.
+// =============================================================================
+
+// --- Text alignment ---------------------------------------------------------
+
+.text-center {
+	text-align: center;
+}
+
+.text-balance {
+	text-wrap: balance;
+}
+
+// --- Text color -------------------------------------------------------------
+
+.text-muted {
+	color: var(--text-muted);
+}
+
+.text-inverse {
+	color: var(--text-inverse);
+}
+
+// --- Surfaces ---------------------------------------------------------------
+
+.surface-raised {
+	background-color: var(--surface-raised);
+}
+
+.surface-accent {
+	background-color: var(--surface-accent);
+}
+
+.surface-inverse {
+	background-color: var(--surface-inverse);
+	color: var(--text-inverse);
+}
+
+// --- Motion -----------------------------------------------------------------
+// Scroll-reveal. The .is-visible class is added by the IntersectionObserver
+// helper in src/lib/utils/motion.js. Reduced-motion users see content
+// immediately (handled in _reset.scss).
+
+.reveal {
+	opacity: 0;
+	transform: translateY(1rem);
+	transition:
+		opacity var(--dur-slow) var(--ease-out),
+		transform var(--dur-slow) var(--ease-out);
+}
+
+.reveal.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal {
+		opacity: 1;
+		transform: none;
+	}
+}

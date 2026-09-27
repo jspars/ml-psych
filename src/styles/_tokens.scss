@@ -1,0 +1,168 @@
+// =============================================================================
+// Design tokens
+// =============================================================================
+// Two tiers:
+//   1. Raw palette  — the literal brand colors. Never referenced by components.
+//   2. Semantic     — what components actually use. These are what swap between
+//                     light and dark themes.
+//
+// Rule: components reference semantic tokens only. If you find yourself writing
+// `var(--ink)` in a component, stop — use `var(--text)` or add a semantic alias.
+// =============================================================================
+
+:root {
+	// ---------------------------------------------------------------------------
+	// 1. Raw palette (from the business card)
+	// ---------------------------------------------------------------------------
+	--ink: #1b3a5c; // wordmark navy — primary brand color
+	--ink-deep: #12283d; // text-safe navy
+	--sage: #b5b49a; // back-panel ground — decorative only
+	--sage-deep: #6e6d57; // text-safe sage
+	--cream: #edebe4; // card base — page background
+	--paper: #f7f6f1; // raised surfaces
+	--lavender: #8b7fb8; // QR / monogram — accent, decorative
+	--lavender-deep: #5f5488; // text-safe accent
+
+	// ---------------------------------------------------------------------------
+	// 2. Semantic tokens — light theme (default)
+	// ---------------------------------------------------------------------------
+	--text: var(--ink-deep);
+	--text-muted: var(--sage-deep);
+	--text-inverse: var(--cream);
+
+	--surface: var(--cream);
+	--surface-raised: var(--paper);
+	--surface-accent: var(--sage);
+	--surface-inverse: var(--ink-deep);
+
+	--border: color-mix(in srgb, var(--sage) 40%, transparent);
+	--border-strong: var(--sage);
+
+	--link: var(--lavender-deep);
+	--link-hover: var(--ink);
+	--focus: var(--lavender-deep);
+
+	--accent: var(--lavender);
+	--accent-deep: var(--lavender-deep);
+
+	// ---------------------------------------------------------------------------
+	// Typography
+	// ---------------------------------------------------------------------------
+	--font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+	--font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+	// Fluid type scale (1.25 ratio, clamped between mobile and desktop)
+	--step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+	--step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+	--step-1: clamp(1.25rem, 1.2rem + 0.3vw, 1.4rem);
+	--step-2: clamp(1.56rem, 1.45rem + 0.55vw, 1.9rem);
+	--step-3: clamp(1.95rem, 1.75rem + 1vw, 2.6rem);
+	--step-4: clamp(2.44rem, 2.1rem + 1.7vw, 3.5rem);
+	--step-5: clamp(3.05rem, 2.5rem + 2.75vw, 4.75rem);
+
+	--leading-tight: 1.15;
+	--leading-snug: 1.3;
+	--leading-normal: 1.6;
+	--leading-relaxed: 1.75;
+
+	--weight-normal: 400;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: 700;
+
+	--tracking-tight: -0.02em;
+	--tracking-normal: 0;
+	--tracking-wide: 0.05em;
+	--tracking-wider: 0.12em;
+
+	// ---------------------------------------------------------------------------
+	// Space
+	// ---------------------------------------------------------------------------
+	--space-3xs: 0.25rem;
+	--space-2xs: 0.5rem;
+	--space-xs: 0.75rem;
+	--space-s: 1rem;
+	--space-m: 1.5rem;
+	--space-l: 2.5rem;
+	--space-xl: 4rem;
+	--space-2xl: 6rem;
+	--space-3xl: 8rem;
+
+	// ---------------------------------------------------------------------------
+	// Radius
+	// ---------------------------------------------------------------------------
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 16px;
+	--radius-full: 999px;
+
+	// ---------------------------------------------------------------------------
+	// Shadow — soft and low-spread; editorial, not "webapp"
+	// ---------------------------------------------------------------------------
+	--shadow-s: 0 1px 2px rgb(18 40 61 / 0.06);
+	--shadow-m: 0 4px 12px rgb(18 40 61 / 0.08);
+	--shadow-l: 0 12px 32px rgb(18 40 61 / 0.1);
+
+	// ---------------------------------------------------------------------------
+	// Motion
+	// ---------------------------------------------------------------------------
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+	--dur-fast: 150ms;
+	--dur-base: 250ms;
+	--dur-slow: 400ms;
+
+	// ---------------------------------------------------------------------------
+	// Layout
+	// ---------------------------------------------------------------------------
+	--measure: 72ch; // max line length for prose
+	--container: 75rem; // 1200px — layout container
+	--container-wide: 90rem; // 1440px — full-bleed atmosphere
+	--gutter: var(--space-s);
+
+	// ---------------------------------------------------------------------------
+	// Breakpoints (documentation only — CSS custom properties can't be used in
+	// media queries. These mirror the values used throughout the stylesheets.)
+	// ---------------------------------------------------------------------------
+	// --bp-sm:  40rem;   /* 640px  */
+	// --bp-md:  48rem;   /* 768px  */
+	// --bp-lg:  64rem;   /* 1024px */
+	// --bp-xl:  80rem;   /* 1280px */
+	// --bp-2xl: 96rem;   /* 1536px */
+}
+
+// =============================================================================
+// Dark theme
+// =============================================================================
+// Only semantic tokens are overridden. The raw palette stays put so that
+// brand colors remain available (e.g. for the wordmark) in both themes.
+//
+// Key move: lavender BRIGHTENS on dark so the accent still pops, while cream
+// becomes the text color. The palette inverts cleanly.
+// =============================================================================
+
+[data-theme='dark'] {
+	--text: var(--cream);
+	--text-muted: #a8a4b8; // muted lavender-grey
+	--text-inverse: var(--ink-deep);
+
+	--surface: #1a1a1e; // warm near-black, slightly smoky
+	--surface-raised: #24242a;
+	--surface-accent: #2e2a3a; // lavender-tinted band
+	--surface-inverse: var(--cream);
+
+	--border: #3a3a44;
+	--border-strong: #4a4a56;
+
+	--link: #b9aee0;
+	--link-hover: var(--cream);
+	--focus: #b9aee0;
+
+	--accent: #a99bd4; // brightened for dark ground
+	--accent-deep: #b9aee0;
+
+	// Shadows read as depth on dark only if they're darker than the surface.
+	--shadow-s: 0 1px 2px rgb(0 0 0 / 0.3);
+	--shadow-m: 0 4px 12px rgb(0 0 0 / 0.4);
+	--shadow-l: 0 12px 32px rgb(0 0 0 / 0.5);
+}

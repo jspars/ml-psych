@@ -7,22 +7,19 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"fonts": "./scripts/subset-fonts.sh"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.70.3",
-		"@tailwindcss/typography": "^0.5.10",
-		"autoprefixer": "^10.4.17",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-svelte": "^2.46.1",
-		"postcss": "^8.4.35",
 		"prettier": "^3.9.9",
 		"prettier-plugin-svelte": "^3.5.2",
 		"sass": "^1.71.1",
 		"svelte": "^5.57.1",
-		"tailwindcss": "^3.4.1",
 		"vite": "^8.3.1"
 	},
 	"type": "module",

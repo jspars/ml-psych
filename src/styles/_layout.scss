@@ -1,0 +1,141 @@
+// =============================================================================
+// Layout primitives
+// =============================================================================
+// Mobile-first. Base styles target small screens; min-width queries layer up.
+// Wider viewports gain richer treatment, not just more whitespace.
+// =============================================================================
+
+// --- Container ---------------------------------------------------------------
+// Constrains content width. The content column stays put on ultrawide displays
+// while the surrounding atmosphere can expand (see .bleed).
+
+.container {
+	width: 100%;
+	max-width: var(--container);
+	margin-inline: auto;
+	padding-inline: var(--gutter);
+}
+
+@media (min-width: 40rem) {
+	.container {
+		--gutter: var(--space-m);
+	}
+}
+
+@media (min-width: 64rem) {
+	.container {
+		--gutter: var(--space-l);
+	}
+}
+
+// --- Prose measure -----------------------------------------------------------
+// Caps line length for readability. Applied to text-heavy blocks.
+
+.prose {
+	max-width: var(--measure);
+}
+
+// --- Section ----------------------------------------------------------------
+// Vertical rhythm for page sections.
+
+.section {
+	padding-block: var(--space-xl);
+}
+
+@media (min-width: 48rem) {
+	.section {
+		padding-block: var(--space-2xl);
+	}
+}
+
+@media (min-width: 96rem) {
+	.section {
+		padding-block: var(--space-3xl);
+	}
+}
+
+// --- Stack ------------------------------------------------------------------
+// Vertical flow with consistent gaps. The workhorse for spacing.
+
+.stack > * + * {
+	margin-block-start: var(--stack-gap, var(--space-s));
+}
+
+.stack--tight {
+	--stack-gap: var(--space-2xs);
+}
+
+.stack--loose {
+	--stack-gap: var(--space-m);
+}
+
+// --- Cluster ----------------------------------------------------------------
+// Horizontal grouping that wraps. Good for button rows, tag lists, nav.
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--cluster-gap, var(--space-s));
+	align-items: center;
+}
+
+// --- Grid -------------------------------------------------------------------
+// Auto-fitting grid. Columns collapse to one on small screens without a query.
+
+.grid {
+	display: grid;
+	gap: var(--grid-gap, var(--space-m));
+	grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min, 16rem), 100%), 1fr));
+}
+
+// --- Bleed ------------------------------------------------------------------
+// Full-bleed background that escapes the container while its content stays
+// constrained. This is how the hero wash and section bands expand on wide
+// displays without stretching text.
+
+.bleed {
+	width: 100vw;
+	margin-inline: calc(50% - 50vw);
+}
+
+.bleed > .container {
+	max-width: var(--container);
+}
+
+// --- Visually hidden --------------------------------------------------------
+// Available to screen readers, invisible on screen. Used for skip links and
+// icon-only control labels.
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+// --- Skip link --------------------------------------------------------------
+// First focusable element on the page. Hidden until focused.
+
+.skip-link {
+	position: absolute;
+	top: var(--space-2xs);
+	left: var(--space-2xs);
+	z-index: 100;
+	padding: var(--space-2xs) var(--space-s);
+	background-color: var(--surface-raised);
+	color: var(--text);
+	border: 2px solid var(--focus);
+	border-radius: var(--radius-m);
+	text-decoration: none;
+	transform: translateY(-200%);
+	transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+	transform: translateY(0);
+}

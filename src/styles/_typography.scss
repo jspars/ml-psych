@@ -1,0 +1,170 @@
+// =============================================================================
+// Typography
+// =============================================================================
+// Fonts are self-hosted, WOFF2, and subset to Latin. No third-party requests.
+//
+// Subsetting is done with fonttools (see scripts/subset-fonts.sh). The source
+// TTFs live in static/fonts/src/ and are NOT shipped; only the subset WOFF2
+// files in static/fonts/ are served.
+// =============================================================================
+
+// --- Display: Playfair Display -----------------------------------------------
+// Used for the wordmark and h1. High-contrast Didone, matching the card.
+
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/playfair-display-600.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/playfair-display-700.woff2') format('woff2');
+}
+
+// --- Body: Inter -------------------------------------------------------------
+// The workhorse. Preloaded in app.html since it renders above the fold.
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/inter-400.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/inter-500.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/inter-600.woff2') format('woff2');
+}
+
+// =============================================================================
+// Base type
+// =============================================================================
+
+body {
+	font-family: var(--font-body);
+	font-size: var(--step-0);
+	font-weight: var(--weight-normal);
+	line-height: var(--leading-normal);
+	color: var(--text);
+	background-color: var(--surface);
+}
+
+// =============================================================================
+// Headings
+// =============================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--weight-semibold);
+	line-height: var(--leading-tight);
+	color: var(--text);
+}
+
+h1 {
+	font-family: var(--font-display);
+	font-size: var(--step-4);
+	font-weight: var(--weight-bold);
+	letter-spacing: var(--tracking-tight);
+}
+
+h2 {
+	font-family: var(--font-display);
+	font-size: var(--step-3);
+	letter-spacing: var(--tracking-tight);
+}
+
+h3 {
+	font-size: var(--step-2);
+	line-height: var(--leading-snug);
+}
+
+h4 {
+	font-size: var(--step-1);
+	line-height: var(--leading-snug);
+}
+
+h5,
+h6 {
+	font-size: var(--step-0);
+	letter-spacing: var(--tracking-wide);
+	text-transform: uppercase;
+}
+
+// =============================================================================
+// Body copy
+// =============================================================================
+
+p {
+	max-width: var(--measure);
+}
+
+p + p {
+	margin-block-start: var(--space-s);
+}
+
+small {
+	font-size: var(--step--1);
+}
+
+strong,
+b {
+	font-weight: var(--weight-semibold);
+}
+
+// =============================================================================
+// Links
+// =============================================================================
+
+a {
+	color: var(--link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+	transition: color var(--dur-fast) var(--ease-out);
+}
+
+a:hover {
+	color: var(--link-hover);
+}
+
+// =============================================================================
+// Focus
+// =============================================================================
+// Visible focus rings on everything interactive. Never remove these without a
+// replacement — keyboard users depend on them.
+
+:focus-visible {
+	outline: 2px solid var(--focus);
+	outline-offset: 2px;
+	border-radius: var(--radius-s);
+}
+
+// =============================================================================
+// Selection
+// =============================================================================
+
+::selection {
+	background-color: color-mix(in srgb, var(--accent) 35%, transparent);
+	color: var(--text);
+}

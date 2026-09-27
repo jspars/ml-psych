@@ -1,17 +1,14 @@
 <script>
-    import "../app.css";
-    import Navbar from "../lib/components/Navbar.svelte";
-    import Footer from "../lib/components/Footer.svelte";
-  </script>
-  
-  <Navbar />
-  <main>
-    <slot />
-  </main>
-    
-  <Footer />
-  
+	import '../styles/app.scss';
+	import Navbar from '../lib/components/Navbar.svelte';
+	import Footer from '../lib/components/Footer.svelte';
+</script>
 
-  <style>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  </style>
+<Navbar />
+<main id="main">
+	<slot />
+</main>
+
+<Footer />

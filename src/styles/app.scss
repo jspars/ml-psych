@@ -1,0 +1,16 @@
+// =============================================================================
+// Stylesheet entry point
+// =============================================================================
+// Import order matters:
+//   1. tokens  — custom properties must exist before anything references them
+//   2. reset   — normalize the box model and defaults
+//   3. typography — base type styles
+//   4. layout  — structural primitives
+//   5. utilities — small helpers, last so they can override
+// =============================================================================
+
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+@use 'layout';
+@use 'utilities';
