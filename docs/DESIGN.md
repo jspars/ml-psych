@@ -137,6 +137,8 @@ components) and semantic tokens (what components actually reference).
 > uses the `-deep` variants. This is enforced by convention and checked in the
 > a11y pass.
 
+![Light theme color swatches](images/tokens-light.png)
+
 ### 3.1.1 Dark theme
 
 Shipped in v1 with a **light / dark / system** toggle. The palette inverts cleanly:
@@ -161,6 +163,8 @@ semantic tokens. A tiny inline script in `app.html` reads the stored preference
 (and `prefers-color-scheme`) and sets `data-theme` **before first paint** to avoid
 a flash of the wrong theme. The toggle is a three-state control (light / dark /
 system) persisted in `localStorage`.
+
+![Dark theme color swatches](images/tokens-dark.png)
 
 ### 3.2 Typography
 
