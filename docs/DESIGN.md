@@ -42,22 +42,43 @@ rather than an afterthought.
 - `src/app.css` defines `--primary`, `--secondary`, `--accent`, etc. — **almost none
   are used.** Actual styles hardcode `#EEF4ED`, `#212529`, and an off-palette
   orange link color (`#ff5a22`).
-- A large commented-out block of Bootstrap-era variable names remains. **This is
-  dead text, not a dependency** — Bootstrap was never installed. The navbar is
-  already hand-built in `Navbar.svelte`.
+- A large commented-out block of Bootstrap-era variable names remains. The
+  commented block itself is dead text, **but Bootstrap is genuinely loaded** —
+  see §2.4.
 - Tailwind is imported (`@tailwind base/components/utilities`) but the utility
   classes in markup are ad-hoc, with magic values and no semantic layer.
 - `tailwind.config.js` extends nothing; only `@tailwindcss/typography` is added.
 
 ### 2.2 Fonts
 
-- **~27 MB of unsubsetted `.ttf` files** in `static/fonts/`.
-- `NanumMyeongjo-*.ttf` (a Korean typeface) accounts for ~12 MB and is used for
+- **~14 MB of unsubsetted `.ttf` files** in `static/fonts/`.
+- `NanumMyeongjo-*.ttf` (a Korean typeface) accounts for ~11.5 MB and is used for
   Latin headings only.
 - Roboto is loaded in 10 weights/styles, most of which are unused.
 - No `preload`, no `font-display`, no subsetting, no WOFF2.
 
-### 2.3 Structure
+> **Resolved in `redesign/tokens`.** Replaced with 81 KB of Latin-subset WOFF2
+> (Playfair Display 600/700, Inter 400/500/600) — a 99.4% reduction. Reproducible
+> via `npm run fonts`.
+
+### 2.3 Third-party CDN dependencies
+
+`src/app.html` loaded five resources from third-party CDNs on every page view:
+
+| Resource            | Version | Used?                  |
+| ------------------- | ------- | ---------------------- |
+| Bootstrap CSS       | 5.3.2   | **Yes** — load-bearing |
+| Bootstrap JS bundle | 5.3.2   | No                     |
+| bootstrap-icons     | 1.10.5  | No                     |
+| jQuery              | 3.6.0   | No                     |
+| jQuery UI           | 1.12.1  | No                     |
+
+Beyond the privacy cost of leaking visitor IPs to three separate CDNs, this was
+~90 KB of JavaScript that did nothing. The four unused resources were removed in
+`redesign/tokens`; Bootstrap CSS remains until `redesign/layout` rebuilds the
+components that depend on it.
+
+### 2.4 Structure
 
 - Components split between `src/lib/components/` and `src/routes/`.
 - `NewHero.svelte` and `OldHero.svelte` both live in `src/routes/`.
@@ -209,6 +230,38 @@ _atmosphere_ expands — full-bleed hero gradient, decorative botanical elements
 the margins, and multi-column layouts that gain breathing room rather than
 padding. This is where the mockup's soft color-wash aesthetic earns its keep.
 
+### 3.5 Token architecture as implemented
+
+Tokens are **plain CSS custom properties** — no preprocessor variables, no
+Bootstrap, no build-time magic. SCSS is used only for `@use` composition and
+nesting; every value that a component consumes is a custom property at runtime.
+That means themes can swap without a rebuild, and DevTools shows the real value.
+
+Two tiers, and the distinction matters:
+
+| Tier            | Example                                     | Who uses it                             |
+| --------------- | ------------------------------------------- | --------------------------------------- |
+| **Raw palette** | `--ink`, `--sage`, `--lavender`             | Nothing directly. Brand reference only. |
+| **Semantic**    | `--text`, `--surface`, `--link`, `--accent` | Every component.                        |
+
+Components reference **semantic tokens only**. This is what makes dark mode a
+matter of overriding one block rather than auditing every rule.
+
+```
+src/styles/
+  _tokens.scss      raw palette + semantic tokens + [data-theme="dark"] overrides
+  _reset.scss       minimal modern reset
+  _typography.scss  @font-face, fluid scale, base type, focus rings
+  _layout.scss      container, prose, section, stack, cluster, grid, bleed
+  _utilities.scss   small reusable helpers, scroll-reveal
+  app.scss          entry point (import order is documented and load-bearing)
+```
+
+**Theme switching** is a `data-theme` attribute on `<html>`, set by an inline
+script in `app.html` that runs before first paint. Precedence is stored
+preference → system preference → light. No flash of the wrong theme, and no
+dependency.
+
 ---
 
 ## 4. Architecture
@@ -340,14 +393,19 @@ page and to read naturally as a footer link.
 - **Existing `/privacy`:** copy stays exactly as-is; the page is restyled to match.
 - **Netlify deploy previews:** enabled for `redesign/theme` so the redesign can be
   reviewed at a live URL without touching production.
-- **Bootstrap:** never a dependency — the commented-out variables in `app.css` are
-  dead text. The navbar is already hand-built and will be restyled natively.
+- **Bootstrap:** loaded from CDN in `app.html`, not via `package.json` — which is
+  why it was easy to miss. It is **genuinely load-bearing**: the markup uses
+  `card` (28×), `container` (11×), `row` (10×), `navbar` (7×), `btn` (6×), plus
+  spacing and flex utilities. It will be removed in `redesign/layout`, where
+  those components are rebuilt natively. The unused Bootstrap JS, Bootstrap
+  Icons, jQuery, and jQuery UI were removed in `redesign/tokens`.
 
 ---
 
 ## 9. Sequencing
 
-1. **`redesign/tokens`** — token layer, font self-hosting/subsetting, remove Tailwind.
+1. ~~**`redesign/tokens`** — token layer, font self-hosting/subsetting, remove Tailwind.~~
+   **Done.** See §3 for the token architecture as implemented.
 2. **`redesign/layout`** — shell, primitives, component architecture.
 3. **`redesign/a11y`** — audit and fixes woven throughout.
 4. **`redesign/assets`** — imagery integration.
