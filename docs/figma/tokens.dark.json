@@ -1,0 +1,313 @@
+{
+	"color": {
+		"raw": {
+			"ink": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.105882, 0.227451, 0.360784],
+					"alpha": 1,
+					"hex": "#1B3A5C"
+				},
+				"$description": "Wordmark navy — primary brand color"
+			},
+			"ink-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.070588, 0.156863, 0.239216],
+					"alpha": 1,
+					"hex": "#12283D"
+				},
+				"$description": "Text-safe navy"
+			},
+			"sage": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.709804, 0.705882, 0.603922],
+					"alpha": 1,
+					"hex": "#B5B49A"
+				},
+				"$description": "Back-panel ground — DECORATIVE ONLY, never text"
+			},
+			"sage-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.431373, 0.427451, 0.341176],
+					"alpha": 1,
+					"hex": "#6E6D57"
+				},
+				"$description": "Text-safe sage"
+			},
+			"cream": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.929412, 0.921569, 0.894118],
+					"alpha": 1,
+					"hex": "#EDEBE4"
+				},
+				"$description": "Card base — page background"
+			},
+			"paper": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.968627, 0.964706, 0.945098],
+					"alpha": 1,
+					"hex": "#F7F6F1"
+				},
+				"$description": "Raised surfaces"
+			},
+			"lavender": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.545098, 0.498039, 0.721569],
+					"alpha": 1,
+					"hex": "#8B7FB8"
+				},
+				"$description": "QR / monogram accent — DECORATIVE ONLY, never text"
+			},
+			"lavender-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.372549, 0.329412, 0.533333],
+					"alpha": 1,
+					"hex": "#5F5488"
+				},
+				"$description": "Text-safe accent"
+			}
+		},
+		"semantic": {
+			"text": {
+				"$type": "color",
+				"$value": "{color.raw.cream}",
+				"$description": "--text: var(--cream)"
+			},
+			"text-muted": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.658824, 0.643137, 0.721569],
+					"alpha": 1,
+					"hex": "#A8A4B8"
+				},
+				"$description": "--text-muted: #a8a4b8 — muted lavender-grey, dark-mode literal"
+			},
+			"text-inverse": {
+				"$type": "color",
+				"$value": "{color.raw.ink-deep}",
+				"$description": "--text-inverse: var(--ink-deep)"
+			},
+			"surface": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.101961, 0.101961, 0.117647],
+					"alpha": 1,
+					"hex": "#1A1A1E"
+				},
+				"$description": "--surface: #1a1a1e — warm near-black, slightly smoky"
+			},
+			"surface-raised": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.141176, 0.141176, 0.164706],
+					"alpha": 1,
+					"hex": "#24242A"
+				},
+				"$description": "--surface-raised: #24242a"
+			},
+			"surface-accent": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.180392, 0.164706, 0.227451],
+					"alpha": 1,
+					"hex": "#2E2A3A"
+				},
+				"$description": "--surface-accent: #2e2a3a — lavender-tinted band"
+			},
+			"surface-inverse": {
+				"$type": "color",
+				"$value": "{color.raw.cream}",
+				"$description": "--surface-inverse: var(--cream) — palette inverts"
+			},
+			"border": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.227451, 0.227451, 0.266667],
+					"alpha": 1,
+					"hex": "#3A3A44"
+				},
+				"$description": "--border: #3a3a44 — dark-mode literal, NOT a color-mix of sage"
+			},
+			"border-strong": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.290196, 0.290196, 0.337255],
+					"alpha": 1,
+					"hex": "#4A4A56"
+				},
+				"$description": "--border-strong: #4a4a56"
+			},
+			"link": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.72549, 0.682353, 0.878431],
+					"alpha": 1,
+					"hex": "#B9AEE0"
+				},
+				"$description": "--link: #b9aee0"
+			},
+			"link-hover": {
+				"$type": "color",
+				"$value": "{color.raw.cream}",
+				"$description": "--link-hover: var(--cream)"
+			},
+			"focus": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.72549, 0.682353, 0.878431],
+					"alpha": 1,
+					"hex": "#B9AEE0"
+				},
+				"$description": "--focus: #b9aee0"
+			},
+			"accent": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.662745, 0.607843, 0.831373],
+					"alpha": 1,
+					"hex": "#A99BD4"
+				},
+				"$description": "--accent: #a99bd4 — brightened for dark ground"
+			},
+			"accent-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.72549, 0.682353, 0.878431],
+					"alpha": 1,
+					"hex": "#B9AEE0"
+				},
+				"$description": "--accent-deep: #b9aee0"
+			}
+		}
+	},
+	"space": {
+		"3xs": {
+			"$type": "dimension",
+			"$value": { "value": 4, "unit": "px" }
+		},
+		"2xs": {
+			"$type": "dimension",
+			"$value": { "value": 8, "unit": "px" }
+		},
+		"xs": {
+			"$type": "dimension",
+			"$value": { "value": 12, "unit": "px" }
+		},
+		"s": {
+			"$type": "dimension",
+			"$value": { "value": 16, "unit": "px" }
+		},
+		"m": {
+			"$type": "dimension",
+			"$value": { "value": 24, "unit": "px" }
+		},
+		"l": {
+			"$type": "dimension",
+			"$value": { "value": 40, "unit": "px" }
+		},
+		"xl": {
+			"$type": "dimension",
+			"$value": { "value": 64, "unit": "px" }
+		},
+		"2xl": {
+			"$type": "dimension",
+			"$value": { "value": 96, "unit": "px" }
+		},
+		"3xl": {
+			"$type": "dimension",
+			"$value": { "value": 128, "unit": "px" }
+		}
+	},
+	"radius": {
+		"s": {
+			"$type": "dimension",
+			"$value": { "value": 4, "unit": "px" }
+		},
+		"m": {
+			"$type": "dimension",
+			"$value": { "value": 8, "unit": "px" }
+		},
+		"l": {
+			"$type": "dimension",
+			"$value": { "value": 16, "unit": "px" }
+		},
+		"full": {
+			"$type": "dimension",
+			"$value": { "value": 999, "unit": "px" }
+		}
+	},
+	"layout": {
+		"measure": {
+			"$type": "dimension",
+			"$value": { "value": 1152, "unit": "px" },
+			"$description": "--measure: 72ch — APPROXIMATE. ch cannot be expressed in Figma; 1152px assumes ~16px/char. Adjust per typeface."
+		},
+		"container": {
+			"$type": "dimension",
+			"$value": { "value": 1200, "unit": "px" },
+			"$description": "--container: 75rem"
+		},
+		"container-wide": {
+			"$type": "dimension",
+			"$value": { "value": 1440, "unit": "px" },
+			"$description": "--container-wide: 90rem"
+		}
+	},
+	"font": {
+		"family": {
+			"display": {
+				"$type": "fontFamily",
+				"$value": "Playfair Display",
+				"$description": "Subset WOFF2, weights 600 + 700"
+			},
+			"body": {
+				"$type": "fontFamily",
+				"$value": "Inter",
+				"$description": "Subset WOFF2, weights 400 + 500 + 600"
+			}
+		},
+		"weight": {
+			"normal": {
+				"$type": "number",
+				"$value": 400
+			},
+			"medium": {
+				"$type": "number",
+				"$value": 500
+			},
+			"semibold": {
+				"$type": "number",
+				"$value": 600
+			},
+			"bold": {
+				"$type": "number",
+				"$value": 700
+			}
+		}
+	}
+}

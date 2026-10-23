@@ -1,0 +1,268 @@
+{
+	"color": {
+		"raw": {
+			"ink": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.105882, 0.227451, 0.360784],
+					"alpha": 1,
+					"hex": "#1B3A5C"
+				},
+				"$description": "Wordmark navy — primary brand color"
+			},
+			"ink-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.070588, 0.156863, 0.239216],
+					"alpha": 1,
+					"hex": "#12283D"
+				},
+				"$description": "Text-safe navy"
+			},
+			"sage": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.709804, 0.705882, 0.603922],
+					"alpha": 1,
+					"hex": "#B5B49A"
+				},
+				"$description": "Back-panel ground — DECORATIVE ONLY, never text"
+			},
+			"sage-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.431373, 0.427451, 0.341176],
+					"alpha": 1,
+					"hex": "#6E6D57"
+				},
+				"$description": "Text-safe sage"
+			},
+			"cream": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.929412, 0.921569, 0.894118],
+					"alpha": 1,
+					"hex": "#EDEBE4"
+				},
+				"$description": "Card base — page background"
+			},
+			"paper": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.968627, 0.964706, 0.945098],
+					"alpha": 1,
+					"hex": "#F7F6F1"
+				},
+				"$description": "Raised surfaces"
+			},
+			"lavender": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.545098, 0.498039, 0.721569],
+					"alpha": 1,
+					"hex": "#8B7FB8"
+				},
+				"$description": "QR / monogram accent — DECORATIVE ONLY, never text"
+			},
+			"lavender-deep": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.372549, 0.329412, 0.533333],
+					"alpha": 1,
+					"hex": "#5F5488"
+				},
+				"$description": "Text-safe accent"
+			}
+		},
+		"semantic": {
+			"text": {
+				"$type": "color",
+				"$value": "{color.raw.ink-deep}",
+				"$description": "--text"
+			},
+			"text-muted": {
+				"$type": "color",
+				"$value": "{color.raw.sage-deep}",
+				"$description": "--text-muted"
+			},
+			"text-inverse": {
+				"$type": "color",
+				"$value": "{color.raw.cream}",
+				"$description": "--text-inverse"
+			},
+			"surface": {
+				"$type": "color",
+				"$value": "{color.raw.cream}",
+				"$description": "--surface"
+			},
+			"surface-raised": {
+				"$type": "color",
+				"$value": "{color.raw.paper}",
+				"$description": "--surface-raised"
+			},
+			"surface-accent": {
+				"$type": "color",
+				"$value": "{color.raw.sage}",
+				"$description": "--surface-accent"
+			},
+			"surface-inverse": {
+				"$type": "color",
+				"$value": "{color.raw.ink-deep}",
+				"$description": "--surface-inverse"
+			},
+			"border": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.709804, 0.705882, 0.603922],
+					"alpha": 0.4,
+					"hex": "#B5B49A"
+				},
+				"$description": "--border: color-mix(in srgb, var(--sage) 40%, transparent) — 40% alpha, not a flattened hex"
+			},
+			"border-strong": {
+				"$type": "color",
+				"$value": "{color.raw.sage}",
+				"$description": "--border-strong"
+			},
+			"link": {
+				"$type": "color",
+				"$value": "{color.raw.lavender-deep}",
+				"$description": "--link"
+			},
+			"link-hover": {
+				"$type": "color",
+				"$value": "{color.raw.ink}",
+				"$description": "--link-hover"
+			},
+			"focus": {
+				"$type": "color",
+				"$value": "{color.raw.lavender-deep}",
+				"$description": "--focus"
+			},
+			"accent": {
+				"$type": "color",
+				"$value": "{color.raw.lavender}",
+				"$description": "--accent"
+			},
+			"accent-deep": {
+				"$type": "color",
+				"$value": "{color.raw.lavender-deep}",
+				"$description": "--accent-deep"
+			}
+		}
+	},
+	"space": {
+		"3xs": {
+			"$type": "dimension",
+			"$value": { "value": 4, "unit": "px" }
+		},
+		"2xs": {
+			"$type": "dimension",
+			"$value": { "value": 8, "unit": "px" }
+		},
+		"xs": {
+			"$type": "dimension",
+			"$value": { "value": 12, "unit": "px" }
+		},
+		"s": {
+			"$type": "dimension",
+			"$value": { "value": 16, "unit": "px" }
+		},
+		"m": {
+			"$type": "dimension",
+			"$value": { "value": 24, "unit": "px" }
+		},
+		"l": {
+			"$type": "dimension",
+			"$value": { "value": 40, "unit": "px" }
+		},
+		"xl": {
+			"$type": "dimension",
+			"$value": { "value": 64, "unit": "px" }
+		},
+		"2xl": {
+			"$type": "dimension",
+			"$value": { "value": 96, "unit": "px" }
+		},
+		"3xl": {
+			"$type": "dimension",
+			"$value": { "value": 128, "unit": "px" }
+		}
+	},
+	"radius": {
+		"s": {
+			"$type": "dimension",
+			"$value": { "value": 4, "unit": "px" }
+		},
+		"m": {
+			"$type": "dimension",
+			"$value": { "value": 8, "unit": "px" }
+		},
+		"l": {
+			"$type": "dimension",
+			"$value": { "value": 16, "unit": "px" }
+		},
+		"full": {
+			"$type": "dimension",
+			"$value": { "value": 999, "unit": "px" }
+		}
+	},
+	"layout": {
+		"measure": {
+			"$type": "dimension",
+			"$value": { "value": 1152, "unit": "px" },
+			"$description": "--measure: 72ch — APPROXIMATE. ch cannot be expressed in Figma; 1152px assumes ~16px/char. Adjust per typeface."
+		},
+		"container": {
+			"$type": "dimension",
+			"$value": { "value": 1200, "unit": "px" },
+			"$description": "--container: 75rem"
+		},
+		"container-wide": {
+			"$type": "dimension",
+			"$value": { "value": 1440, "unit": "px" },
+			"$description": "--container-wide: 90rem"
+		}
+	},
+	"font": {
+		"family": {
+			"display": {
+				"$type": "fontFamily",
+				"$value": "Playfair Display",
+				"$description": "Subset WOFF2, weights 600 + 700"
+			},
+			"body": {
+				"$type": "fontFamily",
+				"$value": "Inter",
+				"$description": "Subset WOFF2, weights 400 + 500 + 600"
+			}
+		},
+		"weight": {
+			"normal": {
+				"$type": "number",
+				"$value": 400
+			},
+			"medium": {
+				"$type": "number",
+				"$value": 500
+			},
+			"semibold": {
+				"$type": "number",
+				"$value": 600
+			},
+			"bold": {
+				"$type": "number",
+				"$value": 700
+			}
+		}
+	}
+}
