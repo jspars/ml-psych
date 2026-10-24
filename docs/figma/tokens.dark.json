@@ -5,21 +5,21 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.105882, 0.227451, 0.360784],
+					"components": [0.227451, 0.223529, 0.380392],
 					"alpha": 1,
-					"hex": "#1B3A5C"
+					"hex": "#3A3961"
 				},
-				"$description": "Wordmark navy — primary brand color"
+				"$description": "Wordmark indigo — primary brand color (Canva LawsonPsych_main_horizontal)"
 			},
 			"ink-deep": {
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.070588, 0.156863, 0.239216],
+					"components": [0.14902, 0.141176, 0.227451],
 					"alpha": 1,
-					"hex": "#12283D"
+					"hex": "#26243A"
 				},
-				"$description": "Text-safe navy"
+				"$description": "Text-safe indigo"
 			},
 			"sage": {
 				"$type": "color",
@@ -162,11 +162,11 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.72549, 0.682353, 0.878431],
+					"components": [0.72549, 0.678431, 0.878431],
 					"alpha": 1,
-					"hex": "#B9AEE0"
+					"hex": "#B9ADE0"
 				},
-				"$description": "--link: #b9aee0"
+				"$description": "--link: #b9ade0"
 			},
 			"link-hover": {
 				"$type": "color",
@@ -177,11 +177,11 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.72549, 0.682353, 0.878431],
+					"components": [0.72549, 0.678431, 0.878431],
 					"alpha": 1,
-					"hex": "#B9AEE0"
+					"hex": "#B9ADE0"
 				},
-				"$description": "--focus: #b9aee0"
+				"$description": "--focus"
 			},
 			"accent": {
 				"$type": "color",
@@ -197,89 +197,150 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.72549, 0.682353, 0.878431],
+					"components": [0.72549, 0.678431, 0.878431],
 					"alpha": 1,
-					"hex": "#B9AEE0"
+					"hex": "#B9ADE0"
 				},
-				"$description": "--accent-deep: #b9aee0"
+				"$description": "--accent-deep"
+			},
+			"surface-decor": {
+				"$type": "color",
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.662745, 0.607843, 0.831373],
+					"alpha": 1,
+					"hex": "#A99BD4"
+				},
+				"$description": "--surface-decor: #A99BD4 — card decor flips to the brightened lavender (dark --accent), per Figma"
 			}
 		}
 	},
 	"space": {
 		"3xs": {
 			"$type": "dimension",
-			"$value": { "value": 4, "unit": "px" }
+			"$value": {
+				"value": 4,
+				"unit": "px"
+			}
 		},
 		"2xs": {
 			"$type": "dimension",
-			"$value": { "value": 8, "unit": "px" }
+			"$value": {
+				"value": 8,
+				"unit": "px"
+			}
 		},
 		"xs": {
 			"$type": "dimension",
-			"$value": { "value": 12, "unit": "px" }
+			"$value": {
+				"value": 12,
+				"unit": "px"
+			}
 		},
 		"s": {
 			"$type": "dimension",
-			"$value": { "value": 16, "unit": "px" }
+			"$value": {
+				"value": 16,
+				"unit": "px"
+			}
 		},
 		"m": {
 			"$type": "dimension",
-			"$value": { "value": 24, "unit": "px" }
+			"$value": {
+				"value": 24,
+				"unit": "px"
+			}
 		},
 		"l": {
 			"$type": "dimension",
-			"$value": { "value": 40, "unit": "px" }
+			"$value": {
+				"value": 40,
+				"unit": "px"
+			}
 		},
 		"xl": {
 			"$type": "dimension",
-			"$value": { "value": 64, "unit": "px" }
+			"$value": {
+				"value": 64,
+				"unit": "px"
+			}
 		},
 		"2xl": {
 			"$type": "dimension",
-			"$value": { "value": 96, "unit": "px" }
+			"$value": {
+				"value": 96,
+				"unit": "px"
+			}
 		},
 		"3xl": {
 			"$type": "dimension",
-			"$value": { "value": 128, "unit": "px" }
+			"$value": {
+				"value": 128,
+				"unit": "px"
+			}
 		}
 	},
 	"radius": {
 		"s": {
 			"$type": "dimension",
-			"$value": { "value": 4, "unit": "px" }
+			"$value": {
+				"value": 4,
+				"unit": "px"
+			}
 		},
 		"m": {
 			"$type": "dimension",
-			"$value": { "value": 8, "unit": "px" }
+			"$value": {
+				"value": 8,
+				"unit": "px"
+			}
 		},
 		"l": {
 			"$type": "dimension",
-			"$value": { "value": 16, "unit": "px" }
+			"$value": {
+				"value": 16,
+				"unit": "px"
+			}
 		},
 		"full": {
 			"$type": "dimension",
-			"$value": { "value": 999, "unit": "px" }
+			"$value": {
+				"value": 999,
+				"unit": "px"
+			}
 		}
 	},
 	"layout": {
 		"measure": {
 			"$type": "dimension",
-			"$value": { "value": 1152, "unit": "px" },
+			"$value": {
+				"value": 1152,
+				"unit": "px"
+			},
 			"$description": "--measure: 72ch — APPROXIMATE. ch cannot be expressed in Figma; 1152px assumes ~16px/char. Adjust per typeface."
 		},
 		"container": {
 			"$type": "dimension",
-			"$value": { "value": 1200, "unit": "px" },
+			"$value": {
+				"value": 1200,
+				"unit": "px"
+			},
 			"$description": "--container: 75rem"
 		},
 		"container-wide": {
 			"$type": "dimension",
-			"$value": { "value": 1440, "unit": "px" },
+			"$value": {
+				"value": 1440,
+				"unit": "px"
+			},
 			"$description": "--container-wide: 90rem"
 		},
 		"control-min-h": {
 			"$type": "dimension",
-			"$value": { "value": 43, "unit": "px" },
+			"$value": {
+				"value": 43,
+				"unit": "px"
+			},
 			"$description": "--control-min-h: 2.6875rem — interactive control (Button, CTA) min height; Figma Button base 100×43"
 		}
 	},

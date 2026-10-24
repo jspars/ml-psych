@@ -12,10 +12,10 @@
 
 :root {
 	// ---------------------------------------------------------------------------
-	// 1. Raw palette (from the business card)
+	// 1. Raw palette (from the Canva brand files / business card)
 	// ---------------------------------------------------------------------------
-	--ink: #1b3a5c; // wordmark navy — primary brand color
-	--ink-deep: #12283d; // text-safe navy
+	--ink: #3a3961; // wordmark indigo — primary brand color (Canva LawsonPsych_main_horizontal)
+	--ink-deep: #26243a; // text-safe indigo (luminosity-matched to the previous #12283D)
 	--sage: #b5b49a; // back-panel ground — decorative only
 	--sage-deep: #6e6d57; // text-safe sage
 	--cream: #edebe4; // card base — page background
@@ -33,6 +33,7 @@
 	--surface: var(--cream);
 	--surface-raised: var(--paper);
 	--surface-accent: var(--sage);
+	--surface-decor: var(--sage); // decorative card/panel wash — flat, per Figma Card anatomy
 	--surface-inverse: var(--ink-deep);
 
 	--border: color-mix(in srgb, var(--sage) 40%, transparent);
@@ -99,9 +100,9 @@
 	// ---------------------------------------------------------------------------
 	// Shadow — soft and low-spread; editorial, not "webapp"
 	// ---------------------------------------------------------------------------
-	--shadow-s: 0 1px 2px rgb(18 40 61 / 0.06);
-	--shadow-m: 0 4px 12px rgb(18 40 61 / 0.08);
-	--shadow-l: 0 12px 32px rgb(18 40 61 / 0.1);
+	--shadow-s: 0 1px 2px rgb(38 36 58 / 0.06);
+	--shadow-m: 0 4px 12px rgb(38 36 58 / 0.08);
+	--shadow-l: 0 12px 32px rgb(38 36 58 / 0.1);
 
 	// ---------------------------------------------------------------------------
 	// Motion
@@ -150,17 +151,18 @@
 	--surface: #1a1a1e; // warm near-black, slightly smoky
 	--surface-raised: #24242a;
 	--surface-accent: #2e2a3a; // lavender-tinted band
+	--surface-decor: var(--accent); // card decor flips to the brightened lavender, per Figma
 	--surface-inverse: var(--cream);
 
 	--border: #3a3a44;
 	--border-strong: #4a4a56;
 
-	--link: #b9aee0;
+	--link: #b9ade0; // matches the Canva dark-bg wordmark exactly
 	--link-hover: var(--cream);
-	--focus: #b9aee0;
+	--focus: #b9ade0;
 
 	--accent: #a99bd4; // brightened for dark ground
-	--accent-deep: #b9aee0;
+	--accent-deep: #b9ade0;
 
 	// Shadows read as depth on dark only if they're darker than the surface.
 	--shadow-s: 0 1px 2px rgb(0 0 0 / 0.3);
