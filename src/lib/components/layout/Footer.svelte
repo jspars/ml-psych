@@ -19,7 +19,18 @@
 
 <footer class="site-footer">
 	<div class="container site-footer__inner">
-		<span class="site-footer__mark">Lawson Psychotherapy</span>
+		<span class="site-footer__mark" aria-hidden="true">
+			<img
+				class="site-footer__wordmark site-footer__wordmark--dark"
+				src="{base}/images/brand/wordmark-dark.svg"
+				alt=""
+			/>
+			<img
+				class="site-footer__wordmark site-footer__wordmark--light"
+				src="{base}/images/brand/wordmark.svg"
+				alt=""
+			/>
+		</span>
 
 		<Nav />
 
@@ -43,11 +54,26 @@
 		padding-block: var(--space-l);
 	}
 
-	.site-footer__mark {
-		font-family: var(--font-display);
-		font-size: var(--step-2);
-		font-weight: var(--weight-semibold);
-		letter-spacing: var(--tracking-tight);
+	/* Stacked wordmark, theme-swapped: the light-theme band is navy
+	   (--surface-inverse) so it takes the lavender-dark variant; the dark-theme
+	   band is cream and takes the indigo one. The name also appears verbatim in
+	   the legal line below, so the mark is aria-hidden. */
+	.site-footer__mark img {
+		display: block;
+		height: 44px;
+		width: auto;
+	}
+
+	.site-footer__wordmark--light {
+		display: none;
+	}
+
+	:global([data-theme='dark']) .site-footer__wordmark--light {
+		display: block;
+	}
+
+	:global([data-theme='dark']) .site-footer__wordmark--dark {
+		display: none;
 	}
 
 	/* Restyle the shared Nav for the inverse band: single row, muted cream links. */

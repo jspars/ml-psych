@@ -27,7 +27,18 @@
 <header class="site-header">
 	<div class="container site-header__inner">
 		<a class="site-header__brand" href="{base}/">
-			<img src="{base}/images/brand/lp.svg" alt="" width="28" height="28" />
+			<img
+				class="site-header__wordmark site-header__wordmark--light"
+				src="{base}/images/brand/wordmark.svg"
+				alt=""
+				height="34"
+			/>
+			<img
+				class="site-header__wordmark site-header__wordmark--dark"
+				src="{base}/images/brand/wordmark-dark.svg"
+				alt=""
+				height="34"
+			/>
 			<span class="visually-hidden">Lawson Psychotherapy — home</span>
 		</a>
 
@@ -73,10 +84,25 @@
 		text-decoration: none;
 	}
 
-	.site-header__brand img {
+	/* Stacked wordmark (owner-provided Canva export): indigo variant on light
+	   theme, lavender-on-dark variant otherwise. The name also lives in the
+	   visually-hidden label for AT, and in the footer's © line. */
+	.site-header__wordmark {
 		display: block;
-		height: 28px;
+		height: 34px;
 		width: auto;
+	}
+
+	.site-header__wordmark--dark {
+		display: none;
+	}
+
+	:global([data-theme='dark']) .site-header__wordmark--light {
+		display: none;
+	}
+
+	:global([data-theme='dark']) .site-header__wordmark--dark {
+		display: block;
 	}
 
 	/* Mobile: hidden disclosure, full-width column below the row. */
