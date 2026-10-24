@@ -3,9 +3,10 @@
 // =============================================================================
 // Fonts are self-hosted, WOFF2, and subset to Latin. No third-party requests.
 //
-// Subsetting is done with fonttools (see scripts/subset-fonts.sh). The source
-// TTFs live in static/fonts/src/ and are NOT shipped; only the subset WOFF2
-// files in static/fonts/ are served.
+// Subsetting is done with fonttools (see scripts/subset-fonts.sh), which
+// downloads the source variable fonts from the Google Fonts repo (OFL) at run
+// time — the repo never stores them. Only the subset WOFF2 files in
+// static/fonts/ are shipped.
 // =============================================================================
 
 // --- Display: Playfair Display -----------------------------------------------
@@ -153,11 +154,14 @@ a:hover {
 // =============================================================================
 // Visible focus rings on everything interactive. Never remove these without a
 // replacement — keyboard users depend on them.
+//
+// No border-radius here on purpose: outlines already follow each element's own
+// radius. Forcing --radius-s on focused elements would snap pill-shaped
+// controls (e.g. Button) to 4px corners while they're focused.
 
 :focus-visible {
 	outline: 2px solid var(--focus);
 	outline-offset: 2px;
-	border-radius: var(--radius-s);
 }
 
 // =============================================================================
