@@ -22,14 +22,13 @@
 	export let header = false;
 	/** Adds a resting shadow; consumers can override with class:.shadow-l etc. */
 	export let shadow = false;
-	/** Presentational — the 16:9 decorative wash behind a header image. */
+	/** Applies the 16:9 header wash; set ratio={false} for custom media hides. */
 	export let ratio = true;
 </script>
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
-<article class="card" class:card--shadow={shadow} class:card--heading {ratio}>
+<article class="card" class:card--shadow={shadow}>
 	{#if header}
-		<div class="card__header" aria-hidden="true">
+		<div class="card__header" class:card__header--ratio={ratio} aria-hidden="true">
 			<slot name="header" />
 		</div>
 	{/if}
@@ -62,20 +61,20 @@
 		box-shadow: var(--shadow-l);
 	}
 
-	.card--heading {
-		flex-direction: column;
-	}
-
-	/* Optional full-bleed header — decorative image/media slot.
-	   360×200 = 16:9, matching the Figma placeholder wash. */
+	/* Optional full-bleed header — decorative image/media slot. */
 	.card__header {
 		width: 100%;
-		aspect-ratio: 16 / 9;
 		/* Decorative sage/lavender wash behind the consumer's image. Text content
 		   must not live here for a11y — that's what slot:title/body are for. */
 		background: var(--accent);
 		opacity: 0.9;
 		overflow: hidden;
+	}
+
+	/* 16:9 wash = the Figma 360×200 placeholder. Gated by the `ratio` prop so
+	   consumers can opt out to drive height from their own media. */
+	.card__header--ratio {
+		aspect-ratio: 16 / 9;
 	}
 
 	.card__header :global(img),
