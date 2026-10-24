@@ -231,6 +231,11 @@
 			"$type": "dimension",
 			"$value": { "value": 1440, "unit": "px" },
 			"$description": "--container-wide: 90rem"
+		},
+		"control-min-h": {
+			"$type": "dimension",
+			"$value": { "value": 43, "unit": "px" },
+			"$description": "--control-min-h: 2.6875rem — interactive control (Button, CTA) min height; Figma Button base 100×43"
 		}
 	},
 	"font": {

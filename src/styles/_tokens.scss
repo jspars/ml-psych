@@ -119,6 +119,7 @@
 	--container: 75rem; // 1200px — layout container
 	--container-wide: 90rem; // 1440px — full-bleed atmosphere
 	--gutter: var(--space-s);
+	--control-min-h: 2.6875rem; // 43px — interactive control (Button, CTA) min height; Figma Button base 100×43
 
 	// ---------------------------------------------------------------------------
 	// Breakpoints (documentation only — CSS custom properties can't be used in
