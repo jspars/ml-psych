@@ -78,4 +78,19 @@
 		text-decoration-color: var(--accent-deep);
 		text-underline-offset: 0.35em;
 	}
+
+	/* Desktop (Header panel): lay links out horizontally. The Footer keeps its own
+	   single-row override — a class selector below beats these type-level rules,
+	   and its direction/wrap are independent of this breakpoint. */
+	@media (min-width: 48rem) {
+		.nav {
+			flex-direction: row;
+			align-items: center;
+			gap: var(--space-s);
+		}
+
+		.nav__item {
+			display: inline-flex;
+		}
+	}
 </style>
