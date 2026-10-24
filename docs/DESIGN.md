@@ -110,16 +110,16 @@ components) and semantic tokens (what components actually reference).
 
 **Raw palette**
 
-| Token             | Hex       | Source on card    | Notes               |
-| ----------------- | --------- | ----------------- | ------------------- |
-| `--ink`           | `#1B3A5C` | Wordmark navy     | Primary brand color |
-| `--ink-deep`      | `#12283D` | —                 | Text-safe navy      |
-| `--sage`          | `#B5B49A` | Back-panel ground | Decorative only     |
-| `--sage-deep`     | `#6E6D57` | —                 | Text-safe sage      |
-| `--cream`         | `#EDEBE4` | Card base         | Page background     |
-| `--paper`         | `#F7F6F1` | —                 | Raised surfaces     |
-| `--lavender`      | `#8B7FB8` | QR / monogram     | Accent, decorative  |
-| `--lavender-deep` | `#5F5488` | —                 | Text-safe accent    |
+| Token             | Hex       | Source on card                                 | Notes               |
+| ----------------- | --------- | ---------------------------------------------- | ------------------- |
+| `--ink`           | `#3A3961` | Wordmark (Canva `LawsonPsych_main_horizontal`) | Primary brand color |
+| `--ink-deep`      | `#26243A` | —                                              | Text-safe indigo    |
+| `--sage`          | `#B5B49A` | Back-panel ground                              | Decorative only     |
+| `--sage-deep`     | `#6E6D57` | —                                              | Text-safe sage      |
+| `--cream`         | `#EDEBE4` | Card base                                      | Page background     |
+| `--paper`         | `#F7F6F1` | —                                              | Raised surfaces     |
+| `--lavender`      | `#8B7FB8` | QR / monogram                                  | Accent, decorative  |
+| `--lavender-deep` | `#5F5488` | —                                              | Text-safe accent    |
 
 **Semantic tokens**
 
@@ -157,8 +157,8 @@ dark ground.
 | `--text-inverse`   | `#12283D`  | Text on light surfaces               |
 | `--border`         | `#3A3A44`  | Hairlines                            |
 | `--lavender`       | `#A99BD4`  | Brightened for dark ground           |
-| `--link`           | `#B9AEE0`  | Higher contrast on dark              |
-| `--focus`          | `#B9AEE0`  | Focus rings                          |
+| `--link`           | `#B9ADE0`  | Matches the Canva dark-bg wordmark   |
+| `--focus`          | `#B9ADE0`  | Focus rings                          |
 
 **Implementation:** `:root` holds light values; `[data-theme="dark"]` overrides the
 semantic tokens. A tiny inline script in `app.html` reads the stored preference
@@ -392,6 +392,16 @@ page and to read naturally as a footer link.
 
 ## 8. Decisions
 
+- **Brand identity (Oct 2026):** the Canva brand files define the identity as a stacked
+  indigo `LAWSON PSYCHOTHERAPY` wordmark (#3A3961; dark-bg counterpart #B9ADE0) — the
+  palette above was shifted to match. Site-ready marks live in `static/images/brand/`
+  (`wordmark.svg`, `wordmark-dark.svg`, theme-swapped in Header/Footer); raw Canva
+  packages (incl. the QR back panel with thin-line service icons + rainbow motif) are
+  reference-only in `docs/brand/canva/`. Favicon is a generated `LP` monogram tile
+  (#3A3961 roundrect, Playfair 700 cream).
+- **Decorative card wash:** the Figma Card sets use flat fills — sage in light, the
+  brightened dark lavender (#A99BD4) in dark. Tokenized as semantic `--surface-decor`
+  so no component encodes theme logic.
 - **Privacy page route:** `/your-data`.
 - **Dark mode:** ships in v1, with a light / dark / system toggle.
 - **Script face:** Brittany is commercial and not web-licensed — the signature is

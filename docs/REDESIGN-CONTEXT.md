@@ -91,6 +91,11 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
 - **Code:** `src/lib/components/primitives/Card.svelte` (committed, build-verified).
   Named slots `header` / `title` / `body` / `actions`; `header` and `shadow` are opt-in
   boolean props; references semantic tokens only. See `Card.svelte` header comment.
+- **Consumer truth (ServiceGrid):** the homepage grid now renders cards matching the
+  populated Figma sets — flat `--surface-decor` header wash (sage light / #A99BD4
+  dark), owner's verbatim Couples Therapy copy, and "Learn more →" actions with an
+  aria-hidden arrow (U+2192 added to the font subset & regenerated, verified present).
+  Individual + Teletherapy card bodies are agent drafts awaiting Figma-approved text.
 
 ### Button (code done — Figma side deferred)
 
@@ -184,15 +189,21 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
    `CTA`) — the `Header`/`Footer` pair replaces the v1 Bootstrap nav/footer (which
    currently render unstyled on this branch). Content-as-data: `src/lib/data/`
    for nav/copy. See §4.2 tree and DESIGN §9.
-5. **Health/verify items:** `+page.svelte` doesn't use Card/Button yet; ~26 MB of
-   uncompressed PNGs in `static/images/` + Windows `:Zone.Identifier` artifacts to
-   optimize/remove; repo-wide `prettier --check` drift in ~30 v1 files (Prettier 3
+5. **Health/verify items:** ~26 MB of uncompressed PNGs in `static/images/` + Windows
+   `:Zone.Identifier` artifacts to optimize/remove; repo-wide `prettier --check` drift
+   in ~30 v1 files (Prettier 3
    vs legacy formatting) — decide whether to batch-format v1 files or leave until
-   they're replaced.
-6. ~~`docs/figma/` token files already committed...~~ **Done** — files committed
-   (45 token paths now, incl. `layout/control-min-h`), typography mode re-import
-   still pending (item 3), `DESIGN.md` wording corrected (Bootstrap, fonts source)
-   in the same docs commit as this file.
+   they're replaced; `docs/images/tokens-light.png` / `tokens-dark.png` swatch renders
+   are now STALE (pre-indigo) — regenerate or drop after the next token milestone;
+   `lp.svg`/`lp.png` are legacy v1 brand (superseded by `wordmark*.svg`, keep as v1
+   reference only).
+6. **Owner copy needed:** Individual Therapy + Teletherapy card bodies — the Couples
+   card carries the owner's verbatim Figma copy; the other two hold agent drafts
+   flagged in `src/lib/data/services.js`.
+7. ~~`docs/figma/` token files already committed...~~ **Done** — files committed
+   (46 token paths now, incl. `layout/control-min-h` + `color/semantic/surface-decor`),
+   typography mode re-import still pending (item 3), `DESIGN.md` wording corrected
+   (Bootstrap, fonts source) in the same docs commit as this file.
 
 ---
 
