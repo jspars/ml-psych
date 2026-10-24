@@ -26,8 +26,8 @@ OUT_DIR="$(cd "$(dirname "$0")/.." && pwd)/static/fonts"
 WORK_DIR="$(mktemp -d)"
 
 # Latin subset: basic Latin, Latin-1 supplement, and the punctuation the site
-# actually uses (curly quotes, em/en dashes, ellipsis, bullet, middot).
-UNICODES="U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-2019,U+201C-201D,U+2022,U+2026,U+00B7,U+2019"
+# actually uses (curly quotes, em/en dashes, ellipsis, bullet, middot, arrow).
+UNICODES="U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-2019,U+201C-201D,U+2022,U+2026,U+00B7,U+2019,U+2192"
 
 echo "==> Working in $WORK_DIR"
 echo "==> Output to $OUT_DIR"

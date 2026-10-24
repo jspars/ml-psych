@@ -61,13 +61,15 @@
 		box-shadow: var(--shadow-l);
 	}
 
-	/* Optional full-bleed header — decorative image/media slot. */
+	/* Optional full-bleed header — decorative image/media slot.
+	   Flat fill per Figma Card anatomy: sage in light theme, brightened
+	   lavender in dark (--surface-decor drives the theme swap; images fill
+	   on top via the object-fit rules below). */
 	.card__header {
 		width: 100%;
 		/* Decorative sage/lavender wash behind the consumer's image. Text content
 		   must not live here for a11y — that's what slot:title/body are for. */
-		background: var(--accent);
-		opacity: 0.9;
+		background: var(--surface-decor);
 		overflow: hidden;
 	}
 
