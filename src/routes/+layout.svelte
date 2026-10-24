@@ -1,14 +1,8 @@
 <script>
 	import '../styles/app.scss';
-	import Navbar from '../lib/components/Navbar.svelte';
-	import Footer from '../lib/components/Footer.svelte';
+	import PageShell from '$lib/components/layout/PageShell.svelte';
 </script>
 
-<a class="skip-link" href="#main">Skip to content</a>
-
-<Navbar />
-<main id="main">
+<PageShell>
 	<slot />
-</main>
-
-<Footer />
+</PageShell>
