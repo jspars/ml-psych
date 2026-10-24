@@ -74,9 +74,11 @@ rather than an afterthought.
 | jQuery UI           | 1.12.1  | No                     |
 
 Beyond the privacy cost of leaking visitor IPs to three separate CDNs, this was
-~90 KB of JavaScript that did nothing. The four unused resources were removed in
-`redesign/tokens`; Bootstrap CSS remains until `redesign/layout` rebuilds the
-components that depend on it.
+~90 KB of JavaScript that did nothing. **All five resources were removed in
+`redesign/tokens`** — including the Bootstrap CSS link — as of commit `5a91ef6`.
+That makes the branch's v1 markup genuinely unstyled in the meantime (Bootstrap
+card/container/navbar classes are inert); `redesign/layout` rebuilds those
+components natively against the token layer.
 
 ### 2.4 Structure
 
@@ -85,7 +87,7 @@ components that depend on it.
 - `.DS_Store` files are tracked in git.
 - Content (services, nav, copy) is hardcoded in markup rather than data.
 
-### 2.4 Accessibility
+### 2.5 Accessibility
 
 - No skip link, no landmarks beyond a bare `<main>`.
 - No visible focus styles defined.
@@ -398,11 +400,12 @@ page and to read naturally as a footer link.
 - **Netlify deploy previews:** enabled for `redesign/theme` so the redesign can be
   reviewed at a live URL without touching production.
 - **Bootstrap:** loaded from CDN in `app.html`, not via `package.json` — which is
-  why it was easy to miss. It is **genuinely load-bearing**: the markup uses
+  why it was easy to miss. It was **genuinely load-bearing**: the markup uses
   `card` (28×), `container` (11×), `row` (10×), `navbar` (7×), `btn` (6×), plus
-  spacing and flex utilities. It will be removed in `redesign/layout`, where
-  those components are rebuilt natively. The unused Bootstrap JS, Bootstrap
-  Icons, jQuery, and jQuery UI were removed in `redesign/tokens`.
+  spacing and flex utilities. As part of the `redesign/tokens` cleanup,
+  **all five CDN resources were dropped at once** (`5a91ef6`) — including the
+  Bootstrap CSS link — so v1 markup renders unstyled on redesign branches until
+  `redesign/layout` rebuilds those components natively.
 
 ---
 
@@ -410,7 +413,10 @@ page and to read naturally as a footer link.
 
 1. ~~**`redesign/tokens`** — token layer, font self-hosting/subsetting, remove Tailwind.~~
    **Done.** See §3 for the token architecture as implemented.
-2. **`redesign/layout`** — shell, primitives, component architecture.
+   Note: primitives built from the Figma `Primitives` file (Card, Button) are
+   landing on this branch while it remains the furthest-along topic branch.
+2. **`redesign/layout`** — shell, component architecture (Header/Footer/Nav/
+   SkipLink/PageShell rebuild what Bootstrap was providing), homepage sections.
 3. **`redesign/a11y`** — audit and fixes woven throughout.
 4. **`redesign/assets`** — imagery integration.
 5. **`/your-data` page** — content + route.

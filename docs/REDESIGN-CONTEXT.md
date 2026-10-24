@@ -2,12 +2,13 @@
 
 > **Purpose:** A single high-level map of the Lawson Psychotherapy frontend redesign, for
 > any model (or human) continuing work in this repo. It does NOT re-document the detail —
-> it tells you *where* the detail lives and records the current state, conventions, and
+> it tells you _where_ the detail lives and records the current state, conventions, and
 > hard-won gotchas so you don't rediscover them. **Read the linked sources before changing
 > anything.**
 >
-> **Status:** Work in the `Card` primitive is done in Figma and committed in code. See
-> [Current state](#3-current-state) and [TBU/todo](#5-open-questions--todo).
+> **Status:** `Card` done in Figma + code. `Button` done in code (owner-spec'd;
+> its Figma side is deferred — see [Current state](#3-current-state) and
+> [TBU/todo](#5-open-questions--todo).
 >
 > **Last updated:** 2026-10-24
 
@@ -21,8 +22,10 @@ v2 redesign** — calm/editorial, token-driven, accessible (WCAG 2.2 AA), sovere
 (no third-party requests), mobile-first — aligned to the practice's business card. All v2
 work happens on **topic branches** (esp. `redesign/tokens`) that integrate into
 `redesign/theme`, which merges to `prod` when ready. Tokens are the foundation; components
-are built fresh (never edited into legacy v1). Current milestone: **`Card.svelte` primitive
-committed**, matching the Figma `Card/Light` + `Card/Dark` component sets.
+are built fresh (never edited into legacy v1). Current milestone: **`Card.svelte` +
+`Button.svelte` primitives committed** — Card matches the Figma `Card/Light` +
+`Card/Dark` component sets; Button was built from an owner-confirmed spec with its Figma
+side deferred (§5).
 
 ---
 
@@ -30,12 +33,12 @@ committed**, matching the Figma `Card/Light` + `Card/Dark` component sets.
 
 These are the authoritative documents. Each is detailed; this ref doc only flags their role.
 
-| Path | Role | Key sections |
-| --- | --- | --- |
-| `docs/DESIGN.md` | **Authoritative design spec.** Strategy, audit, tokens, architecture, decisions, sequencing. §4.2 specifies the component tree. | §3 (tokens), §4 (architecture), §8 (decisions), §9 (sequencing) |
-| `src/styles/_tokens.scss` | **Source of truth for token VALUES.** Two tiers (raw palette vs semantic), with `[data-theme='dark']` overrides. Components reference **semantic only**. | see below |
-| `docs/figma/` | DTCG token JSONs + `README.md` for importing tokens/typography into Figma as Variables. | `README.md` |
-| `README.md` | Repo/branch/infra TL;DR (SvelteKit, Vite 8, Netlify, Node 22). Note: its styling claims predate the redesign. |
+| Path                      | Role                                                                                                                                                     | Key sections                                                    |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| `docs/DESIGN.md`          | **Authoritative design spec.** Strategy, audit, tokens, architecture, decisions, sequencing. §4.2 specifies the component tree.                          | §3 (tokens), §4 (architecture), §8 (decisions), §9 (sequencing) |
+| `src/styles/_tokens.scss` | **Source of truth for token VALUES.** Two tiers (raw palette vs semantic), with `[data-theme='dark']` overrides. Components reference **semantic only**. | see below                                                       |
+| `docs/figma/`             | DTCG token JSONs + `README.md` for importing tokens/typography into Figma as Variables.                                                                  | `README.md`                                                     |
+| `README.md`               | Repo/branch/infra TL;DR (SvelteKit, Vite 8, Netlify, Node 22). Note: its styling claims predate the redesign.                                            |
 
 ### Token architecture (essentials)
 
@@ -89,13 +92,49 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
   Named slots `header` / `title` / `body` / `actions`; `header` and `shadow` are opt-in
   boolean props; references semantic tokens only. See `Card.svelte` header comment.
 
+### Button (code done — Figma side deferred)
+
+- **Figma:** Button sheet `2:2` in the `Primitives` file, 30 frames
+  (Light/Dark × primary/secondary/ghost × default/hover/focus/active/disabled,
+  base 100×43, zero outer bleed). The stroke-inside hand-fixes (§5.2) are still
+  queued — the code side is unaffected, since CSS `outline` already draws
+  outside the box correctly.
+- **Code:** `src/lib/components/primitives/Button.svelte`. Native `<button>` or
+  `<a>` (via `href`); `variant` = `primary` (filled `--accent-deep` +
+  `--text-inverse`) / `secondary` (1.5px `--border-strong` stroke) / `ghost`
+  (text-only `--link`); states as pseudo-classes; pill radius
+  (owner-confirmed); `min-height: var(--control-min-h)` (43px — new semantic
+  token, mirrored into the DTCG JSONs, now 45 token paths). Plain attributes
+  (class, aria-\*, data-\*) forward via `$$restProps` — `class` merges with
+  the primitive's own.
+- **Owner-confirmed vs assumed:** primary lavender-deep fill + pill radius were
+  confirmed by the owner; padding (`--space-2xs` / `--space-m`), type sizing
+  (`--step-0` semibold, `--leading-snug`), and hover/active treatments
+  (`color-mix` with `--surface-inverse` / `--surface-accent` tints) are
+  inferred. Reconcile against Figma frames `5:2`–`5:32` when Figma work
+  resumes.
+- **A11y flags for `redesign/a11y`:** `--border-strong` (sage on cream ≈1.8:1)
+  likely fails WCAG 1.4.11 as a control boundary (token-layer issue, not
+  component); ghost buttons on `--surface-accent` bands ≈3.2:1 in light —
+  don't place ghost on accent bands.
+
 ### Styling / fonts
 
 - `src/styles/_tokens.scss`, `_reset.scss`, `_typography.scss`, `_layout.scss`,
   `_utilities.scss`, `app.scss` (load-bearing import order).
 - Fonts: self-hosted Latin-subset WOFF2 in `static/fonts/` — Playfair Display (display,
   600/700) + Inter (body, 400/500/600), ~81 KB. Reproducible via `npm run fonts`
-  (`scripts/subset-fonts.sh`, Python `fonttools`).
+  (`scripts/subset-fonts.sh`, Python `fonttools`; it fetches the source variable fonts at
+  run time — the repo never stores the TTFs).
+- Focus rings: the global `:focus-visible` rule no longer forces `--radius-s` on the
+  focused element — outlines already follow each element's own radius, and the override
+  would snap pill controls to 4px corners while focused. (`_typography.scss`, commit
+  `1634b9f`.)
+- **Bootstrap reality (corrected):** ALL five CDN resources — including the Bootstrap CSS
+  link — were removed in `redesign/tokens` (`5a91ef6`), not four as earlier drafts of
+  `DESIGN.md` said. Consequence: v1 pages on redesign branches currently render
+  unstyled (offcanvas nav dead, Bootstrap card classes inert). The live site on `prod`
+  is unaffected. `redesign/layout` rebuilds those components natively.
 
 ---
 
@@ -127,23 +166,33 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
 1. **Rename Figma sets** `Component 1`→`Card/Light`, `Component 2`→`Card/Dark`
    (via the Figma UI — the bridge has no rename tool) and **confirm the `Content`
    variant property** on each set (`Populated` / `Anatomy`).
-2. **Button stroke-inside hand-fix (queued).** The 12 focus/active Button variants
-   (2px strokes) still render their ring outside the box; Figma equivalent of CSS
+2. **Button stroke-inside hand-fix (queued, Figma-only).** The 12 focus/active Button
+   variants (2px strokes) still render their ring outside the box; Figma equivalent of CSS
    `outline`/`outline-offset` is **Inside** stroke alignment. Hand-fix in the Figma UI
    (bridge has no `set_stroke_align`). Variants: light `5:7,5:8,5:12,5:13,5:17`; dark
    `5:22,5:23,5:27,5:28,5:32`; plus secondary-bordered default `5:10` (1.5px, 103×46)
    and `5:18` (Ghost Active light) can be de-grown to 100×43. All 30 button frames
-   should measure exactly 100×43 with zero outer bleed.
+   should measure exactly 100×43 with zero outer bleed. **Code unaffected** — the
+   CSS `:focus-visible` outline is the correct equivalent, and `Button.svelte` is
+   already committed (§3).
 3. **Typography variables.** `docs/figma/` `typography.desktop.json` /
    `typography.mobile.json` were regenerated mode-agnostic but **not re-imported** in
    Figma — mode descriptions may still be stale.
-4. **Reusable components after Button:** layout (`Header`, `Footer`, `Nav`, `SkipLink`,
-   `PageShell`) and sections (`Hero`, `ServiceGrid` — likely a 3-up consumer of
-   `Card.svelte`, `AffirmingBanner`, `CTA`). See §4.2 tree and DESIGN §9.
-5. **Health/verify items:** `+page.svelte` doesn't use Card yet; ~26 MB of uncompressed
-   PNGs in `static/images/` + Windows `:Zone.Identifier` artifacts to optimize/remove.
-6. `docs/figma/` token files already committed; bump `DESIGN.md` status/wording where the
-   widening of the card JS/typography facts change it.
+4. **Spec-driven components, same pattern as Button:** the shell first — layout
+   (`Header`, `Footer`, `Nav`, `SkipLink`, `PageShell`) and sections
+   (`Hero`, `ServiceGrid` — a 3-up consumer of `Card.svelte`, `AffirmingBanner`,
+   `CTA`) — the `Header`/`Footer` pair replaces the v1 Bootstrap nav/footer (which
+   currently render unstyled on this branch). Content-as-data: `src/lib/data/`
+   for nav/copy. See §4.2 tree and DESIGN §9.
+5. **Health/verify items:** `+page.svelte` doesn't use Card/Button yet; ~26 MB of
+   uncompressed PNGs in `static/images/` + Windows `:Zone.Identifier` artifacts to
+   optimize/remove; repo-wide `prettier --check` drift in ~30 v1 files (Prettier 3
+   vs legacy formatting) — decide whether to batch-format v1 files or leave until
+   they're replaced.
+6. ~~`docs/figma/` token files already committed...~~ **Done** — files committed
+   (45 token paths now, incl. `layout/control-min-h`), typography mode re-import
+   still pending (item 3), `DESIGN.md` wording corrected (Bootstrap, fonts source)
+   in the same docs commit as this file.
 
 ---
 
