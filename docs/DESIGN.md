@@ -117,9 +117,9 @@ actually reference).
 | `--ink`           | `#3A3961` | Wordmark (Canva `LawsonPsych_main_horizontal`) | Primary brand color |
 | `--ink-deep`      | `#26243A` | —                                              | Text-safe indigo    |
 | `--sage`          | `#B5B49A` | —                                              | Decorative ground   |
-| `--sage-deep`     | `#6E6D57` | —                                              | Text-safe sage      |
-| `--cream`         | `#EDEBE4` | Card ground                                    | Page background     |
-| `--paper`         | `#F7F6F1` | —                                              | Raised surfaces     |
+| `--sage-deep`     | `#65644E` | —                                              | Text-safe sage      |
+| `--cream`         | `#E5E3DE` | Card ground                                    | Page background     |
+| `--paper`         | `#F2F1EC` | —                                              | Raised surfaces     |
 | `--lavender`      | `#8B7FB8` | —                                              | Decorative accent   |
 | `--lavender-deep` | `#5F5488` | —                                              | Text-safe accent    |
 
@@ -149,18 +149,18 @@ Shipped in v1 with a **light / dark / system** toggle. The palette inverts clean
 cream becomes text, and lavender **brightens** so the accent still pops against a
 dark ground.
 
-| Token              | Dark value | Note                                 |
-| ------------------ | ---------- | ------------------------------------ |
-| `--surface`        | `#1A1A1E`  | Warm near-black, slightly smoky      |
-| `--surface-raised` | `#24242A`  | Cards, panels                        |
-| `--surface-accent` | `#2E2A3A`  | Section bands, lavender-tinted       |
-| `--text`           | `#EDEBE4`  | Cream, reused from the light palette |
-| `--text-muted`     | `#A8A4B8`  | Muted lavender-grey                  |
-| `--text-inverse`   | `#26243A`  | Text on light surfaces               |
-| `--border`         | `#3A3A44`  | Hairlines                            |
-| `--accent`         | `#A99BD4`  | Brightened for dark ground           |
-| `--link`           | `#B9ADE0`  | Matches the Canva dark-bg wordmark   |
-| `--focus`          | `#B9ADE0`  | Focus rings                          |
+| Token              | Dark value | Note                                     |
+| ------------------ | ---------- | ---------------------------------------- |
+| `--surface`        | `#222227`  | Smoke — lifted off black, not text-black |
+| `--surface-raised` | `#2B2B32`  | Cards, panels                            |
+| `--surface-accent` | `#363240`  | Section bands, lavender-tinted           |
+| `--text`           | `#E5E3DE`  | Cream, reused from the light palette     |
+| `--text-muted`     | `#A8A4B8`  | Muted lavender-grey                      |
+| `--text-inverse`   | `#26243A`  | Text on light surfaces                   |
+| `--border`         | `#45454F`  | Hairlines                                |
+| `--accent`         | `#A99BD4`  | Brightened for dark ground               |
+| `--link`           | `#B9ADE0`  | Matches the Canva dark-bg wordmark       |
+| `--focus`          | `#B9ADE0`  | Focus rings                              |
 
 **Implementation:** `:root` holds light values; `[data-theme="dark"]` overrides the
 semantic tokens. A tiny inline script in `app.html` reads the stored preference

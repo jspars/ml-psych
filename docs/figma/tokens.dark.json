@@ -107,9 +107,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.101961, 0.101961, 0.117647],
+					"components": [0.133333, 0.133333, 0.152941],
 					"alpha": 1,
-					"hex": "#1A1A1E"
+					"hex": "#222227"
 				},
 				"$description": "--surface: #1a1a1e — warm near-black, slightly smoky"
 			},
@@ -117,9 +117,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.141176, 0.141176, 0.164706],
+					"components": [0.168627, 0.168627, 0.196078],
 					"alpha": 1,
-					"hex": "#24242A"
+					"hex": "#2B2B32"
 				},
 				"$description": "--surface-raised: #24242a"
 			},
@@ -127,9 +127,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.180392, 0.164706, 0.227451],
+					"components": [0.211765, 0.196078, 0.25098],
 					"alpha": 1,
-					"hex": "#2E2A3A"
+					"hex": "#363240"
 				},
 				"$description": "--surface-accent: #2e2a3a — lavender-tinted band"
 			},
@@ -142,9 +142,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.227451, 0.227451, 0.266667],
+					"components": [0.270588, 0.270588, 0.309804],
 					"alpha": 1,
-					"hex": "#3A3A44"
+					"hex": "#45454F"
 				},
 				"$description": "--border: #3a3a44 — dark-mode literal, NOT a color-mix of sage"
 			},
@@ -152,9 +152,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.290196, 0.290196, 0.337255],
+					"components": [0.356863, 0.356863, 0.407843],
 					"alpha": 1,
-					"hex": "#4A4A56"
+					"hex": "#5B5B68"
 				},
 				"$description": "--border-strong: #4a4a56"
 			},

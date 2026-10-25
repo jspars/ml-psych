@@ -18,9 +18,9 @@
 	--ink: #3a3961; // wordmark indigo — primary brand color (Canva LawsonPsych_main_horizontal)
 	--ink-deep: #26243a; // text-safe indigo (luminosity-matched to the previous #12283D)
 	--sage: #b5b49a; // decorative ground — site palette, never text
-	--sage-deep: #6e6d57; // text-safe sage
-	--cream: #edebe4; // card base — page background
-	--paper: #f7f6f1; // raised surfaces
+	--sage-deep: #65644e; // text-safe sage (darkened for AA on the smoked page)
+	--cream: #e5e3de; // warm-neutral off-white — page background
+	--paper: #f2f1ec; // raised surfaces (one step lighter than the page)
 	--lavender: #8b7fb8; // decorative accent — site palette, never text
 	--lavender-deep: #5f5488; // text-safe accent
 
@@ -149,14 +149,14 @@
 	--text-muted: #a8a4b8; // muted lavender-grey
 	--text-inverse: var(--ink-deep);
 
-	--surface: #1a1a1e; // warm near-black, slightly smoky
-	--surface-raised: #24242a;
-	--surface-accent: #2e2a3a; // lavender-tinted band
+	--surface: #222227; // smoke — lifted off black, still text-safe
+	--surface-raised: #2b2b32;
+	--surface-accent: #363240; // lavender-tinted band
 	--surface-decor: var(--accent); // card decor flips to the brightened lavender, per Figma
 	--surface-inverse: var(--cream);
 
-	--border: #3a3a44;
-	--border-strong: #4a4a56;
+	--border: #45454f;
+	--border-strong: #5b5b68;
 
 	--link: #b9ade0; // matches the Canva dark-bg wordmark exactly
 	--link-hover: var(--cream);

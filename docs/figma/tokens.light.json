@@ -35,9 +35,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.431373, 0.427451, 0.341176],
+					"components": [0.396078, 0.392157, 0.305882],
 					"alpha": 1,
-					"hex": "#6E6D57"
+					"hex": "#65644E"
 				},
 				"$description": "Text-safe sage"
 			},
@@ -45,9 +45,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.929412, 0.921569, 0.894118],
+					"components": [0.898039, 0.890196, 0.870588],
 					"alpha": 1,
-					"hex": "#EDEBE4"
+					"hex": "#E5E3DE"
 				},
 				"$description": "Card base — page background"
 			},
@@ -55,9 +55,9 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.968627, 0.964706, 0.945098],
+					"components": [0.94902, 0.945098, 0.92549],
 					"alpha": 1,
-					"hex": "#F7F6F1"
+					"hex": "#F2F1EC"
 				},
 				"$description": "Raised surfaces"
 			},
