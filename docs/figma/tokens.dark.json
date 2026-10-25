@@ -302,6 +302,13 @@
 				"unit": "px"
 			}
 		},
+		"control": {
+			"$type": "dimension",
+			"$value": {
+				"value": 12,
+				"unit": "px"
+			}
+		},
 		"full": {
 			"$type": "dimension",
 			"$value": {

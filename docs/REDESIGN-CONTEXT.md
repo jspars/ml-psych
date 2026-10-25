@@ -107,14 +107,14 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
 - **Code:** `src/lib/components/primitives/Button.svelte`. Native `<button>` or
   `<a>` (via `href`); `variant` = `primary` (filled `--accent-deep` +
   `--text-inverse`) / `secondary` (1.5px `--border-strong` stroke) / `ghost`
-  (text-only `--link`); states as pseudo-classes; large rounded-rect radius
-  (`--radius-l`, 16px — owner-confirmed Oct 2026, pills retired);
+  (text-only `--link`); states as pseudo-classes; rounded-square radius
+  (`--radius-control`, 12px — owner-confirmed Oct 2026, pills retired);
   `min-height: var(--control-min-h)` (43px — new semantic
   token, mirrored into the DTCG JSONs, now 45 token paths). Plain attributes
   (class, aria-\*, data-\*) forward via `$$restProps` — `class` merges with
   the primitive's own.
 - **Owner-confirmed vs assumed:** primary lavender-deep fill + corner radius
-  (`--radius-l`, 16px; pills retired) were
+  (`--radius-control`, 12px; pills retired) were
   confirmed by the owner; padding (`--space-2xs` / `--space-m`), type sizing
   (`--step-0` semibold, `--leading-snug`), and hover/active treatments
   (`color-mix` with `--surface-inverse` / `--surface-accent` tints) are
@@ -205,7 +205,8 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
    card carries the owner's verbatim Figma copy; the other two hold agent drafts
    flagged in `src/lib/data/services.js`.
 7. ~~`docs/figma/` token files already committed...~~ **Done** — files committed
-   (46 token paths now, incl. `layout/control-min-h` + `color/semantic/surface-decor`),
+   (47 token paths now, incl. `layout/control-min-h`, `radius/control` and
+   `color/semantic/surface-decor`),
    typography mode re-import still pending (item 3), `DESIGN.md` wording corrected
    (Bootstrap, fonts source) in the same docs commit as this file.
 
