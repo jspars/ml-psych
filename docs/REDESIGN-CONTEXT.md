@@ -107,12 +107,14 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
 - **Code:** `src/lib/components/primitives/Button.svelte`. Native `<button>` or
   `<a>` (via `href`); `variant` = `primary` (filled `--accent-deep` +
   `--text-inverse`) / `secondary` (1.5px `--border-strong` stroke) / `ghost`
-  (text-only `--link`); states as pseudo-classes; pill radius
-  (owner-confirmed); `min-height: var(--control-min-h)` (43px — new semantic
+  (text-only `--link`); states as pseudo-classes; large rounded-rect radius
+  (`--radius-l`, 16px — owner-confirmed Oct 2026, pills retired);
+  `min-height: var(--control-min-h)` (43px — new semantic
   token, mirrored into the DTCG JSONs, now 45 token paths). Plain attributes
   (class, aria-\*, data-\*) forward via `$$restProps` — `class` merges with
   the primitive's own.
-- **Owner-confirmed vs assumed:** primary lavender-deep fill + pill radius were
+- **Owner-confirmed vs assumed:** primary lavender-deep fill + corner radius
+  (`--radius-l`, 16px; pills retired) were
   confirmed by the owner; padding (`--space-2xs` / `--space-m`), type sizing
   (`--step-0` semibold, `--leading-snug`), and hover/active treatments
   (`color-mix` with `--surface-inverse` / `--surface-accent` tints) are
@@ -135,7 +137,7 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
   run time — the repo never stores the TTFs).
 - Focus rings: the global `:focus-visible` rule no longer forces `--radius-s` on the
   focused element — outlines already follow each element's own radius, and the override
-  would snap pill controls to 4px corners while focused. (`_typography.scss`, commit
+  would snap rounded controls to 4px corners while focused. (`_typography.scss`, commit
   `1634b9f`.)
 - **Bootstrap reality (corrected):** ALL five CDN resources — including the Bootstrap CSS
   link — were removed in `redesign/tokens` (`5a91ef6`), not four as earlier drafts of

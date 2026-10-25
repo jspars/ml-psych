@@ -24,8 +24,9 @@
 	 * (2px `--focus`, 2px offset — the CSS-correct equivalent of Figma's
 	 * inside-stroke). The ring sits outside the fill, so it stays visible.
 	 *
-	 * Owner-confirmed (not on the reconciliation checklist): primary
-	 * lavender-deep fill, pill radius. Inferred/AI-assumed — reconcile against
+	 * Owner-confirmed: primary lavender-deep fill; large rounded-rect radius
+	 * (`--radius-l`, 16px — pills retired Oct 2026, same corner as Card).
+	 * Inferred/AI-assumed — reconcile against
 	 * Figma frames 5:2–5:32 when Figma work resumes (see REDESIGN-CONTEXT §5):
 	 *   - padding (--space-2xs / --space-m), --step-0 semibold, --leading-snug
 	 *   - hover/active: color-mix with --surface-inverse (primary, deepens in
@@ -76,7 +77,7 @@
 		min-height: var(--control-min-h); /* 43px — Figma Button base geometry */
 		padding: var(--space-2xs) var(--space-m);
 		border: 0;
-		border-radius: var(--radius-full);
+		border-radius: var(--radius-l);
 		font-family: var(--font-body);
 		font-size: var(--step-0);
 		font-weight: var(--weight-semibold);

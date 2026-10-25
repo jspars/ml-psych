@@ -133,7 +133,7 @@
 		height: var(--control-min-h);
 		padding: 0;
 		border: 1.5px solid var(--border-strong);
-		border-radius: var(--radius-full);
+		border-radius: var(--radius-l);
 		background-color: transparent;
 		color: var(--text);
 		cursor: pointer;

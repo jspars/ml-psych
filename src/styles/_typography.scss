@@ -156,7 +156,7 @@ a:hover {
 // replacement — keyboard users depend on them.
 //
 // No border-radius here on purpose: outlines already follow each element's own
-// radius. Forcing --radius-s on focused elements would snap pill-shaped
+// radius. Forcing --radius-s on focused elements would snap rounded
 // controls (e.g. Button) to 4px corners while they're focused.
 
 :focus-visible {
