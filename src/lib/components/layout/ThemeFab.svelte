@@ -7,7 +7,10 @@
 	 * announced natively — no custom menu plumbing.
 	 *
 	 * Escape, an outside click, tabbing past the panel, or picking an option
-	 * closes it; focus returns to the trigger. Selection persists to
+	 * closes it; focus returns to the trigger. The panel expands out of the
+	 * FAB's corner (--ease-out snap) with the option rows cascading in behind
+	 * it; reduced-motion users get it instantly (see the media query below).
+	 * Selection persists to
 	 * localStorage under the same `theme` key `app.html`'s pre-paint script
 	 * reads. Ids stay lowercase ('light' | 'dark' | 'system') — display
 	 * casing is CSS, never the stored value.
@@ -134,8 +137,8 @@
 	{#if open}
 		<fieldset id="theme-fab-menu" class="theme-fab__menu">
 			<legend class="visually-hidden">Color theme</legend>
-			{#each OPTIONS as opt (opt.id)}
-				<label class="theme-fab__opt">
+			{#each OPTIONS as opt, i (opt.id)}
+				<label class="theme-fab__opt" style="--i:{i}">
 					<input
 						class="visually-hidden"
 						type="radio"
@@ -197,7 +200,9 @@
 	}
 
 	/* Disclosure menu: actual radios inside a labelled fieldset, so arrow keys
-	   cycle and state is announced natively. */
+	   cycle and state is announced natively. It expands out of the FAB's
+	   corner — strong-deceleration --ease-out does the "quick expand, snap to
+	   final size" feel; the rows cascade in behind it. */
 	.theme-fab__menu {
 		position: absolute;
 		inset-inline-end: 0;
@@ -212,13 +217,14 @@
 		border-radius: var(--radius-m);
 		background-color: var(--surface-raised);
 		box-shadow: var(--shadow-m);
+		transform-origin: bottom right;
 		animation: theme-fab-in var(--dur-fast) var(--ease-out);
 	}
 
 	@keyframes theme-fab-in {
 		from {
 			opacity: 0;
-			transform: translateY(4px);
+			transform: scale(0.9);
 		}
 	}
 
@@ -233,9 +239,23 @@
 		font-weight: var(--weight-medium);
 		cursor: pointer;
 		user-select: none;
+		opacity: 0;
+		animation: theme-fab-row var(--dur-fast) var(--ease-out) forwards;
+		animation-delay: calc(var(--i, 0) * 40ms);
 		transition:
 			background-color var(--dur-fast) var(--ease-out),
 			color var(--dur-fast) var(--ease-out);
+	}
+
+	@keyframes theme-fab-row {
+		from {
+			opacity: 0;
+			transform: translateY(4px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
 	}
 
 	.theme-fab__opt:hover {
@@ -252,6 +272,17 @@
 	.theme-fab__opt:has(input:focus-visible) {
 		outline: 2px solid var(--focus);
 		outline-offset: 2px;
+	}
+
+	/* Reduced motion: show the menu and its rows instantly. The global reset
+	   zeroes animation durations but not delays, so override explicitly. */
+	@media (prefers-reduced-motion: reduce) {
+		.theme-fab__menu,
+		.theme-fab__opt {
+			animation: none;
+			opacity: 1;
+			transform: none;
+		}
 	}
 
 	/* A floating control has no place on paper. */
