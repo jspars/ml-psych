@@ -64,3 +64,23 @@
 		transform: none;
 	}
 }
+
+// --- Theme swap -------------------------------------------------------------
+// `data-theme` swaps the custom properties instantly, so every painted surface
+// would snap. ThemeToggle adds `.theme-switching` to <html> for one beat; this
+// fades the colour properties that actually change. Gated on no-preference so
+// the global reduced-motion rule in _reset.scss still wins.
+
+@media (prefers-reduced-motion: no-preference) {
+	html.theme-switching,
+	html.theme-switching *,
+	html.theme-switching *::before,
+	html.theme-switching *::after {
+		transition:
+			background-color var(--dur-base) var(--ease-out),
+			border-color var(--dur-base) var(--ease-out),
+			color var(--dur-base) var(--ease-out),
+			fill var(--dur-base) var(--ease-out),
+			stroke var(--dur-base) var(--ease-out) !important;
+	}
+}
