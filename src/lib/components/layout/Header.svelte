@@ -40,7 +40,7 @@
 					alt=""
 					height="34"
 				/>
-			</span>
+			</span>x
 			<span class="site-header__lockup site-header__lockup--word" aria-hidden="true">
 				<img
 					class="site-header__wordmark site-header__wordmark--light"
@@ -127,8 +127,9 @@
 	.site-header__mark,
 	.site-header__wordmark {
 		display: block;
-		height: 34px;
+		height: 55px;
 		width: auto;
+		margin-right: 20px;
 	}
 
 	.site-header__mark--dark,
@@ -216,10 +217,10 @@
 
 		.site-header__panel {
 			display: flex;
-			flex: 1;
+			/* flex: 1; */
 			flex-direction: row;
 			align-items: center;
-			justify-content: flex-end;
+			justify-content: space-between;
 			gap: var(--space-m);
 			padding-block: 0;
 		}

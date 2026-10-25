@@ -21,14 +21,14 @@
 	<div class="container site-footer__inner">
 		<span class="site-footer__mark" aria-hidden="true">
 			<img
-				class="site-footer__wordmark site-footer__wordmark--dark"
+				class="flex-item site-footer__wordmark site-footer__wordmark--dark"
 				src="{base}/images/brand/wordmark-dark.svg"
-				alt=""
+				alt="lawson psych wordmark-dark theme variant"
 			/>
 			<img
-				class="site-footer__wordmark site-footer__wordmark--light"
+				class="flex-item site-footer__wordmark site-footer__wordmark--light"
 				src="{base}/images/brand/wordmark.svg"
-				alt=""
+				alt="lawson psych wordmark-light theme variant"
 			/>
 		</span>
 
@@ -54,6 +54,15 @@
 		padding-block: var(--space-l);
 	}
 
+	.site-footer__mark {
+		display: flex;
+		justify-content: space-between;
+
+		.flex-item {
+			max-width: 25%;
+		}
+	}
+
 	/* Stacked wordmark, theme-swapped: the light-theme band is navy
 	   (--surface-inverse) so it takes the lavender-dark variant; the dark-theme
 	   band is cream and takes the indigo one. The name also appears verbatim in
@@ -62,7 +71,7 @@
 	   off this element selector avoids (0,1,1) outranking the variants' (0,1,0)
 	   and rendering both wordmarks stacked in light theme. */
 	.site-footer__mark img {
-		height: 44px;
+		height: 56px;
 		width: auto;
 	}
 
@@ -108,6 +117,7 @@
 	.site-footer :global(.button) {
 		min-height: 2.25rem; /* slightly smaller CTA chrome inside the band */
 		font-size: var(--step--1);
+		flex-grow: 1;
 	}
 
 	.site-footer__legal {

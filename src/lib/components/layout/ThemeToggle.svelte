@@ -19,23 +19,23 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	const STORE_KEY = 'theme';
-	const OPTIONS = ['light', 'dark', 'system'];
+	const OPTIONS = ['light', 'dark', 'System'];
 
 	const media =
 		typeof window !== 'undefined' ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
 	/** Checked value. */
-	let value = 'system';
+	let value = 'System';
 
-	/** Materialize a mode onto <html data-theme>. 'system' defers to the media query. */
+	/** Materialize a mode onto <html data-theme>. 'System' defers to the media query. */
 	function apply(mode) {
 		if (typeof document === 'undefined') return;
-		const theme = mode === 'system' ? (media?.matches ? 'dark' : 'light') : mode;
+		const theme = mode === 'System' ? (media?.matches ? 'dark' : 'light') : mode;
 		document.documentElement.setAttribute('data-theme', theme);
 	}
 
 	function onMediaChange(event) {
-		if (value === 'system') apply(event.matches ? 'dark' : 'light');
+		if (value === 'System') apply(event.matches ? 'dark' : 'light');
 	}
 
 	function set(mode) {
@@ -48,9 +48,9 @@
 		apply(mode);
 	}
 
-	// Listen to OS changes only while 'system' is selected.
+	// Listen to OS changes only while 'System' is selected.
 	$: if (typeof window !== 'undefined') {
-		if (value === 'system') {
+		if (value === 'System') {
 			media?.addEventListener('change', onMediaChange);
 		} else {
 			media?.removeEventListener('change', onMediaChange);

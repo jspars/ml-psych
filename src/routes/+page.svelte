@@ -14,6 +14,8 @@
 
 <ServiceGrid />
 
+<CTA />
+
 <section class="section">
 	<div class="container">
 		<h2>Being deeply understood</h2>
@@ -28,5 +30,3 @@
 		</div>
 	</div>
 </section>
-
-<CTA />

@@ -13,9 +13,9 @@
 /** @type {Array<{ label: string, href: string, cta?: boolean }>} */
 export const NAV_ITEMS = [
 	{ label: 'About', href: '/about' },
-	{ label: 'Fees & Insurance', href: '/fees_and_insurance' },
+	{ label: 'Fees', href: '/fees_and_insurance' },
 	{ label: 'FAQ', href: '/faq' },
 	{ label: 'Publications', href: '/publications' },
-	{ label: 'Non-VA Residents', href: '/psypact' },
+	{ label: 'Non-VA', href: '/psypact' },
 	{ label: 'Get in touch now', href: '/contact', cta: true }
 ];

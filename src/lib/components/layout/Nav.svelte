@@ -54,7 +54,6 @@
 
 	.nav__item {
 		display: flex;
-		align-items: center;
 	}
 
 	.nav__link {
