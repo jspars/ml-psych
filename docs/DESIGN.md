@@ -398,11 +398,12 @@ page and to read naturally as a footer link.
 
 - **Brand identity (Oct 2026):** the Canva brand files define the identity as a stacked
   indigo `LAWSON PSYCHOTHERAPY` wordmark (#3A3961; dark-bg counterpart #B9ADE0) — the
-  palette above was shifted to match. Site-ready marks live in `static/images/brand/`
-  (`wordmark.svg`, `wordmark-dark.svg`, theme-swapped in Header/Footer). The `L|P`
-  monogram (`monogram.svg`, `monogram-dark.svg`) is the compact brand link below
-  30rem; the stacked wordmark takes over above it. At 16px the monogram's hairline
-  divider closes up, so the purpose-built `LP` favicon tile stays.
+  palette above was shifted to match. Site-ready marks live in `static/images/brand/`. The
+  header uses the `L|P` monogram as the single-row brand link (owner-updated export,
+  Nov 2026: full-height divider overshooting the letterforms, tight viewBox
+  `38.208 104.082 1377.22 1377.22`, near-square); the Footer carries the stacked
+  wordmark. At 16px the monogram's hairline divider closes up, so the purpose-built
+  `LP` favicon tile stays.
   `docs/brand/canva/` is a disposable staging folder for new exports — promote into
   `static/images/brand/` or delete; it is not an archive (see its README). Favicon is
   a generated `LP` monogram tile (#3A3961 roundrect, Playfair 700 cream).
