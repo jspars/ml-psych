@@ -25,7 +25,7 @@
 	 * inside-stroke). The ring sits outside the fill, so it stays visible.
 	 *
 	 * Owner-confirmed: primary lavender-deep fill; rounded-square radius
-	 * (`--radius-control`, 12px — pills retired Oct 2026). Inferred/AI-assumed
+	 * (`--radius-control`, 4px — pills retired Oct 2026). Inferred/AI-assumed
 	 * — reconcile against
 	 * Figma frames 5:2–5:32 when Figma work resumes (see REDESIGN-CONTEXT §5):
 	 *   - padding (--space-2xs / --space-m), --step-0 semibold, --leading-snug

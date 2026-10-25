@@ -108,13 +108,13 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
   `<a>` (via `href`); `variant` = `primary` (filled `--accent-deep` +
   `--text-inverse`) / `secondary` (1.5px `--border-strong` stroke) / `ghost`
   (text-only `--link`); states as pseudo-classes; rounded-square radius
-  (`--radius-control`, 12px — owner-confirmed Oct 2026, pills retired);
+  (`--radius-control`, 4px — owner-confirmed Oct 2026, pills retired);
   `min-height: var(--control-min-h)` (43px — new semantic
-  token, mirrored into the DTCG JSONs, now 45 token paths). Plain attributes
+  token, mirrored into the DTCG JSONs, now 47 token paths). Plain attributes
   (class, aria-\*, data-\*) forward via `$$restProps` — `class` merges with
   the primitive's own.
 - **Owner-confirmed vs assumed:** primary lavender-deep fill + corner radius
-  (`--radius-control`, 12px; pills retired) were
+  (`--radius-control`, 4px; pills retired) were
   confirmed by the owner; padding (`--space-2xs` / `--space-m`), type sizing
   (`--step-0` semibold, `--leading-snug`), and hover/active treatments
   (`color-mix` with `--surface-inverse` / `--surface-accent` tints) are

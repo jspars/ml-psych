@@ -260,7 +260,7 @@
 		"control": {
 			"$type": "dimension",
 			"$value": {
-				"value": 12,
+				"value": 4,
 				"unit": "px"
 			}
 		},

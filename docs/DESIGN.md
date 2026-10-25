@@ -206,7 +206,7 @@ Two roles, matching the card.
 --space-s:   1rem;     --space-m:   1.5rem;  --space-l:  2.5rem;
 --space-xl:  4rem;     --space-2xl: 6rem;
 
---radius-s: 4px;  --radius-m: 8px;  --radius-control: 12px;  --radius-l: 16px;  --radius-full: 999px;
+--radius-s: 4px;  --radius-m: 8px;  --radius-control: 4px;  --radius-l: 16px;  --radius-full: 999px;
 
 --shadow-s: 0 1px 2px rgb(18 40 61 / 0.06);
 --shadow-m: 0 4px 12px rgb(18 40 61 / 0.08);
