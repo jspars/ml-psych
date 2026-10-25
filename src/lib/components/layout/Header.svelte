@@ -87,10 +87,15 @@
 	/* Stacked wordmark (owner-provided Canva export): indigo variant on light
 	   theme, lavender-on-dark variant otherwise. The name also lives in the
 	   visually-hidden label for AT, and in the footer's © line. */
+	/* Sizing only — `display` is owned by the variant classes below so the
+	   cascade never depends on source order or specificity. */
 	.site-header__wordmark {
-		display: block;
 		height: 34px;
 		width: auto;
+	}
+
+	.site-header__wordmark--light {
+		display: block;
 	}
 
 	.site-header__wordmark--dark {

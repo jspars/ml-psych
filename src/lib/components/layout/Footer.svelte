@@ -58,10 +58,16 @@
 	   (--surface-inverse) so it takes the lavender-dark variant; the dark-theme
 	   band is cream and takes the indigo one. The name also appears verbatim in
 	   the legal line below, so the mark is aria-hidden. */
+	/* Sizing only — `display` belongs to the variant classes below. Keeping it
+	   off this element selector avoids (0,1,1) outranking the variants' (0,1,0)
+	   and rendering both wordmarks stacked in light theme. */
 	.site-footer__mark img {
-		display: block;
 		height: 44px;
 		width: auto;
+	}
+
+	.site-footer__wordmark--dark {
+		display: block;
 	}
 
 	.site-footer__wordmark--light {
