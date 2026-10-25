@@ -2,8 +2,8 @@
 	/**
 	 * Header — sticky site banner (owner-confirmed: sticky).
 	 *
-	 * Anatomy: container row → wordmark link · nav panel (Nav + ThemeToggle) ·
-	 * mobile disclosure toggle.
+	 * Anatomy: container row → brand link (monogram below 30rem, stacked
+	 * wordmark above) · nav panel (Nav + ThemeToggle) · mobile disclosure toggle.
 	 *
 	 * Below the 48rem breakpoint the panel is a hidden disclosure: the toggle
 	 * button carries aria-expanded/aria-controls, opens a full-width column
@@ -27,18 +27,34 @@
 <header class="site-header">
 	<div class="container site-header__inner">
 		<a class="site-header__brand" href="{base}/">
-			<img
-				class="site-header__wordmark site-header__wordmark--light"
-				src="{base}/images/brand/wordmark.svg"
-				alt=""
-				height="34"
-			/>
-			<img
-				class="site-header__wordmark site-header__wordmark--dark"
-				src="{base}/images/brand/wordmark-dark.svg"
-				alt=""
-				height="34"
-			/>
+			<span class="site-header__lockup site-header__lockup--mark" aria-hidden="true">
+				<img
+					class="site-header__mark site-header__mark--light"
+					src="{base}/images/brand/monogram.svg"
+					alt=""
+					height="34"
+				/>
+				<img
+					class="site-header__mark site-header__mark--dark"
+					src="{base}/images/brand/monogram-dark.svg"
+					alt=""
+					height="34"
+				/>
+			</span>
+			<span class="site-header__lockup site-header__lockup--word" aria-hidden="true">
+				<img
+					class="site-header__wordmark site-header__wordmark--light"
+					src="{base}/images/brand/wordmark.svg"
+					alt=""
+					height="34"
+				/>
+				<img
+					class="site-header__wordmark site-header__wordmark--dark"
+					src="{base}/images/brand/wordmark-dark.svg"
+					alt=""
+					height="34"
+				/>
+			</span>
 			<span class="visually-hidden">Lawson Psychotherapy — home</span>
 		</a>
 
@@ -84,28 +100,48 @@
 		text-decoration: none;
 	}
 
-	/* Stacked wordmark (owner-provided Canva export): indigo variant on light
-	   theme, lavender-on-dark variant otherwise. The name also lives in the
-	   visually-hidden label for AT, and in the footer's © line. */
+	/* Brand lockup, two cuts of the same Canva geometry: square-ish monogram
+	   below 30rem, stacked wordmark above. Colour variants ride the theme
+	   swap; the accessible name lives in the visually-hidden label. */
+	.site-header__lockup {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.site-header__lockup--word {
+		display: none;
+	}
+
+	@media (min-width: 30rem) {
+		.site-header__lockup--mark {
+			display: none;
+		}
+
+		.site-header__lockup--word {
+			display: inline-flex;
+		}
+	}
+
 	/* Sizing only — `display` is owned by the variant classes below so the
 	   cascade never depends on source order or specificity. */
+	.site-header__mark,
 	.site-header__wordmark {
+		display: block;
 		height: 34px;
 		width: auto;
 	}
 
-	.site-header__wordmark--light {
-		display: block;
-	}
-
+	.site-header__mark--dark,
 	.site-header__wordmark--dark {
 		display: none;
 	}
 
+	:global([data-theme='dark']) .site-header__mark--light,
 	:global([data-theme='dark']) .site-header__wordmark--light {
 		display: none;
 	}
 
+	:global([data-theme='dark']) .site-header__mark--dark,
 	:global([data-theme='dark']) .site-header__wordmark--dark {
 		display: block;
 	}
@@ -133,7 +169,7 @@
 		height: var(--control-min-h);
 		padding: 0;
 		border: 1.5px solid var(--border-strong);
-		border-radius: var(--radius-l);
+		border-radius: var(--radius-control);
 		background-color: transparent;
 		color: var(--text);
 		cursor: pointer;
