@@ -1,7 +1,7 @@
 <script>
 	/**
 	 * Footer — dark inverse band, minimal editorial scope (owner-confirmed):
-	 * wordmark, repeated primary nav, legal row.
+	 * wordmark, repeated primary nav + CTA, legal row.
 	 *
 	 * Colors are token-driven via --surface-inverse / --text-inverse, so the
 	 * band is navy in light theme and cream in dark — no theme prop.
@@ -12,27 +12,35 @@
 	 * route ships — deliberately absent now to avoid a prerendered 404 link.
 	 */
 	import { base } from '$app/paths';
+	import { NAV_ITEMS } from '$lib/data/nav.js';
+	import Button from '../primitives/Button.svelte';
 	import Nav from './Nav.svelte';
 
 	const year = new Date().getFullYear();
+	const cta = NAV_ITEMS.find((item) => item.cta);
 </script>
 
 <footer class="site-footer">
 	<div class="container site-footer__inner">
 		<span class="site-footer__mark" aria-hidden="true">
 			<img
-				class="flex-item site-footer__wordmark site-footer__wordmark--dark"
+				class="site-footer__wordmark site-footer__wordmark--dark"
 				src="{base}/images/brand/wordmark-dark.svg"
-				alt="lawson psych wordmark-dark theme variant"
+				alt=""
 			/>
 			<img
-				class="flex-item site-footer__wordmark site-footer__wordmark--light"
+				class="site-footer__wordmark site-footer__wordmark--light"
 				src="{base}/images/brand/wordmark.svg"
-				alt="lawson psych wordmark-light theme variant"
+				alt=""
 			/>
 		</span>
 
-		<Nav />
+		<div class="site-footer__nav">
+			<Nav />
+			{#if cta}
+				<Button href="{base}{cta.href}">{cta.label}</Button>
+			{/if}
+		</div>
 
 		<p class="site-footer__legal">
 			© {year} Lawson Psychotherapy ·
@@ -52,15 +60,6 @@
 		flex-direction: column;
 		gap: var(--space-m);
 		padding-block: var(--space-l);
-	}
-
-	.site-footer__mark {
-		display: flex;
-		justify-content: space-between;
-
-		.flex-item {
-			max-width: 25%;
-		}
 	}
 
 	/* Stacked wordmark, theme-swapped: the light-theme band is navy
@@ -91,6 +90,15 @@
 		display: none;
 	}
 
+	/* Links and CTA share one wrapping row, as they did when Nav rendered the
+	   CTA itself. */
+	.site-footer__nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--space-s);
+	}
+
 	/* Restyle the shared Nav for the inverse band: single row, muted cream links. */
 	.site-footer :global(.nav) {
 		flex-direction: row;
@@ -117,7 +125,6 @@
 	.site-footer :global(.button) {
 		min-height: 2.25rem; /* slightly smaller CTA chrome inside the band */
 		font-size: var(--step--1);
-		flex-grow: 1;
 	}
 
 	.site-footer__legal {

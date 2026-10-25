@@ -2,21 +2,33 @@
 	/**
 	 * Header — sticky site banner (owner-confirmed: sticky).
 	 *
-	 * Anatomy: container row → brand link (monogram below 30rem, stacked
-	 * wordmark above) · nav panel (Nav + ThemeToggle) · mobile disclosure toggle.
+	 * One row at every width: mark (home) · primary nav · theme switcher ·
+	 * contact CTA. Below 48rem the nav, switcher and CTA fold into a
+	 * disclosure panel under the brand row; the toggle button keeps its place
+	 * at the top right, so opening the menu never moves the control that
+	 * closes it.
 	 *
-	 * Below the 48rem breakpoint the panel is a hidden disclosure: the toggle
-	 * button carries aria-expanded/aria-controls, opens a full-width column
-	 * under the row, and any link click (Nav.on:navigate) or Escape closes it.
-	 * From 48rem up the toggle is display:none and the panel is always an
-	 * inline row — CSS-owned visibility, so no-JS users still get the nav.
+	 * The toggle carries aria-expanded/aria-controls, opens a full-width
+	 * column, and any link click (Nav.on:navigate) or Escape closes it. From
+	 * 48rem up the toggle is display:none and the panel lays out inline —
+	 * CSS-owned visibility, so no-JS users still get the nav.
+	 *
+	 * The monogram is the header brand; the wordmark cut belongs to the Footer
+	 * (the compact mark keeps the single row light). The CTA is rendered here
+	 * rather than inside Nav so the row order stays mark · links · switcher ·
+	 * CTA instead of links · CTA · switcher.
 	 *
 	 * Tokens only; the sticky background is plain --surface over a --border
 	 * hairline. Dark theme rides the token swap.
 	 */
 	import { base } from '$app/paths';
+	import { NAV_ITEMS } from '$lib/data/nav.js';
+	import Button from '../primitives/Button.svelte';
 	import Nav from './Nav.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
+
+	/** The one CTA item — nav.js marks it `cta: true`. */
+	const cta = NAV_ITEMS.find((item) => item.cta);
 
 	let open = false;
 	const close = () => (open = false);
@@ -27,41 +39,20 @@
 <header class="site-header">
 	<div class="container site-header__inner">
 		<a class="site-header__brand" href="{base}/">
-			<span class="site-header__lockup site-header__lockup--mark" aria-hidden="true">
-				<img
-					class="site-header__mark site-header__mark--light"
-					src="{base}/images/brand/monogram.svg"
-					alt=""
-					height="34"
-				/>
-				<img
-					class="site-header__mark site-header__mark--dark"
-					src="{base}/images/brand/monogram-dark.svg"
-					alt=""
-					height="34"
-				/>
-			</span>x
-			<span class="site-header__lockup site-header__lockup--word" aria-hidden="true">
-				<img
-					class="site-header__wordmark site-header__wordmark--light"
-					src="{base}/images/brand/wordmark.svg"
-					alt=""
-					height="34"
-				/>
-				<img
-					class="site-header__wordmark site-header__wordmark--dark"
-					src="{base}/images/brand/wordmark-dark.svg"
-					alt=""
-					height="34"
-				/>
-			</span>
+			<img
+				class="site-header__mark site-header__mark--light"
+				src="{base}/images/brand/monogram.svg"
+				alt=""
+				height="55"
+			/>
+			<img
+				class="site-header__mark site-header__mark--dark"
+				src="{base}/images/brand/monogram-dark.svg"
+				alt=""
+				height="55"
+			/>
 			<span class="visually-hidden">Lawson Psychotherapy — home</span>
 		</a>
-
-		<div id="site-nav-panel" class="site-header__panel" class:site-header__panel--open={open}>
-			<Nav on:navigate={close} />
-			<ThemeToggle />
-		</div>
 
 		<button
 			class="site-header__toggle"
@@ -74,6 +65,14 @@
 			</span>
 			<span class="visually-hidden">{open ? 'Close' : 'Open'} menu</span>
 		</button>
+
+		<div id="site-nav-panel" class="site-header__panel" class:site-header__panel--open={open}>
+			<Nav on:navigate={close} />
+			<ThemeToggle />
+			{#if cta}
+				<Button href="{base}{cta.href}" on:click={close}>{cta.label}</Button>
+			{/if}
+		</div>
 	</div>
 </header>
 
@@ -100,50 +99,23 @@
 		text-decoration: none;
 	}
 
-	/* Brand lockup, two cuts of the same Canva geometry: square-ish monogram
-	   below 30rem, stacked wordmark above. Colour variants ride the theme
-	   swap; the accessible name lives in the visually-hidden label. */
-	.site-header__lockup {
-		display: inline-flex;
-		align-items: center;
-	}
-
-	.site-header__lockup--word {
-		display: none;
-	}
-
-	@media (min-width: 30rem) {
-		.site-header__lockup--mark {
-			display: none;
-		}
-
-		.site-header__lockup--word {
-			display: inline-flex;
-		}
-	}
-
 	/* Sizing only — `display` is owned by the variant classes below so the
 	   cascade never depends on source order or specificity. */
-	.site-header__mark,
-	.site-header__wordmark {
+	.site-header__mark {
 		display: block;
 		height: 55px;
 		width: auto;
-		margin-right: 20px;
 	}
 
-	.site-header__mark--dark,
-	.site-header__wordmark--dark {
+	.site-header__mark--dark {
 		display: none;
 	}
 
-	:global([data-theme='dark']) .site-header__mark--light,
-	:global([data-theme='dark']) .site-header__wordmark--light {
+	:global([data-theme='dark']) .site-header__mark--light {
 		display: none;
 	}
 
-	:global([data-theme='dark']) .site-header__mark--dark,
-	:global([data-theme='dark']) .site-header__wordmark--dark {
+	:global([data-theme='dark']) .site-header__mark--dark {
 		display: block;
 	}
 
@@ -209,20 +181,31 @@
 		transform: translateY(-5px) rotate(-45deg);
 	}
 
-	/* Desktop: panel becomes an inline row, toggle disappears. */
+	/* Desktop: one always-visible row. The panel dissolves into a flex row so
+	   Nav, ThemeToggle and the CTA line up beside the mark; Nav takes the slack
+	   so the switcher and CTA stay pinned to the right edge. */
 	@media (min-width: 48rem) {
+		.site-header__inner {
+			display: flex;
+			align-items: center;
+			gap: var(--space-l);
+		}
+
 		.site-header__toggle {
 			display: none;
 		}
 
 		.site-header__panel {
 			display: flex;
-			/* flex: 1; */
+			flex: 1;
 			flex-direction: row;
 			align-items: center;
-			justify-content: space-between;
 			gap: var(--space-m);
 			padding-block: 0;
+		}
+
+		.site-header :global(.nav) {
+			flex: 1;
 		}
 	}
 </style>

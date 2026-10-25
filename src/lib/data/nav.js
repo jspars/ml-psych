@@ -5,7 +5,8 @@
  * hardcoded markup. Labels come from the v1 nav (Bootstrap era); tweak here and
  * both Header and Footer follow.
  *
- * `cta: true` items render with the Button primitive (primary/filled).
+ * `cta: true` items render with the Button primitive (primary/filled) and are
+ * placed by the layout (Header/Footer), not by Nav, so row order is explicit.
  * Keep hrefs in sync with src/lib/site.js ROUTES — that file remains the
  * sitemap source of truth.
  */

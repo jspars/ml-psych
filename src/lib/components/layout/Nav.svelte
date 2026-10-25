@@ -3,9 +3,13 @@
 	 * Nav — dumb link list driven by src/lib/data/nav.js.
 	 *
 	 * Renders every non-CTA item as a text link (muted by default, --text with
-	 * a lavender underline when it matches the current URL) and CTA items as
-	 * the Button primitive. Layout direction is owned by the parent: Header's
-	 * panel turns this into a column on mobile and a row from 48rem up.
+	 * a lavender underline when it matches the current URL). The CTA item is
+	 * skipped: Header and Footer render it themselves so the row order stays
+	 * mark · links · switcher · CTA.
+	 *
+	 * Layout direction is owned by the parent: Header's panel turns this into
+	 * a column on mobile and a row from 48rem up; the Footer keeps its own
+	 * single-row override.
 	 *
 	 * `on:navigate` fires after any link click so the Header can close its
 	 * mobile disclosure (createEventDispatcher, legacy event forwarding —
@@ -15,29 +19,27 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import { NAV_ITEMS } from '$lib/data/nav.js';
-	import Button from '../primitives/Button.svelte';
 
 	const dispatch = createEventDispatcher();
+
+	/** Text links only — the CTA is a Button rendered by the layout. */
+	const LINKS = NAV_ITEMS.filter((item) => !item.cta);
 
 	const hrefFor = (item) => `${base}${item.href}`;
 	const isCurrent = (item, pathname) => pathname === hrefFor(item);
 </script>
 
 <ul class="nav" role="list">
-	{#each NAV_ITEMS as item (item.href)}
+	{#each LINKS as item (item.href)}
 		<li class="nav__item">
-			{#if item.cta}
-				<Button href={hrefFor(item)} on:click={() => dispatch('navigate')}>{item.label}</Button>
-			{:else}
-				<a
-					class="nav__link"
-					href={hrefFor(item)}
-					aria-current={isCurrent(item, $page.url.pathname) ? 'page' : undefined}
-					on:click={() => dispatch('navigate')}
-				>
-					{item.label}
-				</a>
-			{/if}
+			<a
+				class="nav__link"
+				href={hrefFor(item)}
+				aria-current={isCurrent(item, $page.url.pathname) ? 'page' : undefined}
+				on:click={() => dispatch('navigate')}
+			>
+				{item.label}
+			</a>
 		</li>
 	{/each}
 </ul>
@@ -78,18 +80,24 @@
 		text-underline-offset: 0.35em;
 	}
 
-	/* Desktop (Header panel): lay links out horizontally. The Footer keeps its own
-	   single-row override — a class selector below beats these type-level rules,
-	   and its direction/wrap are independent of this breakpoint. */
+	/* Desktop (Header panel): lay links out horizontally with breathing room —
+	   the padding widens the hit target as well as the visual gap. The Footer
+	   keeps its own tighter override (a class selector below beats these
+	   type-level rules, and its direction/wrap are independent of this
+	   breakpoint). */
 	@media (min-width: 48rem) {
 		.nav {
 			flex-direction: row;
 			align-items: center;
-			gap: var(--space-s);
+			gap: var(--space-m);
 		}
 
 		.nav__item {
 			display: inline-flex;
+		}
+
+		.nav__link {
+			padding: var(--space-2xs);
 		}
 	}
 </style>
