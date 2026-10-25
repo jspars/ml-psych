@@ -395,10 +395,10 @@ page and to read naturally as a footer link.
 - **Brand identity (Oct 2026):** the Canva brand files define the identity as a stacked
   indigo `LAWSON PSYCHOTHERAPY` wordmark (#3A3961; dark-bg counterpart #B9ADE0) — the
   palette above was shifted to match. Site-ready marks live in `static/images/brand/`
-  (`wordmark.svg`, `wordmark-dark.svg`, theme-swapped in Header/Footer); raw Canva
-  packages (incl. the QR back panel with thin-line service icons + rainbow motif) are
-  reference-only in `docs/brand/canva/`. Favicon is a generated `LP` monogram tile
-  (#3A3961 roundrect, Playfair 700 cream).
+  (`wordmark.svg`, `wordmark-dark.svg`, theme-swapped in Header/Footer).
+  `docs/brand/canva/` is a disposable staging folder for new exports — promote into
+  `static/images/brand/` or delete; it is not an archive (see its README). Favicon is
+  a generated `LP` monogram tile (#3A3961 roundrect, Playfair 700 cream).
 - **Decorative card wash:** the Figma Card sets use flat fills — sage in light, the
   brightened dark lavender (#A99BD4) in dark. Tokenized as semantic `--surface-decor`
   so no component encodes theme logic.
