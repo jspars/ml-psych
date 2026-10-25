@@ -118,10 +118,12 @@ These are the authoritative documents. Each is detailed; this ref doc only flags
   (`color-mix` with `--surface-inverse` / `--surface-accent` tints) are
   inferred. Reconcile against Figma frames `5:2`–`5:32` when Figma work
   resumes.
-- **A11y flags for `redesign/a11y`:** `--border-strong` (sage on cream ≈1.8:1)
-  likely fails WCAG 1.4.11 as a control boundary (token-layer issue, not
-  component); ghost buttons on `--surface-accent` bands ≈3.2:1 in light —
-  don't place ghost on accent bands.
+- **A11y flags:** ghost buttons on `--surface-accent` bands ≈3.2:1 in light —
+  don't place ghost on accent bands (bands take primary only). `--border-strong`
+  was the decorative sage doing control-boundary duty (≈1.8:1); it is now a
+  neutral control border (#7C7A72 light / #78788A dark) that clears 1.4.11 on
+  surfaces (3.35:1 / 3.28:1). It is still short on accent bands (≈2.0:1), so no
+  bordered controls there either.
 
 ### Styling / fonts
 

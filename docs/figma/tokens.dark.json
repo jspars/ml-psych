@@ -152,11 +152,11 @@
 				"$type": "color",
 				"$value": {
 					"colorSpace": "srgb",
-					"components": [0.356863, 0.356863, 0.407843],
+					"components": [0.470588, 0.470588, 0.541176],
 					"alpha": 1,
-					"hex": "#5B5B68"
+					"hex": "#78788A"
 				},
-				"$description": "--border-strong: #4a4a56"
+				"$description": "--border-strong: #78788A — control boundary, 3.28:1 on raised (1.4.11)"
 			},
 			"link": {
 				"$type": "color",

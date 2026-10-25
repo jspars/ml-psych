@@ -134,6 +134,7 @@ actually reference).
 | `--surface-raised` | `--paper`         | Cards, panels         |
 | `--surface-accent` | `--sage`          | Section bands         |
 | `--border`         | `--sage` @ 40%    | Hairlines             |
+| `--border-strong`  | `#7C7A72`         | Control boundaries    |
 | `--link`           | `--lavender-deep` | Links                 |
 | `--focus`          | `--lavender-deep` | Focus rings           |
 
@@ -158,6 +159,7 @@ dark ground.
 | `--text-muted`     | `#A8A4B8`  | Muted lavender-grey                      |
 | `--text-inverse`   | `#26243A`  | Text on light surfaces                   |
 | `--border`         | `#45454F`  | Hairlines                                |
+| `--border-strong`  | `#78788A`  | Control boundaries                       |
 | `--accent`         | `#A99BD4`  | Brightened for dark ground               |
 | `--link`           | `#B9ADE0`  | Matches the Canva dark-bg wordmark       |
 | `--focus`          | `#B9ADE0`  | Focus rings                              |

@@ -130,8 +130,13 @@
 			},
 			"border-strong": {
 				"$type": "color",
-				"$value": "{color.raw.sage}",
-				"$description": "--border-strong"
+				"$value": {
+					"colorSpace": "srgb",
+					"components": [0.486275, 0.478431, 0.447059],
+					"alpha": 1,
+					"hex": "#7C7A72"
+				},
+				"$description": "--border-strong: #7C7A72 — control boundary, 3.35:1 on the page (1.4.11)"
 			},
 			"link": {
 				"$type": "color",

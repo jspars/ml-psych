@@ -14,10 +14,10 @@
 	 *              `--text`, transparent background
 	 *   ghost      text-only `--link` — for use on `--surface`/`--surface-raised`
 	 *              only; on `--surface-accent` bands the light-theme link/sage
-	 *              contrast is ~3.2:1, so pair bands with secondary or primary
+	 *              contrast is ~3.2:1, so bands take the primary variant only
 	 *
 	 * Theme is token-driven (`:root` / `[data-theme='dark']`): the dark swap
-	 * brightens the fill (`--accent-deep` → #B9AEE0) and flips the label to
+	 * brightens the fill (`--accent-deep` → #B9ADE0) and flips the label to
 	 * navy via `--text-inverse`. No theme prop, by convention.
 	 *
 	 * Focus comes from the global `:focus-visible` ring in `_typography.scss`
@@ -31,8 +31,9 @@
 	 *   - hover/active: color-mix with --surface-inverse (primary, deepens in
 	 *     light / lifts the bright fill in dark) or --surface-accent tints
 	 *     (secondary/ghost)
-	 *   - flag for redesign/a11y: --border-strong (sage on cream ≈1.8:1) may
-	 *     fail WCAG 1.4.11 for control boundaries
+	 *   - --border-strong is a neutral control border, not the decorative
+	 *     sage: 3.35:1 light / 3.28:1 dark on surfaces, so WCAG 1.4.11 holds
+	 *     there; on accent bands it is ~2:1, hence primary-only bands
 	 */
 
 	/** Visual variant: primary (filled) | secondary (bordered) | ghost (text). */

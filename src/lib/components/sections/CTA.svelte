@@ -5,7 +5,7 @@
 	 * constrained container.
 	 *
 	 * No ghost/secondary buttons on this band: the light sage ground can't
-	 * carry --link text (~3.2:1) or a --border-strong stroke (~1.8:1) — the
+	 * carry --link text (~3.2:1) or a --border-strong stroke (~2.0:1) — the
 	 * filled primary is the only variant with safe contrast here (both themes).
 	 * Copy is a draft — owner-editable.
 	 */

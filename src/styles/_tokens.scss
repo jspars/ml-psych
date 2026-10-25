@@ -38,7 +38,7 @@
 	--surface-inverse: var(--ink-deep);
 
 	--border: color-mix(in srgb, var(--sage) 40%, transparent);
-	--border-strong: var(--sage);
+	--border-strong: #7c7a72; // control boundary — 3.35:1 on the page (1.4.11)
 
 	--link: var(--lavender-deep);
 	--link-hover: var(--ink);
@@ -156,7 +156,7 @@
 	--surface-inverse: var(--cream);
 
 	--border: #45454f;
-	--border-strong: #5b5b68;
+	--border-strong: #78788a; // control boundary — 3.28:1 on raised (1.4.11)
 
 	--link: #b9ade0; // matches the Canva dark-bg wordmark exactly
 	--link-hover: var(--cream);
