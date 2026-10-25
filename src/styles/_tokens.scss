@@ -12,15 +12,16 @@
 
 :root {
 	// ---------------------------------------------------------------------------
-	// 1. Raw palette (from the Canva brand files / business card)
+	// 1. Raw palette (wordmark from the Canva brand file; sage/lavender are
+	//    site decoratives, not derived from the card)
 	// ---------------------------------------------------------------------------
 	--ink: #3a3961; // wordmark indigo — primary brand color (Canva LawsonPsych_main_horizontal)
 	--ink-deep: #26243a; // text-safe indigo (luminosity-matched to the previous #12283D)
-	--sage: #b5b49a; // back-panel ground — decorative only
+	--sage: #b5b49a; // decorative ground — site palette, never text
 	--sage-deep: #6e6d57; // text-safe sage
 	--cream: #edebe4; // card base — page background
 	--paper: #f7f6f1; // raised surfaces
-	--lavender: #8b7fb8; // QR / monogram — accent, decorative
+	--lavender: #8b7fb8; // decorative accent — site palette, never text
 	--lavender-deep: #5f5488; // text-safe accent
 
 	// ---------------------------------------------------------------------------

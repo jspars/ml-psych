@@ -105,20 +105,22 @@ token swap rather than a rewrite.
 
 ### 3.1 Color
 
-Derived from the business card. **Two tiers:** raw palette (never used directly in
-components) and semantic tokens (what components actually reference).
+Anchored in the business card's front — the indigo wordmark and the cream ground.
+Sage and lavender are site-palette decoratives, not card-derived. **Two tiers:** raw
+palette (never used directly in components) and semantic tokens (what components
+actually reference).
 
 **Raw palette**
 
-| Token             | Hex       | Source on card                                 | Notes               |
+| Token             | Hex       | Source                                         | Notes               |
 | ----------------- | --------- | ---------------------------------------------- | ------------------- |
 | `--ink`           | `#3A3961` | Wordmark (Canva `LawsonPsych_main_horizontal`) | Primary brand color |
 | `--ink-deep`      | `#26243A` | —                                              | Text-safe indigo    |
-| `--sage`          | `#B5B49A` | Back-panel ground                              | Decorative only     |
+| `--sage`          | `#B5B49A` | —                                              | Decorative ground   |
 | `--sage-deep`     | `#6E6D57` | —                                              | Text-safe sage      |
-| `--cream`         | `#EDEBE4` | Card base                                      | Page background     |
+| `--cream`         | `#EDEBE4` | Card ground                                    | Page background     |
 | `--paper`         | `#F7F6F1` | —                                              | Raised surfaces     |
-| `--lavender`      | `#8B7FB8` | QR / monogram                                  | Accent, decorative  |
+| `--lavender`      | `#8B7FB8` | —                                              | Decorative accent   |
 | `--lavender-deep` | `#5F5488` | —                                              | Text-safe accent    |
 
 **Semantic tokens**
@@ -154,9 +156,9 @@ dark ground.
 | `--surface-accent` | `#2E2A3A`  | Section bands, lavender-tinted       |
 | `--text`           | `#EDEBE4`  | Cream, reused from the light palette |
 | `--text-muted`     | `#A8A4B8`  | Muted lavender-grey                  |
-| `--text-inverse`   | `#12283D`  | Text on light surfaces               |
+| `--text-inverse`   | `#26243A`  | Text on light surfaces               |
 | `--border`         | `#3A3A44`  | Hairlines                            |
-| `--lavender`       | `#A99BD4`  | Brightened for dark ground           |
+| `--accent`         | `#A99BD4`  | Brightened for dark ground           |
 | `--link`           | `#B9ADE0`  | Matches the Canva dark-bg wordmark   |
 | `--focus`          | `#B9ADE0`  | Focus rings                          |
 

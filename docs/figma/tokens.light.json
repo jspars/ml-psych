@@ -29,7 +29,7 @@
 					"alpha": 1,
 					"hex": "#B5B49A"
 				},
-				"$description": "Back-panel ground — DECORATIVE ONLY, never text"
+				"$description": "Decorative ground — site palette, DECORATIVE ONLY, never text"
 			},
 			"sage-deep": {
 				"$type": "color",
@@ -69,7 +69,7 @@
 					"alpha": 1,
 					"hex": "#8B7FB8"
 				},
-				"$description": "QR / monogram accent — DECORATIVE ONLY, never text"
+				"$description": "Decorative accent — site palette, DECORATIVE ONLY, never text"
 			},
 			"lavender-deep": {
 				"$type": "color",
