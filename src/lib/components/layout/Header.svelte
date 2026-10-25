@@ -43,13 +43,13 @@
 				class="site-header__mark site-header__mark--light"
 				src="{base}/images/brand/monogram.svg"
 				alt=""
-				height="55"
+				height="48"
 			/>
 			<img
 				class="site-header__mark site-header__mark--dark"
 				src="{base}/images/brand/monogram-dark.svg"
 				alt=""
-				height="55"
+				height="48"
 			/>
 			<span class="visually-hidden">Lawson Psychotherapy — home</span>
 		</a>
@@ -103,7 +103,7 @@
 	   cascade never depends on source order or specificity. */
 	.site-header__mark {
 		display: block;
-		height: 55px;
+		height: 48px;
 		width: auto;
 	}
 

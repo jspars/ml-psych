@@ -400,9 +400,11 @@ page and to read naturally as a footer link.
   indigo `LAWSON PSYCHOTHERAPY` wordmark (#3A3961; dark-bg counterpart #B9ADE0) — the
   palette above was shifted to match. Site-ready marks live in `static/images/brand/`. The
   header uses the `L|P` monogram as the single-row brand link (owner-updated export,
-  Nov 2026: full-height divider overshooting the letterforms, tight viewBox
-  `38.208 104.082 1377.22 1377.22`, near-square); the Footer carries the stacked
-  wordmark. At 16px the monogram's hairline divider closes up, so the purpose-built
+  Nov 2026: full-height divider overshooting the letterforms, drawn with an even
+  ~5px ink gap each side of the divider at the 48px display height — the raw
+  export had ~2px; letters were shifted ±90 viewBox units, tight viewBox
+  `-51.792 104.083 1556.792 1377.219`, near-square); the Footer carries the
+  stacked wordmark. At 16px the monogram's hairline divider closes up, so the purpose-built
   `LP` favicon tile stays.
   `docs/brand/canva/` is a disposable staging folder for new exports — promote into
   `static/images/brand/` or delete; it is not an archive (see its README). Favicon is
