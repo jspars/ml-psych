@@ -2,21 +2,23 @@
 	/**
 	 * Header — sticky site banner (owner-confirmed: sticky).
 	 *
-	 * One row at every width: mark (home) · primary nav · theme switcher ·
-	 * contact CTA. Below 48rem the nav, switcher and CTA fold into a
-	 * disclosure panel under the brand row; the toggle button keeps its place
-	 * at the top right, so opening the menu never moves the control that
-	 * closes it.
+	 * One row at every width: mark (home) · primary nav · contact CTA. The
+	 * theme switcher is a floating FAB owned by PageShell, so the row only
+	 * holds real navigation UI.
+	 *
+	 * Below 48rem the nav and CTA fold into a disclosure panel under the
+	 * brand row; the toggle button keeps its place at the top right, so
+	 * opening the menu never moves the control that closes it.
 	 *
 	 * The toggle carries aria-expanded/aria-controls, opens a full-width
 	 * column, and any link click (Nav.on:navigate) or Escape closes it. From
 	 * 48rem up the toggle is display:none and the panel lays out inline —
 	 * CSS-owned visibility, so no-JS users still get the nav.
 	 *
-	 * The monogram is the header brand; the wordmark cut belongs to the Footer
-	 * (the compact mark keeps the single row light). The CTA is rendered here
-	 * rather than inside Nav so the row order stays mark · links · switcher ·
-	 * CTA instead of links · CTA · switcher.
+	 * The monogram is the header brand; the wordmark cut belongs to the
+	 * Footer (the compact mark keeps the single row light). The CTA is
+	 * rendered here rather than inside Nav so the row order stays mark ·
+	 * links · CTA.
 	 *
 	 * Tokens only; the sticky background is plain --surface over a --border
 	 * hairline. Dark theme rides the token swap.
@@ -25,7 +27,6 @@
 	import { NAV_ITEMS } from '$lib/data/nav.js';
 	import Button from '../primitives/Button.svelte';
 	import Nav from './Nav.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
 
 	/** The one CTA item — nav.js marks it `cta: true`. */
 	const cta = NAV_ITEMS.find((item) => item.cta);
@@ -68,7 +69,6 @@
 
 		<div id="site-nav-panel" class="site-header__panel" class:site-header__panel--open={open}>
 			<Nav on:navigate={close} />
-			<ThemeToggle />
 			{#if cta}
 				<Button href="{base}{cta.href}" on:click={close}>{cta.label}</Button>
 			{/if}
@@ -182,8 +182,8 @@
 	}
 
 	/* Desktop: one always-visible row. The panel dissolves into a flex row so
-	   Nav, ThemeToggle and the CTA line up beside the mark; Nav takes the slack
-	   so the switcher and CTA stay pinned to the right edge. */
+	   Nav and the CTA line up beside the mark; Nav takes the slack so the CTA
+	   stays pinned to the right edge. */
 	@media (min-width: 48rem) {
 		.site-header__inner {
 			display: flex;

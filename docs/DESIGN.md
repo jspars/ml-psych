@@ -301,8 +301,8 @@ scopes them automatically, so there is no global class-name collision risk.
 ```
 src/lib/
 ├── components/
-│   ├── primitives/    # Button, Card, Icon, Container, Section, Prose
-│   ├── layout/        # Header, Footer, Nav, SkipLink, PageShell
+│   ├── primitives/    # Button, Card, Icon, Container, Section, Prose, ThemeIcon
+│   ├── layout/        # Header, Footer, Nav, SkipLink, PageShell, ThemeFab
 │   └── sections/      # Hero, ServiceGrid, AffirmingBanner, CTA
 ├── data/              # site.js, nav.js, services.js, copy.js
 └── utils/             # a11y.js, motion.js

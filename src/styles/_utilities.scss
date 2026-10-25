@@ -67,7 +67,7 @@
 
 // --- Theme swap -------------------------------------------------------------
 // `data-theme` swaps the custom properties instantly, so every painted surface
-// would snap. ThemeToggle adds `.theme-switching` to <html> for one beat; this
+// would snap. ThemeFab adds `.theme-switching` to <html> for one beat; this
 // fades the colour properties that actually change. Gated on no-preference so
 // the global reduced-motion rule in _reset.scss still wins.
 
